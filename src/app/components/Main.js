@@ -8,10 +8,10 @@ import Article from './Article.js'
 export default class Main extends React.Component {
   render () {
     return (
-      <div>
+      <main>
         <h1>Blog Posts</h1>
         <Article />
-      </div>
+      </main>
     )
   }
 }

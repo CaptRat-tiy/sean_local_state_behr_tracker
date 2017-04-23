@@ -12,6 +12,7 @@ var config = {
     filename: "bundle.js",
     publicPath: "/app/"
   },
+  devtool: "inline-source-map",
   module: {
     loaders: [
       {
@@ -23,7 +24,7 @@ var config = {
         }
       },
       {
-       test: /\.json?/,
+       test: /\.json$/,
        include: SRC_DIR,
        loader: "json-loader"
       },
