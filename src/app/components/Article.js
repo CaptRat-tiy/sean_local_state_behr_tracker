@@ -3,15 +3,12 @@
 import React from 'react';
 
 import styles from '../styles/App.css';
-import Main from './Main'
-import Header from './Header'
 
-export default class App extends React.Component {
+export default class Article extends React.Component {
   render () {
     return (
       <div>
-        <Header />
-        <Main />
+        <h1>Title of Individual Blog Post</h1>
       </div>
     )
   }
