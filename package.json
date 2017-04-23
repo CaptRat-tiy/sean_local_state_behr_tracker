@@ -1,7 +1,7 @@
 {
-  "name": "react-template-dew",
+  "name": "blog assignment using React",
   "version": "1.0.0",
-  "description": "CHANGE DESCRIPTION",
+  "description": "TIY Assignment",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://YOUR_GITHUB_REPO_HERE"
+    "url": "https://github.com/CaptRat-tiy/blog-assignment-w-react"
   },
   "author": "YOUR_NAME_EMAIL_AND_GITHUB_PROFILE_HERE",
   "license": "ISC",
-  "homepage": "http://YOUR_HOMEPAGE_HTTP_HERE",
+  "homepage": "add later",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.18.2",
