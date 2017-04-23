@@ -14,10 +14,7 @@
   },
   "author": "YOUR_NAME_EMAIL_AND_GITHUB_PROFILE_HERE",
   "license": "ISC",
-  "bugs": {
-    "url": "YOUR_BUGS_HTTP_HERE"
-  },
-  "homepage": "YOUR_HOMEPAGE_HTTP_HERE",
+  "homepage": "http://YOUR_HOMEPAGE_HTTP_HERE",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.18.2",
