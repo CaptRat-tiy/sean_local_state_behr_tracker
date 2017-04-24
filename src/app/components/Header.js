@@ -8,7 +8,7 @@ import Nav from './Nav'
 export default class Header extends React.Component {
   render () {
     return (
-      <div>
+      <div className="header">
         <h1>Patrick's Blog</h1>
         <Nav />
       </div>

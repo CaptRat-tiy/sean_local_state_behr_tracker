@@ -2,10 +2,27 @@ h1 {
   color: darkslategrey;
 }
 
+.header {
+  width: 100%;
+  border: 1px grey solid;
+  height: 100px;
+  /*background-image: url("../images/Harderthanlearning.jpg")*/
+}
+
+
 .individualBlog {
   font-size: .4em;
   color: blue;
   font-family: cursive;
   border: 1px black double;
   padding: .5em;
+}
+
+.nav li {
+  /*text-decoration: none;*/
+  padding-left: .4em;
+  display: inline-block;
+  font-size: .5em;
+  list-style-type: none;
+
 }
