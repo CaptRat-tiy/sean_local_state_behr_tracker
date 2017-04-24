@@ -1,6 +1,7 @@
 h1, h2 {
   color: darkslategrey;
 }
+
 h1 {
   text-align: center;
 }
@@ -9,8 +10,8 @@ div.header { width: 100%;
   border: 1px grey solid;
   height: 100px;
   background-color: lightblue;
-  /*background-image:url('./images/Harderthanlearning.jpg')*/ }
-
+  /*background-image: url('images/Harderthanlearning.jpg') */
+}
 
 .individualBlog {
   font-size: .4em;
@@ -26,5 +27,4 @@ div.header { width: 100%;
   display: inline-block;
   font-size: .5em;
   list-style-type: none;
-
 }
