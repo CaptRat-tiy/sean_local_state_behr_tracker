@@ -1,13 +1,15 @@
-h1 {
+h1, h2 {
   color: darkslategrey;
 }
+h1 {
+  text-align: center;
+}
 
-.header {
-  width: 100%;
+div.header { width: 100%;
   border: 1px grey solid;
   height: 100px;
-  /*background-image: url("../images/Harderthanlearning.jpg")*/
-}
+  background-color: lightblue;
+  /*background-image:url('./images/Harderthanlearning.jpg')*/ }
 
 
 .individualBlog {
