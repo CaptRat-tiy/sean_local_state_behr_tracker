@@ -4,6 +4,7 @@ import React from 'react';
 
 import styles from '../styles/App.css';
 import blogData from './allblogdata.json';
+import Date from './Date'
 
 export default class Article extends React.Component {
 
@@ -13,8 +14,9 @@ export default class Article extends React.Component {
         {
           blogData.map((c,i,a) => {
             return (
-              <div className="individualBlog">
-              <h4 key={i}>{c.title}</h4>
+              <div key={i} className="individualBlog">
+                <h4>{c.title}</h4>
+                <Date blogDates={blogData[i].date} />
               </div>
             )
           })
