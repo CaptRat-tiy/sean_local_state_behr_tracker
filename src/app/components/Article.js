@@ -9,9 +9,9 @@ export default class Article extends React.Component {
   render () {
     console.log(blogData);
     return (
-      <div>
-        <h2>{blogData[0].title}</h2>
-        <h3>{blogData[0].article}</h3>
+      <div className="individualBlog">
+        <h2>{blogData[1].title}</h2>
+        <h3>{blogData[1].article}</h3>
 
 
       </div>

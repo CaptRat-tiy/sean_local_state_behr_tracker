@@ -1,3 +1,11 @@
 h1 {
   color: darkslategrey;
 }
+
+.individualBlog {
+  font-size: .4em;
+  color: blue;
+  font-family: cursive;
+  border: 1px black double;
+  padding: .5em;
+}
