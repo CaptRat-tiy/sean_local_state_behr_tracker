@@ -1,24 +1,6 @@
-Synopsis
-
-This project creates a template for creating React apps. User should be able to copy this directory and jump right into writing vanilla React with CSS support, fully configured webpack, and fleshed-out .gitignore file.
-
-This comes with Firebase installed. If using another Database, remove Firebase from the HTML script and package.json dependencies.
-
-Steps before Use:
-
-Change 'name' in package.json and other noted fields to match your project
-
-Check dependencies in package.json - make sure you aren't missing any or have any extra
-
-run npm init in project directory
-
-run npm install in project directory
-
-
-Scripts:
-
-npm start = "node server.js"
-
-npm run dev = "webpack -d && cp src/index.html dist/index.html && cp -R src/app/img dist/app && webpack-dev-server --content-base src/ --inline --hot"
-
-npm run postinstall = "webpack -p && cp src/index.html dist/index.html && cp -R src/app/img dist/app"
+This blog display needs a header, main content area, and footer.
+This main content area needs to have a main area for actual content and at least one sidebar.
+This site also needs a navigation bar that takes users to blog posts, an about page, and a recommended links links page.
+This blog posts should include a date-time entry and tags.
+This sidebar should include a list of months when a blog entry has been made, along with a list of tags used on blogs. Clicking on a month or tag should show a filtered list of blog entries.
+Then modify this blog so that you can use blog entries as project entries, to include a video or screenshot. Visitors should be able to select a 'portfolio' tag to see your portfolio entries.
