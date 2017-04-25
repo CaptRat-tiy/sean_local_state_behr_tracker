@@ -15,7 +15,7 @@
   "author": "Patrick Logan",
   "license": "ISC",
   "homepage": "http://add later",
-  "devDependencies": {},
+
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -28,7 +28,6 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-image-file": "^0.1.0",
     "react-router": "^4.0.0-alpha.5",
     "style-loader": "0.13.1",
     "webpack": "^1.13.3",

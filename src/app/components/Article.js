@@ -19,7 +19,6 @@ export default class Article extends React.Component {
                 <Date blogDates={blogData[i].date} />
                 {c.article.map((para, i, a) => {
                    return (<p key={i}>{para}</p>);
-
                 })}
               </div>
             )

@@ -9,15 +9,8 @@ export default class Date extends React.Component {
     let dates = this.props.blogDates;
     return (
       <div>
-        <p>{dates.month} {dates.day}, {dates.year}</p>
+        <span className="calendar">{dates.month} {dates.day}, {dates.year}</span>
       </div>
     )
   }
 }
-
-//
-// "date": {
-//   "month": "December",
-//   "day": "28",
-//   "year": 2016
-// },
