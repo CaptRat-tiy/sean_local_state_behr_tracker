@@ -15,8 +15,12 @@ export default class Article extends React.Component {
           blogData.map((c,i,a) => {
             return (
               <div key={i} className="individualBlog">
-                <h4>{c.title}</h4>
+                <h6>{c.title}</h6>
                 <Date blogDates={blogData[i].date} />
+                {c.article.map((para, i, a) => {
+                   return (<p key={i}>{para}</p>);
+
+                })}
               </div>
             )
           })

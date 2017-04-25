@@ -83,7 +83,9 @@
         "… The thing that I think is the most frustrating about programming is you battle with a concept or feature or tool for a long time, and while you’re battling, it feels like you’re never gonna get it.",
         "And then you get it.",
         "And then it feels obvious.",
-        "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness."]
+        "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness."],
+
+        "tags": ["noob", "Javascript", "beginner", "collaboration"]
       },
       {
         "title": "When one teaches, two learn",
@@ -99,6 +101,8 @@
         "Never say ‘I don’t know’ to an interview question. That’s not inviting any kind of conversation. That’s a period - end of discussion.",
         "My favorite advice, though, recalls Robert Heinlein’s dictum, which titles this blog entry. Drew and Kevin offered their cohort’s great lesson: 'help stragglers. It’s kind but more selfishly, they’ll return the favor when you are lost.'",
         "I’ve been looking for collaboration baked into a course’s teaching design. I think I’ve found it. Yesterday was our first time but 6 of us will perfect our mob-coding in a group project every Thursday for the next 2 months. We move seating 2x a week, to work alongside new folks. Friday has Iron Pints at 1:30, where everyone leaves their computers and gathers in a code-free zone, to socialize and imbibe, and be congenial.",
-        "The IronYard offers an intense 12 week front-end engineering curriculum with what seem like a palpable intention for supporting us."]
+        "The IronYard offers an intense 12 week front-end engineering curriculum with what seem like a palpable intention for supporting us."],
+
+        "tags": ["politics", "Javascript", "Learning JS", "collaboration"]
       }
 ]

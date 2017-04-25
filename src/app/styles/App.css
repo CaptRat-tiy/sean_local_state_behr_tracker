@@ -6,6 +6,12 @@ h1 {
   text-align: center;
 }
 
+h6 {
+  color: black;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
 div.header { width: 100%;
   border: 1px grey solid;
   height: 100px;
@@ -13,13 +19,16 @@ div.header { width: 100%;
   /*background-image: url('images/Harderthanlearning.jpg') */
 }
 
-.individualBlog {
+p {
   font-size: .4em;
   color: blue;
-  font-family: cursive;
+}
+
+.individualBlog {
   border: 1px black double;
   padding: .5em;
 }
+
 
 .nav li {
   /*text-decoration: none;*/
