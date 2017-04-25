@@ -5,6 +5,13 @@ div.header { width: 100%;
   /*background-image: url('images/Harderthanlearning.jpg') */
 }
 
+/*header {
+  background-image: ('../images/Harderthanlearning.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}   DOESN'T DISPLAY ANYTHING - on Chrome?*/
+
 h1 {
   text-align: center;
 }
