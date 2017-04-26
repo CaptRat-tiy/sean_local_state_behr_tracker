@@ -1,3 +1,4 @@
+
 "use strict";
 
 import React from 'react';
@@ -16,24 +17,19 @@ export default class Article extends React.Component {
             return (
               <div key={i} className="individualBlog">
                 <h6>{c.title}</h6>
-                <Date blogDates={blogData[i].date} />
-                {c.article.map((para, i, a) => {
-                   return (<p key={i}>{para}</p>);
-                })} 
+
+                <Date blogDates={c.date} />
+                {c.article.map((para, j) => {
+                  return (
+                    <p key={j}>
+                      {para}
+                    </p>
+                   )}
+                )}
               </div>
-            )
-          })
-        }
+            )}
+          )}
       </div>
     )
   }
 }
-
-
-// <div className="individualBlog">
-//   <h2>{blogData[1].title}</h2>
-//   {paras.map((para, i, a) => {
-//     return (<p key={i}>{para}</p>);
-//   })}
-//   <h3>{blogData[0].tags}</h3>
-// </div>
