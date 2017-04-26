@@ -12,6 +12,12 @@ div.header { width: 100%;
   display: flex;
 }   DOESN'T DISPLAY ANYTHING - on Chrome?*/
 
+footer {
+  text-align: center;
+  background-color: beige;
+  border: 1px black solid;
+}
+
 h1 {
   text-align: center;
 }
