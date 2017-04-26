@@ -30,7 +30,8 @@
       "Perhaps. I hope so.", "At another point, he said that programmers see terseness as beautiful. I understand what Drew means, and I want to eventually acquire the ability to be terse, and write beautiful code. Right now, I’m still staring at the next huge black monoliths that appear on every page, wondering WTF.",
       "I feel exhausted. I stare at my pastel and jagged Ruby code.", "After a few hours, when I look back, I can see that I am erratically pressing into an infinite darkness. And I very gratefully acknowledge I couldn’t have come this far without mentors - who can see in the dark."
     ],
-    "tags": ["politics", "Javascript", "beginner", "collaboration"]
+    "tags": ["politics", "Javascript", "beginner", "collaboration"],
+    "src": "./images/Terseness.gif"
   },
 
   {
@@ -53,7 +54,7 @@
     "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness."
   ],
     "tags": ["noob", "Javascript", "beginner", "collaboration"],
-    "image": "./images/Harderthanlearning.jpg"
+    "src": "./images/Harderthanlearning.jpg"
   },
 
   {
@@ -70,7 +71,8 @@
     "It’s much harder than I thought.",
     "I like the collaboration of this program’s community. I’m old school enough to want the traditional back&forth of a lively topic rippling through a cohort and inspiring discourse. Learning the esoteric logic of code is terribly hard, and coding alone is still harder. It’s discouraging, and deflating, to not know how to look up to find answers because I don’t know exactly how I am stuck. That’s what stuck is! Paralysis. That’s where colleagues are so helpful to me. There are lots of folks in my boat, having the same confusions and feeling the same embarrassment and … feeling just as stupid and incapable at times. There are rare but satisfying times I can help them, too."
   ],
-    "tags": ["politics", "Javascript", "beginner", "collaboration"]
+    "tags": ["politics", "Javascript", "beginner", "collaboration"],
+    "src": "./images/CodingReally.jpg"
   },
 
   {
@@ -103,8 +105,8 @@
     "article":[
       "Here is a list of insights/recommendations from the first 3 weeks that I wish I had more time to write about:",
       "Networking isn’t meeting someone just to get them to accept your LinkedIn request. It is actual human relating — finding out about the person’s interests and supporting them, if yours align.",
-      "During every workday’s 3 hours of rapid-fire lecture concepts, somehow take comprehensive, human-readable, organized notes. And — pay attention to the nuance and distinctions of each new concept. Ugh. It’s very difficult to attend and understand — and transcribe anything readable later. I sure wish one of the brick&mortar schools would develop a different option than code school/bootcamps’ intense exposure concept.",
-      "Why is a webdev student’s default setting to work solo on projects? I still don’t understand this. May be social anxiety / competence concerns? Immediately after getting my assignment, I instinctively want to team up, and talk out strategies and “big picture” perspectives.",
+      "During every workday’s 3 hours of rapid-fire lecture concepts, somehow take comprehensive, human-readable, organized notes. And — pay attention to the nuance and distinctions of each new concept. Ugh. It’s very difficult to attend and understand — and transcribe anything readable later. I sure wish one of the brick & mortar schools would develop a different option than code school/bootcamps’ intense exposure concept.",
+      "Why is a webdev student’s default setting to work solo on projects? I still don’t understand this. May be social anxiety?  Competence insecurity? I'm stumped.  Because immediately after getting my assignment, I instinctively want to team up, and talk out strategies and “big picture” perspectives.",
       "Every Thursday, we work on our Iron Yard group project. We are assigned differing members weekly. I am really becoming quite cognizant of the concern businesses show toward assuring we applicants are not only competent but also a “good fit” for job placements. For example, writing actual code is not our biggest hurdle yet. Despite agreeing on one mutual “issue” and being given a clear SOP walking into our room, my group still struggles with respecting divergent concepts and interpersonal give & take.",
       "And so, the importance of group dynamic is emerging as a significant component of the team’s potential.",
       "It is becoming visceral and obvious why interviews attempt to parse my influence on the existing dynamic in a development team."
