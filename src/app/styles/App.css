@@ -34,6 +34,12 @@ h6 {
   margin-top: 1em;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+
+}
 p {
   font-size: .4em;
   color: blue;
@@ -48,8 +54,8 @@ span {
   float: right;
   background-color: slategrey;
   text-transform:uppercase;
-  margin:.5em;
-  padding:.3em;
+  margin-right: 3em;
+  padding:.2em;
   position: relative;
   bottom: 3em;
 

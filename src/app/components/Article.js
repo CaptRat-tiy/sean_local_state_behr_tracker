@@ -20,6 +20,9 @@ export default class Article extends React.Component {
 
                 <Date blogDates={c.date} />
                 {c.article.map((para, j) => {
+                  if(para.includes(".jpg")||para.includes(".jpeg")||para.includes(".png")||para.includes(".gif")){
+                    return <img src={para} />
+                  }
                   return (
                     <p key={j}>
                       {para}

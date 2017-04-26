@@ -28,10 +28,10 @@
       "At one point during the next 4 (FOUR!) hours of mentoring, of gently guiding me toward comprehending a way forward ('Change 2 words and you’ve got it' 'We have to account for the fact that we’re checking each combo, not one'...), Drew commented that I could clean up my code a little, and sent me a simplified syntax of what I had cobbled from my limited skill and his consistent guidance. I stared at what he’d written, my brain whining and losing momentum, underpowered up the hill he’d just conjured on a whim.",
       " 'You think the solution is way more complex than it is sometimes. It’s simple simple.' ",
       "Perhaps. I hope so.", "At another point, he said that programmers see terseness as beautiful. I understand what Drew means, and I want to eventually acquire the ability to be terse, and write beautiful code. Right now, I’m still staring at the next huge black monoliths that appear on every page, wondering WTF.",
+      "./images/Terseness.gif",
       "I feel exhausted. I stare at my pastel and jagged Ruby code.", "After a few hours, when I look back, I can see that I am erratically pressing into an infinite darkness. And I very gratefully acknowledge I couldn’t have come this far without mentors - who can see in the dark."
     ],
-    "tags": ["politics", "Javascript", "beginner", "collaboration"],
-    "src": "./images/Terseness.gif"
+    "tags": ["politics", "Javascript", "beginner", "collaboration"] 
   },
 
   {
@@ -45,6 +45,8 @@
     "I’ve been trying to teach myself coding for a while now, and the convention historically has been to major in Computer Science, then get a job. The new disrupter for IT aspirants is completing online schools, “bootcamps” or even becoming self-taught. I’ve tried each of these, and just started my ‘second’ bootcamp.",
     "See, this ain’t my first toe in the water. I started a fulltime “full-stack boot camp” last year. I’d done the prep work required and paid my hefty tuition and was excited to be educated, naively expecting to learn years of wisdom much the same way Neo learns jui-jitsu.",
     "Here was my experience of moving from “preparation” to the actual full-time course:",
+    "./images/Harderthanlearning.jpg",
+
     "Let’s summarize that I found the experience enlightening. I quit after 2 weeks, having assured myself that I was totally unprepared and therefore incapable of assimilating that intensity of novel, complex and cumulative information each day for another 10 weeks.",
     "Following that intense agitation, I’ve continued online courses and completed a laid-back “code camp” in September; it was gratifying, and the milieu and instruction was, primarily, designed to foster a dev community in a ski town. We met once a week for 3 months following an online WebDev course curriculum. It was, in every way, different than the bootcamp.",
     "So now I have 2 radically different pedagogies around coding but I do have one consistent insight, from Saron Yitbarek, founder of CodeNewbie.org:",
@@ -53,8 +55,7 @@
     "And then it feels obvious.",
     "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness."
   ],
-    "tags": ["noob", "Javascript", "beginner", "collaboration"],
-    "src": "./images/Harderthanlearning.jpg"
+    "tags": ["noob", "Javascript", "beginner", "collaboration"]
   },
 
   {
