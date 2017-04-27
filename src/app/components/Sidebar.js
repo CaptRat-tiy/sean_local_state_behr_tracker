@@ -8,12 +8,34 @@ import Tile from './Tile.js'
 export default class Sidebar extends React.Component {
 
   render () {
-    // const blogData = this.props.blogData;
+    const blogData = this.props.blogData;
+    const tags = [];
+
+    blogData.map((individArticle, i, a)=>{
+      const tagsArray = individArticle.tags
+      tagsArray.map((c, i, a) => {
+        if(!tags.includes(c)) {
+          tags.push(c)
+        }
+      })
+    })
+    //alphabetize the tags:
+    tags.sort(function (a,b) {
+      var nameA = a.toUpperCase(); // ignore upper and lowercase
+      var nameB = b.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+    });
+
     return (
       <div className="sidebar">
         <p>TILES (titles, filters, dates)</p>
-        <Tile blogData = {this.props.blogData} />
-        <Tile blogData = {this.props.blogData} />
+
+        <Tile categoryArray = {tags} />
       </div>
     )
   }
