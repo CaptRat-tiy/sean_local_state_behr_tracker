@@ -19,7 +19,7 @@ export default class Sidebar extends React.Component {
         }
       })
     })
-    //alphabetize the tags:
+    //alphabetize the categoryArrays:
     tags.sort(function (a,b) {
       var nameA = a.toUpperCase(); // ignore upper and lowercase
       var nameB = b.toUpperCase(); // ignore upper and lowercase
@@ -34,8 +34,9 @@ export default class Sidebar extends React.Component {
     return (
       <div className="sidebar">
         <p>TILES (titles, filters, dates)</p>
-
+      {/*this Tile is for tags,... but there will be more */}
         <Tile categoryArray = {tags} />
+
       </div>
     )
   }
