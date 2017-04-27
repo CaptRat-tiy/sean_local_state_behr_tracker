@@ -12,7 +12,7 @@ export default class Sidebar extends React.Component {
     return (
       <div>
         <Tile blogData = {this.props.blogData} />
-        <p>HELLO!!! ANYBODY THERE?</p>
+        <p>story tags:</p>
       </div>
     )
   }

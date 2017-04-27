@@ -18,25 +18,15 @@ export default class Tile extends React.Component {
         }
       })
     })
-    console.log({tags}); return (
+    return (
       <div>
-        <h5>TAG TILE</h5>
+
           <ul>
-            {blogData.map((individArticle, i)=>{
-              const tagsArray = individArticle.tags
-
-              return tagsArray.map((c, i, a) => {
-                if(!tags.includes(c)) {
-                  tags.push(c)
-                }
-                return tags.map((tags)=>{
-                  return <li>{tags}</li>
-                })
-              })
-            }) }
-
+            <div>
+            <h5>TILES (titles, filters, dates)</h5>
+              <h6>{tags}</h6>
+            </div>
           </ul>
-        <p>Hello, World?</p>
       </div>
     )
   }
