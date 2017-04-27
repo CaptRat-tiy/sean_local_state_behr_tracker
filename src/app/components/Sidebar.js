@@ -10,8 +10,9 @@ export default class Sidebar extends React.Component {
   render () {
     // const blogData = this.props.blogData;
     return (
-      <div>
+      <div className="sidebar">
         <p>TILES (titles, filters, dates)</p>
+        <Tile blogData = {this.props.blogData} />
         <Tile blogData = {this.props.blogData} />
       </div>
     )
