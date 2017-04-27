@@ -19,21 +19,11 @@ export default class App extends React.Component {
   render () {
     return (
       <div>
-
-          <Header />
-          <div className="main">
-            <Sidebar blogData = {blogData}/>
+        <Header />
+        <Sidebar blogData = {blogData}/>
+        <main className="main">
             <Main />
-        </div>
-        {
-          blogData.map((c,i,a) => {
-            return (
-              <div key={i}>
-              <h6>{c.tags}</h6>
-              </div>
-            )
-          })
-        }
+        </main>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>
     )
