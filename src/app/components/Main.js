@@ -9,7 +9,6 @@ export default class Main extends React.Component {
 
   render () {
     return (
-
         <main>
           <h2>Blog Posts</h2>
           <Article />

@@ -24,16 +24,16 @@ export default class App extends React.Component {
           <div className="main">
             <Sidebar blogData = {blogData}/>
             <Main />
-            {
-              blogData.map((c,i,a) => {
-                return (
-                  <div key={i} className="sidebar">
-                    <h6>{c.tags}</h6>
-                  </div>
-                  )
-                })
-            }
         </div>
+        {
+          blogData.map((c,i,a) => {
+            return (
+              <div key={i}>
+              <h6>{c.tags}</h6>
+              </div>
+            )
+          })
+        }
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>
     )

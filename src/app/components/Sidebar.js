@@ -11,8 +11,8 @@ export default class Sidebar extends React.Component {
     // const blogData = this.props.blogData;
     return (
       <div>
+        <p>TILES (titles, filters, dates)</p>
         <Tile blogData = {this.props.blogData} />
-        <p>story tags:</p>
       </div>
     )
   }

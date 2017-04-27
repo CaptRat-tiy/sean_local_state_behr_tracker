@@ -11,7 +11,7 @@ export default class Tile extends React.Component {
     const tags = [];
     blogData.map((individArticle, i)=>{
       const tagsArray = individArticle.tags
-
+// filter to only show possible tags, not EVERY tag:
       tagsArray.map((c, i, a) => {
         if(!tags.includes(c)) {
           tags.push(c)
@@ -20,11 +20,14 @@ export default class Tile extends React.Component {
     })
     return (
       <div>
-
           <ul>
             <div>
-            <h5>TILES (titles, filters, dates)</h5>
-              <h6>{tags}</h6>
+              <h6>tags/filters</h6>
+              {tags.map((c,i)=>{
+                return <h6>{c}</h6>
+                }
+              )}
+
             </div>
           </ul>
       </div>

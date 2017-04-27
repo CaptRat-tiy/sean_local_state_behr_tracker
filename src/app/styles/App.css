@@ -37,7 +37,8 @@ h6 {
 img {
   display: block;
   margin: auto;
-  width: 50%;
+  padding: .5em;
+  max-height: 8em;
 
 }
 p {
@@ -81,7 +82,7 @@ span {
   height: 100%;
 }
 
-.sidebar {
+/*.sidebar {
     background-color: beige;
     border: 1px grey dashed;
     width: 3em;
@@ -90,4 +91,4 @@ span {
     right: 0;
     padding-top: 5em;
     font-size: .7em;
-}
+}*/
