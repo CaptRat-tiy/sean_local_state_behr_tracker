@@ -10,6 +10,24 @@ export default class Sidebar extends React.Component {
   render () {
     const blogData = this.props.blogData;
     const tags = [];
+    const dates = [];
+    const titles = [];
+// make tags, dates and title arrays
+//     function makeSidebarArrays (array, category) {
+//       blogData.map((individArticle, i, a)=>{
+//       // const individArray = individArticle.tags
+//       const individArray = category;
+//
+//       console.log(individArray);
+//       individArray.map((c, i, a) => {
+//         if(!array.includes(c)) {
+//           array.push(c)
+//         }
+//       })
+// })}
+// const test = makeSidebarArrays(tags, blogData[i].tags);
+//
+// console.log(test);
 
     blogData.map((individArticle, i, a)=>{
       const tagsArray = individArticle.tags

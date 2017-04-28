@@ -10,7 +10,7 @@
       "My neighborhood must have had influential Catholics on the school board because Barrington High School had first and second-year Latin as an elective. Ms. Benham refused to concede that Latin was mortua, and like acolytes or Brian in Monty Python’s Life of Brian, we would haltingly attempt to guess and then conjugate the accusative, imperative, dative or nominative (or whatever!) And like Brian’s Centurion interrogator, unless the formulation is perfectly correct, the words make no sense - instead of the graffiti throw-down 'Romans, Go Home!', the Roman soldier translates 'People called Romanes, they go to the house?'",
       "Now that I’ve spent considerable time under the surface of coding watching online code-alongs and YouTube tutorials, listening to applicable podcasts and hearing the jargon in Meetup presentations, I have become slightly less intimidated by code’s foreboding, unforgiving, foreign cast and its evasive logic. But I continue to wonder if coding languages are like Latin, or other dead languages, and with no shared dialogue – the back & forth of communication – if they contain no real kernel of 'language'.",
       "Here is an example of modern English: 'totes' is a sensible hipster answer to 'you interested in seeing the new Star Wars?'' But its dialect would stump Siri, because the meaning lies within the context, and inference eludes an algorithm. I think 'language' and linearity, 'language' and logic may be incompatible, and part of my struggle is trying to comprehend this stuff as a language.",
-      "Javascript and Error messages and testing scripts – these remain advanced Greek to me - a dogmatic and confusing series of words whose precision lays in ambush, beyond my ability. I think code is like Trump, just needling me with 'Wrong! Wrong!' without helping me to understand. The lack of collaboration, code’s esoteric quality and the vast, vast world of required background information, makes fluency still seem nearly impossible."
+      "Javascript and Error messages and testing scripts – these remain advanced Greek to me - a dogmatic and confusing series of words whose precision lays in ambush, beyond my ability. I think code is like Trump, just needling me with 'WRONG! WRONG!' without helping me to understand. The lack of collaboration, code’s esoteric quality and the vast, vast world of required background information, makes fluency still seem nearly impossible."
     ],
     "tags": ["politics", "Javascript", "beginner", "collaboration"],
     "src": "./images/Semiotics.gif",
@@ -41,19 +41,23 @@
       "day": "26",
       "year": 2017
       },
-    "article":["The only thing more painful than learning from experience is not learning from experience.” (Archibald McLeish)",
+    "article":[["\"The only thing more painful than learning from experience is not learning from experience.” (Archibald McLeish)\""],
     "I’ve been trying to teach myself coding for a while now, and the convention historically has been to major in Computer Science, then get a job. The new disrupter for IT aspirants is completing online schools, “bootcamps” or even becoming self-taught. I’ve tried each of these, and just started my ‘second’ bootcamp.",
     "See, this ain’t my first toe in the water. I started a fulltime “full-stack boot camp” last year. I’d done the prep work required and paid my hefty tuition and was excited to be educated, naively expecting to learn years of wisdom much the same way Neo learns jui-jitsu.",
     "Here was my experience of moving from “preparation” to the actual full-time course:",
     "./images/Harderthanlearning.jpg",
-
     "Let’s summarize that I found the experience enlightening. I quit after 2 weeks, having assured myself that I was totally unprepared and therefore incapable of assimilating that intensity of novel, complex and cumulative information each day for another 10 weeks.",
     "Following that intense agitation, I’ve continued online courses and completed a laid-back “code camp” in September; it was gratifying, and the milieu and instruction was, primarily, designed to foster a dev community in a ski town. We met once a week for 3 months following an online WebDev course curriculum. It was, in every way, different than the bootcamp.",
     "So now I have 2 radically different pedagogies around coding but I do have one consistent insight, from Saron Yitbarek, founder of CodeNewbie.org:",
-    "...       The thing that I think is the most frustrating about programming is you battle with a concept or feature or tool for a long time, and while you’re battling, it feels like you’re never gonna get it.",
+
+
+    [" \" ...The thing that I think is the most frustrating about programming is you battle with a concept or feature or tool for a long time, and while you are battling, it feels like you're never gonna get it." ,
+
     "And then you get it.",
+
     "And then it feels obvious.",
-    "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness...      "
+
+    "I feel like there’s a very small amount of time, maybe like 5 seconds, where you feel good about it. 90% of it is spent where you feel angry, and stupid. 9% is spent feeling like ‘oh. Obviously.’ And there’s 1% of happiness...\" "]
   ],
     "tags": ["noob", "Javascript", "beginner", "collaboration"]
   },

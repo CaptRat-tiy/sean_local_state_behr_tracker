@@ -10,6 +10,11 @@
   background-position: center;
   display: flex;
 }   DOESN'T DISPLAY ANYTHING - on Chrome?*/
+blockquote {
+  font-style: italic;
+  font-size: .45em;
+  color: slategrey;
+}
 
 footer {
   text-align: center;
@@ -42,7 +47,7 @@ img {
 }
 p {
   font-size: .4em;
-  color: blue;
+  color: black;
 }
 
 span {

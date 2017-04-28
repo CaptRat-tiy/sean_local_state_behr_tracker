@@ -22,6 +22,12 @@ export default class Article extends React.Component {
                   if(para.includes(".jpg")||para.includes(".jpeg")||para.includes(".png")||para.includes(".gif")){
                     return <img key={j} src={para} />
                   }
+                  // This is the code that isolates the quotes as a different formatting
+                  else if (typeof para === "object"){
+                    return para.map((paraQuote, paraQuoteI)=>{
+                      return <blockquote>{paraQuote}</blockquote>
+                    })
+                  }
                   return (
                     <p key={j}>
                       {para}
