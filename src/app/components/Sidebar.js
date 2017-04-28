@@ -9,8 +9,9 @@ export default class Sidebar extends React.Component {
 
   render () {
     const blogData = this.props.blogData;
+
     const tags = [];
-    const dates = [];
+    const monthArray = [];
     const title = [];
 
     blogData.map((individArticle, i, a)=>{
@@ -24,6 +25,13 @@ export default class Sidebar extends React.Component {
 
     blogData.map((individArticle, i)=>{
        title.push(individArticle.title)
+    })
+
+    blogData.map((individArticle, i)=>{
+     const month = individArticle.date.month
+      if(!monthArray.includes(month)) {
+        monthArray.push(month)
+      }
     })
 
     function alphabetize(array) {
@@ -41,24 +49,14 @@ export default class Sidebar extends React.Component {
 
     alphabetize(tags)
     alphabetize(title)
-    // //alphabetize the categoryArrays:
-    // tags.sort(function (a,b) {
-    //   var nameA = a.toUpperCase(); // ignore upper and lowercase
-    //   var nameB = b.toUpperCase(); // ignore upper and lowercase
-    //   if (nameA < nameB) {
-    //     return -1;
-    //   }
-    //   if (nameA > nameB) {
-    //     return 1;
-    //   }
-    // });
 
     return (
       <div className="sidebar">
         <p>TILES (titles, filters, dates)</p>
-      {/*this Tile is for tags,... but there will be more */}
+
         <Tile categoryArray = {tags} />
         <Tile categoryArray = {title} />
+        <Tile categoryArray = {monthArray} />
       </div>
     )
   }
