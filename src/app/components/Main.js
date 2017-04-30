@@ -11,9 +11,8 @@ export default class Main extends React.Component {
     return (
         <main>
           <h2>Blog Posts</h2>
-          <Article />
+          <Article blogData = {this.props.blogData}/>
         </main>
-
     )
   }
 }

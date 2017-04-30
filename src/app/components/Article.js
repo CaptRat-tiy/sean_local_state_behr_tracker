@@ -4,12 +4,12 @@
 import React from 'react';
 
 import styles from '../styles/App.css';
-import blogData from './allblogdata.json';
 import Date from './Date'
 
 export default class Article extends React.Component {
 
   render () {
+    const blogData = this.props.blogData;
     return (
       <div>
         {

@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from '../styles/App.css';
 import Tile from './Tile.js'
-
+import { alphabetize } from '../helper-function.js'
 
 export default class Sidebar extends React.Component {
 
@@ -34,29 +34,15 @@ export default class Sidebar extends React.Component {
       }
     })
 
-    function alphabetize(array) {
-      array.sort(function (a,b) {
-        var nameA = a.toUpperCase(); // ignore upper and lowercase
-        var nameB = b.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-      });
-    }
-
     alphabetize(tags)
     alphabetize(title)
 
     return (
       <div className="sidebar">
-        <p>TILES (titles, filters, dates)</p>
 
-        <Tile categoryArray = {tags} />
-        <Tile categoryArray = {title} />
-        <Tile categoryArray = {monthArray} />
+        <Tile categoryArray = {tags} category = {"Tags"} />
+        <Tile categoryArray = {title} category = {"Title"} />
+        <Tile categoryArray = {monthArray} category = {"Month"}/>
       </div>
     )
   }

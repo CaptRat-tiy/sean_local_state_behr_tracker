@@ -12,16 +12,20 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tags: [],
+      blogData: blogData,
+      sidebarFilterCategory: "",
+      sidebarFilterText: "",
+      
     }
   }
   render () {
+    console.log(this.state.blogData);
     return (
       <div id="layout">
         <Header />
         <div className="main">
-          <Sidebar blogData = {blogData} />
-          <Main />
+          <Sidebar blogData = {this.state.blogData} />
+          <Main blogData = {blogData} />
         </div>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>

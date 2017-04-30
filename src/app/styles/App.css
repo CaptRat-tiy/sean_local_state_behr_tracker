@@ -4,12 +4,6 @@
   background-color: lightblue;
   }
 
-/*header {
-  background-image: ('../images/Harderthanlearning.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-}   DOESN'T DISPLAY ANYTHING - on Chrome?*/
 blockquote {
   font-style: italic;
   font-size: .45em;
