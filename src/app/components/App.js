@@ -8,7 +8,6 @@ import Header from './Header';
 import blogData from './allblogdata.json';
 import Sidebar from './Sidebar'
 
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -18,12 +17,12 @@ export default class App extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div id="layout">
         <Header />
-        <Sidebar blogData = {blogData}/>
-        <main className="main">
-            <Main />
-        </main>
+        <div className="main">
+          <Sidebar blogData = {blogData} />
+          <Main />
+        </div>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>
     )
