@@ -7,7 +7,6 @@ export default class Tile extends React.Component {
 
   render () {
     const categoryArray = this.props.categoryArray
-    console.log(categoryArray);
 
     return (
       <div>
