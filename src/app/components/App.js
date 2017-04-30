@@ -13,9 +13,9 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       blogData: blogData,
-      sidebarFilterCategory: "",
-      sidebarFilterText: "",
-      
+      sidebarSelectCategory: "",
+      sidebarSelectText: "",
+
     }
   }
   render () {
