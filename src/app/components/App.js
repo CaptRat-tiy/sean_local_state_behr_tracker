@@ -21,7 +21,7 @@ export default class App extends React.Component {
         <Header />
         <div className="main">
           <Sidebar blogData = {blogData} />
-          <Main />
+          <Main blogData = {blogData} />
         </div>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>
