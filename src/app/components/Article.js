@@ -34,7 +34,6 @@ export default class Article extends React.Component {
                     </p>
                    )}
                 )}
-                <img src={c.src} />
               </div>
             )}
           )}
