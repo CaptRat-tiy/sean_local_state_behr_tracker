@@ -62,8 +62,12 @@ export default class App extends React.Component {
       <div id="layout">
         <Header />
         <div className="main">
-          <Sidebar blogData = {blogData} setFilterState={this.setFilterState} />
-          <Main blogData = {this.state.blogData} />
+          <Sidebar
+            blogData = {blogData} setFilterState={this.setFilterState}
+          />
+          <Main
+            blogData = {this.state.blogData} 
+          />
         </div>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
       </div>

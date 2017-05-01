@@ -1,6 +1,6 @@
 [
   {
-    "title": "Semiotics - the Study of Meaning-Making",
+    "title": "Semiotics: the Study of Meaning-Making",
     "date": {
       "month": "December",
       "day": "28",
@@ -8,7 +8,7 @@
     },
     "article": [
       "My neighborhood must have had influential Catholics on the school board because Barrington High School had first and second-year Latin as an elective. Ms. Benham refused to concede that Latin was mortua, and like acolytes or Brian in Monty Python’s Life of Brian, we would haltingly attempt to guess and then conjugate the accusative, imperative, dative or nominative (or whatever!) And like Brian’s Centurion interrogator, unless the formulation is perfectly correct, the words make no sense - instead of the graffiti throw-down 'Romans, Go Home!', the Roman soldier translates :",
-      [" \"People called Romanes, they go to the house? \" "],
+      [" \"People called Romanes, they go to the house?\""],
       "Now that I’ve spent considerable time under the surface of coding watching online code-alongs and YouTube tutorials, listening to applicable podcasts and hearing the jargon in Meetup presentations, I have become slightly less intimidated by code’s foreboding, unforgiving, foreign cast and its evasive logic. But I continue to wonder if coding languages are like Latin, or other dead languages, and with no shared dialogue – the back & forth of communication – if they contain no real kernel of 'language'.",
       "Here is an example of modern English: 'totes' is a sensible hipster answer to 'you interested in seeing the new Star Wars?'' But its dialect would stump Siri, because the meaning lies within the context, and inference eludes an algorithm. I think 'language' and linearity, 'language' and logic may be incompatible, and part of my struggle is trying to comprehend this stuff as a language.",
       "Javascript and Error messages and testing scripts – these remain advanced Greek to me - a dogmatic and confusing series of words whose precision lays in ambush, beyond my ability. I think code is like Trump, just needling me with 'WRONG! WRONG!' without helping me to understand. The lack of collaboration, code’s esoteric quality and the vast, vast world of required background information, makes fluency still seem nearly impossible.",
@@ -39,18 +39,18 @@
   },
 
   {
-    "title": "The Only Thing More Painful Than Learning From Experience...",
+    "title": "\"The Only Thing More Painful Than Learning From Experience...\"",
     "date": {
       "month": "February",
       "day": "26",
       "year": 2017
       },
-    "article":[["\"The only thing more painful than learning from experience is not learning from experience.” \""],
+    "article":[["\"... is not learning from experience.\""],
     "Archibald McLeish",
     "I’ve been trying to teach myself coding for a while now, and the convention historically has been to major in Computer Science, then get a job. The new disrupter for IT aspirants is completing online schools, “bootcamps” or even becoming self-taught. I’ve tried each of these, and just started my ‘second’ bootcamp.",
     "See, this ain’t my first toe in the water. I started a fulltime “full-stack boot camp” last year. I’d done the prep work required and paid my hefty tuition and was excited to be educated, naively expecting to learn years of wisdom much the same way Neo learns jui-jitsu.",
     "Here was my experience of moving from “preparation” to the actual full-time course:",
-    "./images/Harderthanlearning.jpg",
+    "./images/jaws.jpg",
     "Let’s summarize that I found the experience enlightening. I quit after 2 weeks, having assured myself that I was totally unprepared and therefore incapable of assimilating that intensity of novel, complex and cumulative information each day for another 10 weeks.",
     "Following that intense agitation, I’ve continued online courses and completed a laid-back “code camp” in September; it was gratifying, and the milieu and instruction was, primarily, designed to foster a dev community in a ski town. We met once a week for 3 months following an online WebDev course curriculum. It was, in every way, different than the bootcamp.",
     "So now I have 2 radically different pedagogies around coding but I do have one consistent insight, from Saron Yitbarek, founder of CodeNewbie.org:",
@@ -97,11 +97,11 @@
       "To conclude our first week, we had two former student visitors today, to provide more visceral and authentic advice. By ‘more’ I mean, all the motivational maxims and inspiring quotations aside, there’s something far more digestible to me when the motivator is just a rung or two above 'peer' in my present struggle. I sense their admiration mixed with true empathy for what we’re undertaking. Drew and Kevin finished the last cohort, but — as Teddy Roosevelt extolled — they remember and admire the striving valiantly and erring, coming short 'again and again because there is no effort without error and shortcoming'.",
       "./images/teaching.jpg",
       "Here is some solid advice they passed along:",
-      "network effectively (instead of just getting accepted into senior programmers’ and recruiter’s LinkedIn accounts); take folks to lunch and find out about them as people, not just potential check-signers.",
-      "Expect to emerge into a local job culture a bit over-crowded with many other hungry 'junior developers'. Strategize how to leverage our life experience.",
-      "Never say ‘I don’t know’ to an interview question. That’s not inviting any kind of conversation. That’s a period - end of discussion.",
-      "My favorite advice, though, recalls Robert Heinlein’s dictum, which titles this blog entry. Drew and Kevin offered their cohort’s great lesson: 'help stragglers. It’s kind but more selfishly, they’ll return the favor when you are lost.'",
-      "I’ve been looking for collaboration baked into a course’s teaching design. I think I’ve found it. Yesterday was our first time but 6 of us will perfect our mob-coding in a group project every Thursday for the next 2 months. We move seating 2x a week, to work alongside new folks. Friday has Iron Pints at 1:30, where everyone leaves their computers and gathers in a code-free zone, to socialize and imbibe, and be congenial.",
+      " * network effectively (instead of just getting accepted into senior programmers’ and recruiter’s LinkedIn accounts); take folks to lunch and find out about them as people, not just potential check-signers.",
+      "* Expect to emerge into a local job culture a bit over-crowded with many other hungry 'junior developers'. Strategize how to leverage our life experience.",
+      "* Never say ‘I don’t know’ to an interview question. That’s not inviting any kind of conversation. That’s a period - end of discussion.",
+      "* My favorite advice, though, recalls Robert Heinlein’s dictum, which titles this blog entry. Drew and Kevin offered their cohort’s great lesson: 'help stragglers. It’s kind but more selfishly, they’ll return the favor when you are lost.'",
+      "I’ve been looking for collaboration baked into a course’s teaching design. I think I’ve found it.  I hope so! Yesterday was our first time but 6 of us will perfect our mob-coding in a group project every Thursday for the next 2 months; we move seating 2x a week, to work alongside new folks. Friday has Iron Pints at 1:30, where everyone leaves their computers and gathers in a code-free zone, to socialize and imbibe, and be congenial.",
       "The IronYard offers an intense 12 week front-end engineering curriculum with what seem like a palpable intention for supporting us."
     ],
     "tags": ["politics", "Javascript", "Learning JS", "collaboration"]

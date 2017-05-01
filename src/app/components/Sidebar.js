@@ -40,10 +40,19 @@ export default class Sidebar extends React.Component {
     return (
       <div className="sidebar">
 
-        <Tile categoryArray = {tags} category = {"Tags"} setFilterState={this.props.setFilterState} />
-        <Tile categoryArray = {title} category = {"Title"}
-        setFilterState={this.props.setFilterState} />
-        <Tile categoryArray = {monthArray} category = {"Month"} setFilterState={this.props.setFilterState}/>
+        <Tile
+          categoryArray = {tags}
+          category = {"Tags"} setFilterState={this.props.setFilterState}
+        />
+        <Tile
+          categoryArray = {title}
+          category = {"Title"}
+          setFilterState={this.props.setFilterState}
+        />
+        <Tile
+          categoryArray = {monthArray}
+          category = {"Month"} setFilterState={this.props.setFilterState}
+        />
       </div>
     )
   }
