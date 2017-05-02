@@ -56,7 +56,6 @@ h6 {
 html, body {
   width: 100vw;
   min-height: 100vh;
-  margin: 0;
   padding: 0;
 }
 
@@ -123,5 +122,5 @@ ul {
 #layout {
   display: grid;
   grid-template-columns: minmax(100px, 3fr) 9fr;
-  grid-template-rows: 20vh auto 10vh;
+  grid-template-rows: 20% auto 10%;
 }
