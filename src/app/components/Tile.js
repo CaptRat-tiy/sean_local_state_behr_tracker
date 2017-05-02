@@ -24,7 +24,7 @@ export default class Tile extends React.Component {
               <h6>{category}</h6>
                 <ul>
                   {categoryArray.map((c,i)=>{
-                    return <li key={i}><button id={c} name={category} onClick={this.handleClick}>{c}</button></li>
+                    return <li key={c,i}><button id={c} name={category} onClick={this.handleClick}>{c}</button></li>
                     }
                   )}
                 </ul>

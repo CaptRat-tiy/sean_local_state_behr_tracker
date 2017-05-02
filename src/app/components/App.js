@@ -16,8 +16,6 @@ export default class App extends React.Component {
 
     this.state = {
       blogData: blogData,
-      sidebarSelectCategory: "",
-      sidebarSelectText: "",
     }
   }
 
@@ -25,10 +23,8 @@ export default class App extends React.Component {
   setFilterState(selector, category) {
     this.setState({
       blogData: this.setBlogData(selector, category),
-      sidebarSelectCategory: category,
-      sidebarSelectText: selector
     })
-    }
+  }
 
     setBlogData (selector, category) {
       const selectedBlogData = []
@@ -63,10 +59,11 @@ export default class App extends React.Component {
         <Header />
         <div className="main">
           <Sidebar
-            blogData = {blogData} setFilterState={this.setFilterState}
+            blogData = {blogData}
+            setFilterState={this.setFilterState}
           />
           <Main
-            blogData = {this.state.blogData} 
+            blogData = {this.state.blogData}
           />
         </div>
         <footer>THIS IS THE FOOTER.  Don't judge!</footer>
