@@ -1,7 +1,7 @@
 {
-  "name": "react-template-dew",
+  "name": "Behavioral Tracking App",
   "version": "1.0.0",
-  "description": "CHANGE DESCRIPTION",
+  "description": "TIY final project",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -10,14 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://YOUR_GITHUB_REPO_HERE"
+    "url": "https://github.com/CaptRat-tiy/Behavioral-Tracker"
   },
-  "author": "YOUR_NAME_EMAIL_AND_GITHUB_PROFILE_HERE",
-  "license": "ISC",
-  "bugs": {
-    "url": "YOUR_BUGS_HTTP_HERE"
+  "author": "Patrick Logan",
+  "license": "ISC"
   },
-  "homepage": "YOUR_HOMEPAGE_HTTP_HERE",
+  "homepage": "02one.net",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.18.2",
