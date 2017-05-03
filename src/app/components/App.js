@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
 
   render () {
-    const observedBehaviors=this.props.observedBehaviors;
+    // const observedBehaviors=this.props.observedBehaviors;
     return (
       <div>
         {

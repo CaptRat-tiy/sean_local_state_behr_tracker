@@ -23,9 +23,10 @@
     "grade": "3",
     "FREQUENCY/INTERVAL": {
         "15_minutes": true,
+        "30_minutes": false,
         "45_minutes": false,
         "75_minutes": true,
-        "end_of_class": true
+        "at_end_of_class": false
       },
     "ATTENDANCE": {
       "absent?": false,
