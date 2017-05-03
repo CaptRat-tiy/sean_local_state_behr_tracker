@@ -15,15 +15,16 @@ export default class App extends React.Component {
   }
 
   render () {
-    console.log(observedBehaviors);
+    // console.log(observedBehaviors);
     // const observedBehaviors=this.props.observedBehaviors;
     return (
       <div>
         {
         observedBehaviors.map((c,i,a) =>{
           return (
-            <div>
+            <div key={i}>
               <p>{"Hellp World!"}</p>
+              <p>{console.log(c.TEACHER1.firstname)}</p>
             </div>
           )
         })
