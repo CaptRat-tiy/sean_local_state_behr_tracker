@@ -1,4 +1,6 @@
-This project is in fulfillment of TIY's curriculum.  It tracks particular (imaginary) students' disruptive/maladaptive behaviors in class in an elegant simplified format, freeing teacher's time and attention back onto the "problem child", instead of the damn paperwork! ; )
+This project is in fulfillment of TIY's curriculum.  
+
+It tracks particular (imaginary) students' disruptive/maladaptive behaviors in class in an elegant simplified format, freeing teacher's time and attention back onto the "problem child", instead of the damn paperwork! ; )
 
 To start:
 
