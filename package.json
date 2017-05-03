@@ -1,5 +1,5 @@
 {
-  "name": "Behavioral Tracking App",
+  "name": "behavioral_tracking_app",
   "version": "1.0.0",
   "description": "TIY final project",
   "main": "index.js",
@@ -13,8 +13,7 @@
     "url": "https://github.com/CaptRat-tiy/Behavioral-Tracker"
   },
   "author": "Patrick Logan",
-  "license": "ISC"
-  },
+  "license": "ISC",
   "homepage": "02one.net",
   "devDependencies": {},
   "dependencies": {
@@ -45,7 +44,8 @@
   "keywords": [
     "react",
     "webpack",
-    "blog"
+    "final project",
+    "behavioral tracker final project"
   ],
   "devDependencies": {
     "file-loader": "^0.11.1",
