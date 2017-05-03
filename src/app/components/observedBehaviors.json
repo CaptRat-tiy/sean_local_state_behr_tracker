@@ -1,13 +1,13 @@
 [
   {
-    "TEACHER": {
+    "TEACHER1": {
       "firstname": "Kamie",
       "lastname": "Logan",
       "grade": "3",
       "email_address": "klogan@emerson.com",
       "username": "naughtemouse"
     },
-    "TEACHER": {
+    "TEACHER2": {
       "firstname": "Dirk",
       "lastname": "Matthias",
       "grade": "11",

@@ -4,7 +4,7 @@ import React from 'react';
 
 import styles from '../styles/App.css';
 import observedBehaviors from './observedBehaviors.json';
-console.log(observedBehaviors);
+
 
 export default class App extends React.Component {
   constructor(props){
@@ -15,6 +15,7 @@ export default class App extends React.Component {
   }
 
   render () {
+    console.log(observedBehaviors);
     // const observedBehaviors=this.props.observedBehaviors;
     return (
       <div>
@@ -22,7 +23,7 @@ export default class App extends React.Component {
         observedBehaviors.map((c,i,a) =>{
           return (
             <div>
-              <h6>{observedBehaviors.ATTENDANCE.tardy}</h6>
+              <p>{"Hellp World!"}</p>
             </div>
           )
         })
