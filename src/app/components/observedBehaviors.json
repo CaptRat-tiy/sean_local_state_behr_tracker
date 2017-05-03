@@ -15,23 +15,28 @@
       "username": "dirkadirka"
     }
   },
+
   {
+  "STUDENT": {
+    "firstname": "Finnegan",
+    "lastname": "Viszla",
+    "grade": "3",
     "FREQUENCY/INTERVAL": {
-      "15_minutes": true,
-      "45_minutes": false,
-      "75_minutes": true,
-      "end_of_class": true
-    }
-  },
-  {
+        "15_minutes": true,
+        "45_minutes": false,
+        "75_minutes": true,
+        "end_of_class": true
+      },
     "ATTENDANCE": {
       "absent?": false,
         "img": "./images/attendance/absent today red.png",
        "tardy": true,
         "img": "./images/attendance/tardy red.png",
       "completed_homework": false
+      }
     }
   },
+
   {
     "AGGRESSION": {
       "fighting": false,
