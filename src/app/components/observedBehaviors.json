@@ -7,53 +7,59 @@
       "email_address": "klogan@emerson.com",
       "username": "naughtemouse"
     },
-
     "TEACHER": {
       "firstname": "Dirk",
       "lastname": "Matthias",
       "grade": "11",
       "email_address": "dirkadirka@emerson.com",
       "username": "dirkadirka"
-    },
-
+    }
+  },
+  {
     "FREQUENCY/INTERVAL": {
       "15_minutes": true,
       "45_minutes": false,
       "75_minutes": true,
       "end_of_class": true
-    },
-
+    }
+  },
+  {
     "ATTENDANCE": {
       "absent?": false,
-      "tardy": true,
-      "completes_homework": false
-    },
-
+        "img": "./images/attendance/absent today red.png",
+       "tardy": true,
+        "img": "./images/attendance/tardy red.png",
+      "completed_homework": false
+    }
+  },
+  {
     "AGGRESSION": {
       "fighting": false,
       "threatening/bullying": false,
       "hands_on_others": true,
       "aggressive_speech": false,
       "argumentative": true
-    },
-
+    }
+  },
+  {
     "DISTRACTION": {
       "self-distraction": true,
       "environmental_distraction": false,
-      "walking": true,
+      "out_of_chair": true,
       "distracting_others": false,
       "attention_seeking(of_others)": true,
       "not_facing_target": true
-    },
-
+    }
+  },
+  {
     "OTHER_CONCERNS": {
-      "withdrawal": false,
       "isolation": false,
       "impulsive": false,
       "crying": false,
       "doesn't_request_assistance": false
-    },
-
+    }
+  },
+  {
     "ENVIRONMENT": {
       "wear_glasses?": false,
       "hearing_aid?": false,
