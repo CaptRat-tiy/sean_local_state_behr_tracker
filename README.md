@@ -8,6 +8,7 @@ run npm init in project directory
 
 run npm install in project directory
 
+(Opens in localhost:8080 at present)
 
 Scripts:
 

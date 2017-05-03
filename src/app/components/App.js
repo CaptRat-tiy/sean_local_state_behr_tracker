@@ -3,23 +3,28 @@
 import React from 'react';
 
 import styles from '../styles/App.css';
-
-
-
+import observedBehaviors from './observedBehaviors.json';
 
 export default class App extends React.Component {
 
   render () {
-    return (
-      <div id="layout">
-        <Header />
-        <div className="main">
+    const observedBehaviors = this.props.observedBehaviors;
 
-          <Main
-          />
-        </div>
-        <footer>THIS IS THE FOOTER.  Don't judge!</footer>
+    return (
+      <div>
+        {
+        observedBehaviors.map((c,i,a) =>{
+          return (
+            <div>
+              <h6>{observedBehaviors.TEACHER}</h6>
+            </div>
+          )
+        })
+      }
+
       </div>
+
+
     )
   }
 }

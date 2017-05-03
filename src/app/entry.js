@@ -1,1 +1,1 @@
-document.write("It works");
+document.write("ENTRY.js works");
