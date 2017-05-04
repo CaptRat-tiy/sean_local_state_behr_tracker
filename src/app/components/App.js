@@ -61,7 +61,6 @@ export default class App extends React.Component {
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
 
-    console.log(behaviors);
     return (
 
       <div>
