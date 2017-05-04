@@ -27,15 +27,22 @@ export default class App extends React.Component {
     this.state = {
       courseData: {},
       students: [],
-
+      teacherInfo: {},
+      behaviors: []
     }
   }
 
   componentWillMount(){
     fbRef.on("child_added", (snapshot)=>{
+      const courseData = this.changeIntoArray(snapshot.val())
       const students = this.changeIntoArray(snapshot.val().studentArray)
+      const teacherInfo = snapshot.val().teacherID
+      const behaviors = this.changeIntoArray(snapshot.val().behaviors)
       this.setState({
-        students: students
+        courseData: courseData,
+        students: students,
+        teacherInfo: teacherInfo,
+        behaviors: behaviors
       })
     })
   }
@@ -49,19 +56,22 @@ export default class App extends React.Component {
   }
 
   render () {
-    const students = this.state.students
-
-    console.log(this.state.students);
+    const students=this.state.students
+    const courseData=this.state.courseData
+    const teacherInfo=this.state.teacherInfo
+    const behaviors=this.state.behaviors
 
     return (
 
       <div>
+        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s {teacherInfo.gradeLevel} Class </h1>
         {students.map((studentObject, index)=>{
           return <p key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</p>
-        }
-
+          }
         )}
-
+        {behaviors.map((behavior, index)=>{
+          return <p key={behavior}>{behavior}</p>
+        })}
       </div>
     )
   }
