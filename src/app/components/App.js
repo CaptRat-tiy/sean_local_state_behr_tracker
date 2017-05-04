@@ -61,6 +61,7 @@ export default class App extends React.Component {
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
 
+    console.log(behaviors);
     return (
 
       <div>
@@ -70,7 +71,12 @@ export default class App extends React.Component {
           }
         )}
         {behaviors.map((behavior, index)=>{
-          return <p key={behavior}>{behavior}</p>
+          return (
+            <div key={behavior.name}>
+              <p >{behavior.name}</p>
+              <img src={behavior.image} alt={behavior.name} />
+           </div>
+         )
         })}
       </div>
     )
