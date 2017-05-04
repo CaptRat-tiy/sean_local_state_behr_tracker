@@ -4,9 +4,7 @@ import React from 'react';
 import _ from 'underscore';
 import * as firebase from 'firebase';
 
-
 import styles from '../styles/App.css';
-import observedBehaviors from './observedBehaviors.json';
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
@@ -19,13 +17,13 @@ var config = {
 
 firebase.initializeApp(config);
 
-const fbRef = firebase.database().ref()
+
+const fbRef= firebase.database().ref();
 
 export default class App extends React.Component {
   constructor(props){
     super(props);
     this.changeIntoArray=this.changeIntoArray.bind(this)
-
     this.state = {
       courseData: {},
       students: [],
@@ -38,7 +36,6 @@ export default class App extends React.Component {
       const students = this.changeIntoArray(snapshot.val().studentArray)
       this.setState({
         students: students
-
       })
     })
   }
@@ -55,13 +52,16 @@ export default class App extends React.Component {
     const students = this.state.students
 
     console.log(this.state.students);
+
     return (
+
       <div>
         {students.map((studentObject, index)=>{
           return <p key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</p>
         }
 
         )}
+
       </div>
     )
   }
