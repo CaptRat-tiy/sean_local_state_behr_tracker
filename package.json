@@ -15,7 +15,10 @@
   "author": "Patrick Logan",
   "license": "ISC",
   "homepage": "02one.net",
-  "devDependencies": {},
+  "devDependencies": {
+    "file-loader": "^0.11.1",
+    "url-loader": "^0.5.8"
+  },
   "dependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -24,19 +27,19 @@
     "classnames": "^2.2.5",
     "css-loader": "^0.26.0",
     "file-loader": "^0.11.1",
-    "firebase": "^3.6.1",
+    "firebase": "3.6.1",
     "json-loader": "^0.5.4",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-image": "^1.0.1",
     "react-image-file": "^0.1.0",
-    "react-router": "^4.0.0-alpha.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "style-loader": "0.13.1",
     "url-loader": "^0.5.8",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-    
   },
   "bugs": {
     "url": "https://github.com/CaptRat-tiy/blog-assignment-w-react/issues"
@@ -46,9 +49,5 @@
     "webpack",
     "final project",
     "behavioral tracker final project"
-  ],
-  "devDependencies": {
-    "file-loader": "^0.11.1",
-    "url-loader": "^0.5.8"
-  }
+  ]
 }
