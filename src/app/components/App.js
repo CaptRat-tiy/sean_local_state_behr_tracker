@@ -2,7 +2,9 @@
 
 import React from 'react';
 import _ from 'underscore';
-import * as firebase from 'firebase';
+import * as firebase from 'firebase'
+
+import Student from './Student'
 
 import styles from '../styles/App.css';
 
@@ -64,11 +66,13 @@ export default class App extends React.Component {
     return (
 
       <div>
-        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s {teacherInfo.gradeLevel} Class </h1>
+        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
+
         {students.map((studentObject, index)=>{
-          return <p key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</p>
+          return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
+
         {behaviors.map((behavior, index)=>{
           return (
             <div key={behavior.name}>
@@ -77,6 +81,11 @@ export default class App extends React.Component {
            </div>
          )
         })}
+
+        {students.map((student, index)=>{
+          return <Student key={student.lastName} studentData={student} />
+        })}
+        
       </div>
     )
   }

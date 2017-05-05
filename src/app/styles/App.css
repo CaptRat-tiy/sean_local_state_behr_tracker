@@ -1,6 +1,5 @@
 *, html, body {
   box-sizing: border-box;
-  width: 100%;
   padding: 0;
 }
 
@@ -13,4 +12,9 @@ footer {
   background-color: beige;
   border: 1px black solid;
   max-height: 3%;
+}
+
+img {
+  max-width: 10%;
+  height: auto;
 }
