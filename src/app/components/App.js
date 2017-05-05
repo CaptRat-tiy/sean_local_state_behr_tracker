@@ -1,9 +1,10 @@
 "use strict";
 
 import React from 'react';
+import _ from 'underscore';
+import * as firebase from 'firebase';
 
 import styles from '../styles/App.css';
-import * as firebase from "firebase";
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
@@ -16,47 +17,66 @@ var config = {
 
 firebase.initializeApp(config);
 
+
 const fbRef= firebase.database().ref();
 
 export default class App extends React.Component {
   constructor(props){
     super(props);
-    this.changeIntoArray=this.changeIntoArray.bind(this);
+    this.changeIntoArray=this.changeIntoArray.bind(this)
     this.state = {
       courseData: {},
-
+      students: [],
+      teacherInfo: {},
+      behaviors: []
     }
   }
 
-  componentWillMount() {
-    fbRef.on("child_added", (snapshot) => {
+  componentWillMount(){
+    fbRef.on("child_added", (snapshot)=>{
+      const courseData = this.changeIntoArray(snapshot.val())
+      const students = this.changeIntoArray(snapshot.val().studentArray)
+      const teacherInfo = snapshot.val().teacherID
+      const behaviors = this.changeIntoArray(snapshot.val().behaviors)
       this.setState({
-        courseData: snapshot.val(),
-        students: snapshot.val().studentArray,
-        teacherInfo: snapshot.val().teacherID,
-        behaviors: snapshot.val().behaviors,
-        testing: this.changeIntoArray(snapshot.val().studentArray)
+        courseData: courseData,
+        students: students,
+        teacherInfo: teacherInfo,
+        behaviors: behaviors
       })
-    }).bind(this)
+    })
   }
 
-changeIntoArray(object){
-  console.log(object);
-  const array = []
-  object.map((c, i, a)=>{
-    array.push(c)
-  })
-  return array
-}
-  render () {
-    const teacherName = this.state.teacherInfo
+  changeIntoArray(object){
+    const newArray = []
+    _.map(object, function(c,i,a){
+      newArray.push(c)
+    })
+    return newArray
+  }
 
-    const testing=this.state.testing
-    console.log(testing);
+  render () {
+    const students=this.state.students
+    const courseData=this.state.courseData
+    const teacherInfo=this.state.teacherInfo
+    const behaviors=this.state.behaviors
+
     return (
 
       <div>
-        <h1>{testing}'s Course</h1>
+        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s {teacherInfo.gradeLevel} Class </h1>
+        {students.map((studentObject, index)=>{
+          return <p key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</p>
+          }
+        )}
+        {behaviors.map((behavior, index)=>{
+          return (
+            <div key={behavior.name}>
+              <p >{behavior.name}</p>
+              <img src={behavior.image} alt={behavior.name} />
+           </div>
+         )
+        })}
       </div>
     )
   }
