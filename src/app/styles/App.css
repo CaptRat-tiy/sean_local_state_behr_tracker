@@ -13,8 +13,21 @@ footer {
   border: 1px black solid;
   max-height: 3%;
 }
+header {
+border: 1px solid green;
+}
 
 img {
   max-width: 10%;
   height: auto;
+  margin-bottom: 5%;
+  border: 1px solid brown;
+}
+
+navbar {
+  border: 1px dashed red;
+}
+
+#studentName {
+
 }

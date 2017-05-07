@@ -19,7 +19,6 @@ var config = {
 
 firebase.initializeApp(config);
 
-
 const fbRef= firebase.database().ref();
 
 export default class App extends React.Component {
@@ -85,7 +84,7 @@ export default class App extends React.Component {
         {students.map((student, index)=>{
           return <Student key={student.lastName} studentData={student} />
         })}
-        
+
       </div>
     )
   }
