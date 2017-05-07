@@ -8,8 +8,8 @@ export default class Student extends React.Component{
   render(){
     return (
       <div>
-         <h1>Not Student</h1>
-         <h3 className="profile" >{this.props.profile}</h3>
+      <h1>Hellp World</h1>
+         <h3 className="lastName">{this.props.lastName}</h3>
       </div>
     )
   }

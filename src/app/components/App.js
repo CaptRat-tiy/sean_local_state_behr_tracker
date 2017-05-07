@@ -65,6 +65,9 @@ export default class App extends React.Component {
     return (
 
       <div>
+        {students.map((student, index)=>{
+          return <Student key={student.lastName} studentData={student} />
+        })}
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
         {students.map((studentObject, index)=>{
@@ -75,15 +78,12 @@ export default class App extends React.Component {
         {behaviors.map((behavior, index)=>{
           return (
             <div key={behavior.name}>
-              <p >{behavior.name}</p>
+              <p>{behavior.name}</p>
               <img src={behavior.image} alt={behavior.name} />
            </div>
          )
         })}
 
-        {students.map((student, index)=>{
-          return <Student key={student.lastName} studentData={student} />
-        })}
 
       </div>
     )
