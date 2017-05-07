@@ -26,17 +26,3 @@ export default class Routing extends React.Component{
     )
   }
 }
-//
-// export const Routing = () => {
-//   return (
-//     <BrowserRouter>
-//       <NavBar />
-//
-//     </BrowserRouter>
-//   )
-// }
-
-// <Match pattern="/about" component={About} />
-// <div>
-//   <Match exactly pattern="/" component={App} />
-// </div>
