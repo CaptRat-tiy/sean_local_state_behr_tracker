@@ -1,19 +1,15 @@
 This project is in fulfillment of TIY's curriculum.  
 
-It tracks particular (imaginary) students' disruptive/maladaptive behaviors in class in an elegant expeditious gesture-format, rather than paperwork -- freeing teacher's time and attention back onto the "problem child", instead of the damn paperwork! ; )
+Along with Reading, 'Riting and 'Rithmetic, teachers are expected to be police and parent and priest in their classrooms.  One particularly onerous requirement is tracking particular (imaginary) students' disruptive/maladaptive behaviors in class, so that any interventions can be scientifically analyzed for effect. While this sounds wise, the regimentation requires the teacher to interrupt lessons' flow, in order to track the observed behaviors.  Often (regularly), teachers delay the tracking to a more convenient time - thereby lessening the accuracy and quality of the data.
+
+This application assists the process in an elegant expeditious digital manner, rather than paperwork -- the app signals the teacher at the planned time, quickly reminds the teacher of the behavior with recognizable icons and the toggle switch captures the binary data (was he doing this behavior just now, or not?), freeing teacher's time and attention back onto the "problem child", instead of the damn paperwork! ; )
+
+The app will allow teachers to input student names, frequency intervals for observation and to choose typical "problem" behaviors for tracking.
+
+Later iterations of this app would include mobile swipe recording, mobile reminder (the phone vibrating and generating the student / behavior icon).
+
+
 
 To start:
 
-run npm init in project directory
-
-run npm install in project directory
-
 (Opens in localhost:8080 at present)
-
-Scripts:
-
-npm start = "node server.js"
-
-npm run dev = "webpack -d && cp src/index.html dist/index.html && cp -R src/app/img dist/app && webpack-dev-server --content-base src/ --inline --hot"
-
-npm run postinstall = "webpack -p && cp src/index.html dist/index.html && cp -R src/app/img dist/app"
