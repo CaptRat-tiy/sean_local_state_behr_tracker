@@ -10,7 +10,7 @@ export default class Student extends React.Component{
 
     let studentFirst = this.props.studentFirst;
     let studentLast = this.props.studentLast;
-    let behaviorList = this.props.behaviorList;
+    let behaviorOne = this.props.behaviorOne;
 
     return (
 
@@ -19,6 +19,7 @@ export default class Student extends React.Component{
         <h1>{studentFirst} {studentLast}</h1>
       {/* List of Behaviors as a component. */}
 
+        <img src={this.props.behaviorOne} alt="one"/>
       </div>
     )
   }
@@ -27,6 +28,7 @@ export default class Student extends React.Component{
 // <Behaviors
 //   behaviorList = {this.props.behaviorList}
 //   />
+
 
 // {behaviorList.map((behavior, index)=>{
 //   return (

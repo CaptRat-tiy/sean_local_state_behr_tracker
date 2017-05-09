@@ -72,7 +72,7 @@ export default class App extends React.Component {
           }
         )}
 
-        {behaviors.map((behavior, index)=>{
+        {this.state.behaviors.map((behavior, index)=>{
           return (
             <div key={behavior.name}>
               <p>{behavior.name}</p>
@@ -81,12 +81,15 @@ export default class App extends React.Component {
          )
         })}
 
+
+{/*the array Behaviors has to be treated as an object, and parsed to one component, to pass down as props!  WHAT THE HELL? */}
+
         {students.map((student, index)=>{
           return <Student
           key={index}
           studentFirst={student.firstName}
           studentLast = {student.lastName}
-          behaviorList = {this.state.behaviors}
+          behaviorOne = {this.state.behaviors[0].image}
           />
         })}
       </div>
