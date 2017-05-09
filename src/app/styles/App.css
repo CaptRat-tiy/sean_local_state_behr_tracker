@@ -45,6 +45,6 @@ nav {
   /*border: 8px dashed red;*/
 }
 
-.studentName {
-
+.studentProfile {
+  border: 1px solid black;
 }
