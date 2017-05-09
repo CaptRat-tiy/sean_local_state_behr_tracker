@@ -65,7 +65,6 @@ export default class App extends React.Component {
     return (
 
       <div>
-
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
         {students.map((studentObject, index)=>{
@@ -83,9 +82,16 @@ export default class App extends React.Component {
         })}
 
         {students.map((student, index)=>{
-          return <Student key={student.lastName} studentData={student} />
+          return <Student
+          key={index}
+          studentFirst={student.firstName}
+          studentLast = {student.lastName}
+          behaviorList = {this.state.behaviors}
+          />
         })}
       </div>
     )
+
   }
+
 }
