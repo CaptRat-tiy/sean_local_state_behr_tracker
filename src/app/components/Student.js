@@ -11,6 +11,8 @@ export default class Student extends React.Component{
     let studentFirst = this.props.studentFirst;
     let studentLast = this.props.studentLast;
 
+
+
     let behaviorOne = this.props.behaviorOne;
     let behaviorTwo= this.props.behaviorTwo;
     let behaviorThree = this.props.behaviorThree;
@@ -28,14 +30,14 @@ export default class Student extends React.Component{
         <h1>{studentFirst} {studentLast}</h1>
       {/* List of Behaviors as a component. */}
 
-        <img src={this.props.behaviorOne} alt="one"/>
-        <img src={this.props.behaviorTwo} alt="Two"/>
-        <img src={this.props.behaviorThree} alt="Three"/>
-        <img src={this.props.behaviorFour} alt="Four"/>
-        <img src={this.props.behaviorFive} alt="Five"/>
-        <img src={this.props.behaviorSix} alt="Six"/>
-        <img src={this.props.behaviorSeven} alt="Seven"/>
-        <img src={this.props.behaviorEight} alt="Eight"/>
+        <img src={this.props.behaviorOne} alt="argumentative"/>
+        <img src={this.props.behaviorTwo} alt="bullying"/>
+        <img src={this.props.behaviorThree} alt="excessive crying"/>
+        <img src={this.props.behaviorFour} alt="aggresssion"/>
+        <img src={this.props.behaviorFive} alt="hands to self"/>
+        <img src={this.props.behaviorSix} alt="not facing front"/>
+        <img src={this.props.behaviorSeven} alt="self-distracting"/>
+        <img src={this.props.behaviorEight} alt="withdrawn"/>
       </div>
     )
   }

@@ -74,7 +74,7 @@ export default class App extends React.Component {
 
         {this.state.behaviors.map((behavior, index)=>{
           return (
-            <div key={behavior.name}>
+            <div className='behaviorArray' key={behavior.name}>
               <p>{behavior.name}</p>
               <img src={behavior.image} alt={behavior.name} />
            </div>
