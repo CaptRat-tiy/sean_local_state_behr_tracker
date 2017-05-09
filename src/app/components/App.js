@@ -82,27 +82,29 @@ export default class App extends React.Component {
         })}
 
 
-{/*the array Behaviors has to be treated as an object, and parsed to one component, to pass down as props!  WHAT THE HELL? */}
+          {/*the array Behaviors has to be treated as an object, and parsed to one component, to pass down as props!  WHAT THE HELL? */}
 
         {students.map((student, index)=>{
-          return <Student
-          key={index}
-          studentFirst={student.firstName}
-          studentLast = {student.lastName}
+          return (
+            <div>
+              <Student
+                key={index}
+                studentFirst={student.firstName}
+                studentLast = {student.lastName}
 
-          behaviorOne = {this.state.behaviors[0].image}
-          behaviorTwo = {this.state.behaviors[1].image}
-          behaviorThree = {this.state.behaviors[2].image}
-          behaviorFour = {this.state.behaviors[3].image}
-          behaviorFive = {this.state.behaviors[4].image}
-          behaviorSix = {this.state.behaviors[5].image}
-          behaviorSeven = {this.state.behaviors[6].image}
-          behaviorEight = {this.state.behaviors[7].image}
-          />
+                behaviorOne = {this.state.behaviors[0].image}
+                behaviorTwo = {this.state.behaviors[1].image}
+                behaviorThree = {this.state.behaviors[2].image}
+                behaviorFour = {this.state.behaviors[3].image}
+                behaviorFive = {this.state.behaviors[4].image}
+                behaviorSix = {this.state.behaviors[5].image}
+                behaviorSeven = {this.state.behaviors[6].image}
+                behaviorEight = {this.state.behaviors[7].image}
+              />
+            </div>
+          )
         })}
-      </div>
+      </div>  
     )
-
   }
-
 }
