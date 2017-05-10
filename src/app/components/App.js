@@ -67,14 +67,15 @@ export default class App extends React.Component {
     const behaviors=this.state.behaviors
 
     return (
-      <div>
-
+      <div className = "profile_and_behaviors">
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
+
           {/* filter/buttons of Students */}
         {students.map((studentObject, index)=>{
           return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
+
           {/* filter/buttons of Behaviors */}
         {this.state.behaviors.map((behavior, index)=>{
           return (
@@ -84,24 +85,28 @@ export default class App extends React.Component {
            </div>
          )
         })}
+
         {students.map((student, index)=>{
           console.log(this.state.behaviors);
           return
            <Student
-          key={index}
-          studentFirst={student.firstName}
-          studentLast = {student.lastName}
-          behaviorList={this.state.behaviors} />
+              key={index}
+              studentFirst={student.firstName}
+              studentLast = {student.lastName}
+              behaviorList={this.state.behaviors}
+          />
 
           return (
             <div>
               <Student
                 key={index}
                 studentFirst={student.firstName}
-                studentLast = {student.lastName} />
+                studentLast = {student.lastName}
+              />
               <Behavior
                 key={index}
-                behaviorList={behaviors} />
+                behaviorList={behaviors}
+              />
             </div>
             )
           }

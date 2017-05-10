@@ -1,28 +1,25 @@
-*, html, body {
-  padding: 0;
-  width: 100vw;
-  margin: 0;
-}
-
 body {
+  padding: 0;
+  margin: 0;
   background-color: khaki;
 }
+
+.profiles_and_behaviors {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: stretch;
+    }
 
 button {
 width: 10%;
 }
-
+/*
 footer {
   text-align: center;
   background-color: beige;
   border: 1px black solid;
   max-height: 3%;
-}
-
-header {
-background-color: green;
-width: 100vw;
-}
+}*/
 
 img {
   max-width: 5%;
@@ -31,13 +28,7 @@ img {
   border: 1px solid brown;
 }
 
-
-
 .behaviorArray {
   margin-left: 1em;
   /*border: 8px dashed red;*/
-}
-
-.studentProfile {
-
 }
