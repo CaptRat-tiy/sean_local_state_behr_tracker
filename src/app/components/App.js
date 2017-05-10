@@ -6,6 +6,9 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
+import About from './About'
+import Footer from './Footer'
+import Routing from './Routing'
 
 import styles from '../styles/App.css';
 
@@ -67,13 +70,13 @@ export default class App extends React.Component {
       <div>
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
-          {/*student filter/buttons */}
+          {/* filter/buttons of Students */}
         {students.map((studentObject, index)=>{
           return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
 
-          {/*behavior filter/buttons */}
+          {/* filter/buttons of Behaviors */}
         {this.state.behaviors.map((behavior, index)=>{
           return (
             <div className='behaviorArray' key={behavior.name}>
