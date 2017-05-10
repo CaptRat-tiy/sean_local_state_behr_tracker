@@ -12,13 +12,14 @@ export default class Student extends React.Component{
     let studentLast = this.props.studentLast;
     let behaviorList= this.props.behaviorList;
 
+    console.log(behaviorList);
     return (
 
       <div className="studentProfile">
         <div>
 
           <h1>{studentFirst} {studentLast}</h1>
-          
+
         </div>
       </div>
     )

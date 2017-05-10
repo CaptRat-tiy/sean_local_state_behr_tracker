@@ -69,13 +69,11 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
-
           {/* filter/buttons of Students */}
         {students.map((studentObject, index)=>{
           return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
-
           {/* filter/buttons of Behaviors */}
         {this.state.behaviors.map((behavior, index)=>{
           return (
@@ -85,9 +83,7 @@ export default class App extends React.Component {
            </div>
          )
         })}
-
         {students.map((student, index)=>{
-
           console.log(this.state.behaviors);
           return
            <Student
@@ -95,24 +91,6 @@ export default class App extends React.Component {
           studentFirst={student.firstName}
           studentLast = {student.lastName}
           behaviorList={this.state.behaviors} />
-
-          // behaviorOne = {this.state.behaviors[0].image}
-          // behaviorTwo = {this.state.behaviors[1].image}
-          // behaviorThree = {this.state.behaviors[2].image}
-          // behaviorFour = {this.state.behaviors[3].image}
-          // behaviorFive = {this.state.behaviors[4].image}
-          // behaviorSix = {this.state.behaviors[5].image}
-          // behaviorSeven = {this.state.behaviors[6].image}
-          // behaviorEight = {this.state.behaviors[7].image}
-
-          // behaviorOne = {this.state.behaviors[0].image}
-          // behaviorTwo = {this.state.behaviors[1].image}
-          // behaviorThree = {this.state.behaviors[2].image}
-          // behaviorFour = {this.state.behaviors[3].image}
-          // behaviorFive = {this.state.behaviors[4].image}
-          // behaviorSix = {this.state.behaviors[5].image}
-          // behaviorSeven = {this.state.behaviors[6].image}
-          // behaviorEight = {this.state.behaviors[7].image}
 
           return (
             <div>
@@ -131,3 +109,20 @@ export default class App extends React.Component {
     )
   }
 }
+
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}
