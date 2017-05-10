@@ -12,7 +12,7 @@ export default class Student extends React.Component{
     let studentLast = this.props.studentLast;
     let behaviorCollection =this.props.behaviorCollection
 
-    console.log(behaviorCollection);
+    // console.log(behaviorCollection);
 
     // let behaviorOne = this.props.behaviorOne;
     // let behaviorTwo= this.props.behaviorTwo;
@@ -24,15 +24,13 @@ export default class Student extends React.Component{
     // let behaviorEight = this.props.behaviorEight;
 
 
-    <Behaviors
-      behaviorCollection = {this.props.behaviorCollection}
-      />
+
 
     // let behaviorOne = this.props.behaviorOne;
     // let behaviorTwo= this.props.behaviorTwo;
     // let behaviorThree = this.props.behaviorThree;
     // let behaviorFour = this.props.behaviorFour;
-    // let behaviorFive = this.props.behaviorFive;
+    // let behaviorFive = this.`props.behaviorFive;
     // let behaviorSix= this.props.behaviorSix;
     // let behaviorSeven = this.props.behaviorSeven;
     // let behaviorEight = this.props.behaviorEight;
@@ -42,6 +40,9 @@ export default class Student extends React.Component{
 
       <div className="studentProfile">
         <div>
+        <Behaviors
+          behaviorCollection = {this.props.behaviorCollection}
+        />
           <h1>{studentFirst} {studentLast}</h1>
 
             {/* List of Behaviors as a component. */}
