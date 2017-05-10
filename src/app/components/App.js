@@ -5,6 +5,7 @@ import _ from 'underscore';
 import * as firebase from 'firebase'
 
 import Student from './Student'
+import Behaviors from './Behaviors'
 
 import styles from '../styles/App.css';
 
@@ -63,7 +64,6 @@ export default class App extends React.Component {
     const behaviors=this.state.behaviors
 
     return (
-
       <div>
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
@@ -88,14 +88,12 @@ export default class App extends React.Component {
 
         {students.map((student, index)=>{
 
-          // console.log(this.state.behaviors);
+          console.log(this.state.behaviors);
           return <Student
           key={index}
           studentFirst={student.firstName}
           studentLast = {student.lastName}
-          behaviorCollection={this.state.behaviors}
-
-
+          behaviorCollection={this.state.behaviors} />
 
           // behaviorOne = {this.state.behaviors[0].image}
           // behaviorTwo = {this.state.behaviors[1].image}
@@ -105,26 +103,29 @@ export default class App extends React.Component {
           // behaviorSix = {this.state.behaviors[5].image}
           // behaviorSeven = {this.state.behaviors[6].image}
           // behaviorEight = {this.state.behaviors[7].image}
-          />
+
+          // behaviorOne = {this.state.behaviors[0].image}
+          // behaviorTwo = {this.state.behaviors[1].image}
+          // behaviorThree = {this.state.behaviors[2].image}
+          // behaviorFour = {this.state.behaviors[3].image}
+          // behaviorFive = {this.state.behaviors[4].image}
+          // behaviorSix = {this.state.behaviors[5].image}
+          // behaviorSeven = {this.state.behaviors[6].image}
+          // behaviorEight = {this.state.behaviors[7].image}
+
           return (
             <div>
               <Student
                 key={index}
                 studentFirst={student.firstName}
-                studentLast = {student.lastName}
-
-                behaviorOne = {this.state.behaviors[0].image}
-                behaviorTwo = {this.state.behaviors[1].image}
-                behaviorThree = {this.state.behaviors[2].image}
-                behaviorFour = {this.state.behaviors[3].image}
-                behaviorFive = {this.state.behaviors[4].image}
-                behaviorSix = {this.state.behaviors[5].image}
-                behaviorSeven = {this.state.behaviors[6].image}
-                behaviorEight = {this.state.behaviors[7].image}
-              />
+                studentLast = {student.lastName} />
+              <Behavior
+                key={index}
+                behaviorList={behaviors} />
             </div>
-          )
-        })}
+            )
+          }
+        )}
       </div>
     )
   }
