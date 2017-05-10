@@ -10,17 +10,32 @@ export default class Student extends React.Component{
 
     let studentFirst = this.props.studentFirst;
     let studentLast = this.props.studentLast;
+    let behaviorCollection =this.props.behaviorCollection
+
+    console.log(behaviorCollection);
+
+    // let behaviorOne = this.props.behaviorOne;
+    // let behaviorTwo= this.props.behaviorTwo;
+    // let behaviorThree = this.props.behaviorThree;
+    // let behaviorFour = this.props.behaviorFour;
+    // let behaviorFive = this.props.behaviorFive;
+    // let behaviorSix= this.props.behaviorSix;
+    // let behaviorSeven = this.props.behaviorSeven;
+    // let behaviorEight = this.props.behaviorEight;
 
 
+    <Behaviors
+      behaviorCollection = {this.props.behaviorCollection}
+      />
 
-    let behaviorOne = this.props.behaviorOne;
-    let behaviorTwo= this.props.behaviorTwo;
-    let behaviorThree = this.props.behaviorThree;
-    let behaviorFour = this.props.behaviorFour;
-    let behaviorFive = this.props.behaviorFive;
-    let behaviorSix= this.props.behaviorSix;
-    let behaviorSeven = this.props.behaviorSeven;
-    let behaviorEight = this.props.behaviorEight;
+    // let behaviorOne = this.props.behaviorOne;
+    // let behaviorTwo= this.props.behaviorTwo;
+    // let behaviorThree = this.props.behaviorThree;
+    // let behaviorFour = this.props.behaviorFour;
+    // let behaviorFive = this.props.behaviorFive;
+    // let behaviorSix= this.props.behaviorSix;
+    // let behaviorSeven = this.props.behaviorSeven;
+    // let behaviorEight = this.props.behaviorEight;
 
 
     return (
