@@ -87,28 +87,18 @@ export default class App extends React.Component {
         })}
 
         {students.map((student, index)=>{
-          console.log(this.state.behaviors);
+
+          // console.log(behaviors);
+
           return
            <Student
               key={index}
-              studentFirst={student.firstName}
-              studentLast = {student.lastName}
-              behaviorList={this.state.behaviors}
+
+              students = {students}
+              behaviorList={behaviors}
           />
 
-          return (
-            <div>
-              <Student
-                key={index}
-                studentFirst={student.firstName}
-                studentLast = {student.lastName}
-              />
-              <Behavior
-                key={index}
-                behaviorList={behaviors}
-              />
-            </div>
-            )
+          
           }
         )}
       </div>

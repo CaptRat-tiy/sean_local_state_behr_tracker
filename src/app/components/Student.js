@@ -8,17 +8,16 @@ import styles from '../styles/App.css';
 export default class Student extends React.Component{
   render(){
 
-    let studentFirst = this.props.studentFirst;
-    let studentLast = this.props.studentLast;
-    let behaviorList= this.props.behaviorList;
+    let student = this.props.student;
+    let behaviorList= this.props.behaviors;
 
-    console.log(behaviorList);
+
     return (
 
       <div className="studentProfile">
         <div>
 
-          <h1>{studentFirst} {studentLast}</h1>
+          <h1>{student}</h1>
 
         </div>
       </div>
