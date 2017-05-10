@@ -68,6 +68,7 @@ export default class App extends React.Component {
 
     return (
       <div>
+
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
           {/* filter/buttons of Students */}
         {students.map((studentObject, index)=>{
