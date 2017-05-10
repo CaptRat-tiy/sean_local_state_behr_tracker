@@ -5,6 +5,10 @@ import _ from 'underscore';
 import * as firebase from 'firebase'
 
 import Student from './Student'
+import Behaviors from './Behaviors'
+import About from './About'
+import Footer from './Footer'
+import Routing from './Routing'
 
 import styles from '../styles/App.css';
 
@@ -18,7 +22,6 @@ var config = {
   };
 
 firebase.initializeApp(config);
-
 
 const fbRef= firebase.database().ref();
 
@@ -64,29 +67,63 @@ export default class App extends React.Component {
     const behaviors=this.state.behaviors
 
     return (
-
       <div>
-        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
+        <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
+          {/* filter/buttons of Students */}
         {students.map((studentObject, index)=>{
           return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
-
-        {behaviors.map((behavior, index)=>{
+          {/* filter/buttons of Behaviors */}
+        {this.state.behaviors.map((behavior, index)=>{
           return (
-            <div key={behavior.name}>
-              <p >{behavior.name}</p>
+            <div className='behaviorArray' key={behavior.name}>
+              <p>{behavior.name}</p>
               <img src={behavior.image} alt={behavior.name} />
            </div>
          )
         })}
-
         {students.map((student, index)=>{
-          return <Student key={student.lastName} studentData={student} />
-        })}
-        
+          console.log(this.state.behaviors);
+          return
+           <Student
+          key={index}
+          studentFirst={student.firstName}
+          studentLast = {student.lastName}
+          behaviorList={this.state.behaviors} />
+
+          return (
+            <div>
+              <Student
+                key={index}
+                studentFirst={student.firstName}
+                studentLast = {student.lastName} />
+              <Behavior
+                key={index}
+                behaviorList={behaviors} />
+            </div>
+            )
+          }
+        )}
       </div>
     )
   }
 }
+
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}
