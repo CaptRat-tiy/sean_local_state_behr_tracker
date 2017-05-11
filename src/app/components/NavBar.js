@@ -8,7 +8,7 @@ import Footer from './Footer'
 export default class NavBar extends React.Component{
   render(){
     return (
-        <header className="headerProp">
+        <header>
           <h1>Behavior Tracking App ('navbar component')</h1>
 
                <Link to="/about"><p>About</p></Link>

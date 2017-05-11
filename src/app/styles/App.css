@@ -42,3 +42,17 @@ img {
   margin-left: 1em;
   /*border: 8px dashed red;*/
 }
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
