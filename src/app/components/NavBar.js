@@ -13,6 +13,7 @@ export default class NavBar extends React.Component{
 
                <Link to="/about"><p>About</p></Link>
                <Link to="/student"><p>Student</p></Link>
+
         </header>
     )
   }
