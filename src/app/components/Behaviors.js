@@ -8,17 +8,34 @@
 // export default class Behaviors extends React.Component{
 // render() {
 //
-// let behaviorsList=this.props.behaviorsList
-// console.log(behaviorsList)
-// return (
-// {behaviorsList.map((behavior, index)=>{
-//     return (
-//     //   <div className='behaviorArray'              key={behavior.name}>
-//     //     <p>{behavior.name}</p>
-//     //     <img src={behavior.image} alt={behavior.name} />
-//     //  </div>
-//     )
-//   )}
-//   })
-//   }
-// }
+//   return (
+//     <div key={behavior.name}>
+//       <p>{behavior.name}</p>
+//       <img src={behavior.image} alt={behavior.name} />
+//    </div>
+//  )
+// })}
+
+//
+// <Behaviors
+// behaviorList = {this.props.behaviorList}
+// />
+
+
+
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}
+// behaviorOne = {this.state.behaviors[0].image}
+// behaviorTwo = {this.state.behaviors[1].image}
+// behaviorThree = {this.state.behaviors[2].image}
+// behaviorFour = {this.state.behaviors[3].image}
+// behaviorFive = {this.state.behaviors[4].image}
+// behaviorSix = {this.state.behaviors[5].image}
+// behaviorSeven = {this.state.behaviors[6].image}
+// behaviorEight = {this.state.behaviors[7].image}

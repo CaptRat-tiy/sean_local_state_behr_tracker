@@ -3,8 +3,8 @@
 import React from 'react';
 import _ from 'underscore';
 import * as firebase from 'firebase'
-
-import Student from './Student'
+import NavBar from './NavBar'
+//import Student from './Student'
 import Behaviors from './Behaviors'
 import About from './About'
 import Footer from './Footer'
@@ -40,6 +40,9 @@ export default class App extends React.Component {
   componentWillMount(){
     fbRef.on("child_added", (snapshot)=>{
       const courseData = this.changeIntoArray(snapshot.val())
+
+      console.log("back from Firebase:", snapshot.val().studentArray);
+
       const students = this.changeIntoArray(snapshot.val().studentArray)
       const teacherInfo = snapshot.val().teacherID
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
@@ -49,6 +52,7 @@ export default class App extends React.Component {
         teacherInfo: teacherInfo,
         behaviors: behaviors
       })
+      console.log("Just after state:", students);
     })
   }
 
@@ -66,6 +70,9 @@ export default class App extends React.Component {
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
 
+
+console.log("out of App.js:", students);
+
     return (
       <div className = "profile_and_behaviors">
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
@@ -77,48 +84,28 @@ export default class App extends React.Component {
         )}
 
           {/* filter/buttons of Behaviors */}
-        {this.state.behaviors.map((behavior, index)=>{
+        {behaviors.map((behavior, index)=>{
           return (
             <div className='behaviorArray' key={behavior.name}>
               <p>{behavior.name}</p>
               <img src={behavior.image} alt={behavior.name} />
            </div>
-         )
-        })}
+              )
+            }
+          )}
 
-        {students.map((student, index)=>{
-
-          // console.log(behaviors);
-
-          return
-           <Student
-              key={index}
-
-              students = {students}
-              behaviorList={behaviors}
-          />
-
-          
-          }
-        )}
+          {students.map((student, index)=>{
+              (
+                <div
+                key={index}
+                students={students}
+                behaviors={behaviors}
+                >{student.firstName}</div>
+              )
+              console.log("mapping for Student Component:", students);
+            }
+          )}
       </div>
     )
   }
 }
-
-// behaviorOne = {this.state.behaviors[0].image}
-// behaviorTwo = {this.state.behaviors[1].image}
-// behaviorThree = {this.state.behaviors[2].image}
-// behaviorFour = {this.state.behaviors[3].image}
-// behaviorFive = {this.state.behaviors[4].image}
-// behaviorSix = {this.state.behaviors[5].image}
-// behaviorSeven = {this.state.behaviors[6].image}
-// behaviorEight = {this.state.behaviors[7].image}
-// behaviorOne = {this.state.behaviors[0].image}
-// behaviorTwo = {this.state.behaviors[1].image}
-// behaviorThree = {this.state.behaviors[2].image}
-// behaviorFour = {this.state.behaviors[3].image}
-// behaviorFive = {this.state.behaviors[4].image}
-// behaviorSix = {this.state.behaviors[5].image}
-// behaviorSeven = {this.state.behaviors[6].image}
-// behaviorEight = {this.state.behaviors[7].image}

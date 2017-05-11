@@ -3,59 +3,33 @@
 import React from 'react';
 import Behaviors from './Behaviors';
 
-import styles from '../styles/App.css';
+import styles from '../styles/student.css';
 
 export default class Student extends React.Component{
   render(){
 
-    let student = this.props.student;
-    let behaviorList= this.props.behaviors;
+    let students = this.props.students;
+    let behaviors = this.props.behaviors;
 
+    {console.log("outside Student render's return:", students)}
 
     return (
+      <div className="studentProfileWindow">
 
-      <div className="studentProfile">
-        <div>
+      {console.log("inside Student render's return:", students)}
 
-          <h1>{student}</h1>
+        {  students.map((student, index)=>{
 
-        </div>
+          (
+            <div key={index}>
+              <h1>
+                here
+              </h1>
+            </div>
+          )
+          }
+        )}
       </div>
     )
   }
 }
-
-// <Behaviors
-//   behaviorList = {this.props.behaviorList}
-//   />
-
-
-// {behaviorList.map((behavior, index)=>{
-//   return (
-//     <div key={behavior.name}>
-//       <p>{behavior.name}</p>
-//       <img src={behavior.image} alt={behavior.name} />
-//    </div>
-//  )
-// })}
-
-
-// let behaviorOne = this.props.behaviorOne;
-// let behaviorTwo= this.props.behaviorTwo;
-// let behaviorThree = this.props.behaviorThree;
-// let behaviorFour = this.props.behaviorFour;
-// let behaviorFive = this.props.behaviorFive;
-// let behaviorSix= this.props.behaviorSix;
-// let behaviorSeven = this.props.behaviorSeven;
-// let behaviorEight = this.props.behaviorEight;
-//
-//
-// {/* List of Behaviors as a component. */}
-// <img src={this.props.behaviorOne} alt="argumentative"/>
-// <img src={this.props.behaviorTwo} alt="bullying"/>
-// <img src={this.props.behaviorThree} alt="excessive crying"/>
-// <img src={this.props.behaviorFour} alt="aggresssion"/>
-// <img src={this.props.behaviorFive} alt="hands to self"/>
-// <img src={this.props.behaviorSix} alt="not facing front"/>
-// <img src={this.props.behaviorSeven} alt="self-distracting"/>
-// <img src={this.props.behaviorEight} alt="withdrawn"/>
