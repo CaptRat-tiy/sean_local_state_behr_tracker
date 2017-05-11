@@ -1,52 +1,3 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  /*background-color: khaki;*/
-}
-
-/*.courseInfo {
-  background-color: khaki;
-  border: 1px solid brown;
-  width: 100vw;
-}
-
-.studentBehaviorOptions {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: stretch;
-  align-items: flex-start;
-  border: 1px solid red;
-  }*/
-
-.main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-
-button {
-width: 10%;
-}
-/*
-footer {
-  text-align: center;
-  background-color: beige;
-  border: 1px black solid;
-  max-height: 3%;
-}*/
-
 img {
   max-width: 5%;
   height: auto;
@@ -54,7 +5,76 @@ img {
   border: 1px solid brown;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+button {
+width: 10%;
 }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+    .header {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+    }
+
+    .main {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      background-color: yellow;
+    }
+
+      .courseInfoLightGreen {
+        background-color: lightgreen;
+      }
+
+      .studentSelectors {
+        background-color: pink;
+      }
+
+      .studentBehaviorOptions {
+        border: solid 2px purple;
+      }
+
+    .footer {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      background-color: brown;
+      text-align: center;
+    }
+
+.studentTileWindow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+    .studentTile {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      background-color: slategrey;
+      }
+
+    .identifierIcon {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      }
+
+    .observedBehaviors {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      }
