@@ -68,47 +68,45 @@ export default class App extends React.Component {
     const behaviors=this.state.behaviors
 
     return (
-      <div className="app-container">
+      <div className="main">
+        <div className="body">
+          <div className="courseInfo">
+            <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
+          </div>
 
-        <div className="teacherInfo">
-          <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
+          <div className="footerStudentTiles">
+            {students.map((studentObject, index)=>{
+              return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
+              }
+            )}
+          </div>
+
+          <div className = "studentBehaviorOptions">
+            {this.state.behaviors.map((behavior, index)=>{
+            return (
+              <div key={behavior.name}>
+                <p>{behavior.name}</p>
+                <img src={behavior.image} alt={behavior.name} />
+              </div>
+                )
+              }
+            )}
+          </div>
+
+          <div>
+            {students.map((student, index)=>{
+              console.log(student);
+            return
+              <Student
+                key={index}
+
+                students = {students}
+                behaviorList={behaviors}
+              />
+              }
+            )}
+          </div>
         </div>
-
-        <div className="studentTiles">
-          {students.map((studentObject, index)=>{
-            return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
-            }
-          )}
-        </div>
-
-        <div className = "behaviorOptions">
-          {this.state.behaviors.map((behavior, index)=>{
-          return (
-            <div className='behaviorArray' key={behavior.name}>
-              <p>{behavior.name}</p>
-              <img src={behavior.image} alt={behavior.name} />
-            </div>
-              )
-            }
-          )}
-        </div>
-
-        {students.map((student, index)=>{
-
-          // console.log(behaviors);
-          console.log(student);
-
-          return
-           <Student
-              key={index}
-
-              students = {students}
-              behaviorList={behaviors}
-          />
-
-
-          }
-        )}
       </div>
     )
   }

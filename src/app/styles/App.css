@@ -10,15 +10,31 @@ body {
   /*background-color: khaki;*/
 }
 
-.profile_and_behaviors {
-    order: 0;
-    flex: 0 0 auto;
-    align-self: stretch;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid red;
-    }
+/*.courseInfo {
+  background-color: khaki;
+  border: 1px solid brown;
+  width: 100vw;
+}
+
+.studentBehaviorOptions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-start;
+  border: 1px solid red;
+  }*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
 
 button {
 width: 10%;
@@ -38,21 +54,7 @@ img {
   border: 1px solid brown;
 }
 
-.behaviorArray {
-  margin-left: 1em;
-  /*border: 8px dashed red;*/
-}
-
 h1 {
   margin: 0;
   padding: 0;
-}
-.app-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
 }
