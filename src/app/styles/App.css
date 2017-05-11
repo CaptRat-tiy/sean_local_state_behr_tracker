@@ -9,6 +9,16 @@ button {
 width: 10%;
 }
 
+header {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  }
+
 .body {
   display: flex;
   flex-direction: column;
@@ -16,6 +26,8 @@ width: 10%;
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
     .header {
@@ -39,17 +51,10 @@ width: 10%;
         background-color: pink;
       }
 
-      .studentBehaviorOptions {
-        border: solid 2px purple;
-      }
+      .studentBehaviorOptionsPurpleBorder {
+        border: solid 4px purple;
 
-    .footer {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-      background-color: brown;
-      text-align: center;
-    }
+      }
 
 .studentTileWindow {
   display: flex;
@@ -78,3 +83,12 @@ width: 10%;
       flex: 0 1 auto;
       align-self: auto;
       }
+
+.footer {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: brown;
+  text-align: center;
+  max-height: 3%;
+}

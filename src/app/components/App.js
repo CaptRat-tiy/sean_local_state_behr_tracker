@@ -77,7 +77,7 @@ export default class App extends React.Component {
 
 
 
-          <div className = "studentBehaviorOptions">
+          <div className = "studentBehaviorOptionsPurpleBorder">
             {this.state.behaviors.map((behavior, index)=>{
             return (
               <div key={behavior.name}>
@@ -90,7 +90,7 @@ export default class App extends React.Component {
           </div>
 
           <div>
-            <div className="studentSelectors">
+            <div className="studentSelectorButtons">
             {students.map((studentObject, index)=>{
               return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
               }
@@ -98,7 +98,7 @@ export default class App extends React.Component {
             </div>
           </div>
 
-          
+
           <div className="footer">
             This qualifies as a footer
           </div>
