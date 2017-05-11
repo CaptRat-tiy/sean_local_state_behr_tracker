@@ -69,7 +69,7 @@ export default class App extends React.Component {
 
     return (
       <div className="body">
-        <div className="main">
+        <div className="mainYellow">
 
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
@@ -80,7 +80,7 @@ export default class App extends React.Component {
           <div className = "studentBehaviorOptionsPurpleBorder">
             {this.state.behaviors.map((behavior, index)=>{
             return (
-              <div key={behavior.name}>
+              <div className= "singleBehavior" key={behavior.name}>
                 <p>{behavior.name}</p>
                 <img src={behavior.image} alt={behavior.name} />
               </div>

@@ -1,7 +1,12 @@
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
 img {
-  max-width: 5%;
-  height: auto;
-  margin-bottom: 5%;
+  max-width: 150px;
+  /*height: auto;*/
+  /*margin-bottom: 5%;*/
   border: 1px solid brown;
 }
 
@@ -30,31 +35,42 @@ header {
   margin: 0;
 }
 
-    .header {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-    }
+/*.header {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}*/
 
-    .main {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-      background-color: yellow;
-    }
+.mainYellow {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: yellow;
+}
 
-      .courseInfoLightGreen {
-        background-color: lightgreen;
-      }
+  .courseInfoLightGreen {
+    background-color: lightgreen;
+  }
 
-      .studentSelectors {
-        background-color: pink;
-      }
+  .studentBehaviorOptionsPurpleBorder {
+    border: solid 4px purple;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
 
-      .studentBehaviorOptionsPurpleBorder {
-        border: solid 4px purple;
+  .singleBehavior {
+    order: 0;
+    flex: 1 0 20%;
+    align-self: auto;
+  }
 
-      }
+  .studentSelectorButtons {
+    background-color: pink;
+  }
 
 .studentTileWindow {
   display: flex;
@@ -65,24 +81,24 @@ header {
   align-items: center;
   }
 
-    .studentTile {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-      background-color: slategrey;
-      }
+  .studentTile {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    background-color: slategrey;
+    }
 
-    .identifierIcon {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-      }
+  .identifierIcon {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
 
-    .observedBehaviors {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-      }
+  .observedBehaviors {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
 
 .footer {
   order: 0;
