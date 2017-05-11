@@ -74,8 +74,10 @@ export default class App extends React.Component {
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
+          
+          {console.log(students)}
 
-
+          <div>{Student}</div>
 
           <div className = "studentBehaviorOptionsPurpleBorder">
             {this.state.behaviors.map((behavior, index)=>{
