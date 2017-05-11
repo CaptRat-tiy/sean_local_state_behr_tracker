@@ -11,7 +11,7 @@ export default class Student extends React.Component{
     let student = this.props.student;
     let behaviorList= this.props.behaviors;
 
-
+    console.log(student);
     return (
 
       <div className="studentProfile">

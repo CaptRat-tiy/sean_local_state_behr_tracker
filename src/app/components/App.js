@@ -67,7 +67,7 @@ export default class App extends React.Component {
     const behaviors=this.state.behaviors
 
     return (
-      <div className = "profile_and_behaviors">
+      <div className="test">
         <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class </h1>
 
           {/* filter/buttons of Students */}
@@ -75,7 +75,7 @@ export default class App extends React.Component {
           return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
           }
         )}
-
+        <div className = "profile_and_behaviors">
           {/* filter/buttons of Behaviors */}
         {this.state.behaviors.map((behavior, index)=>{
           return (
@@ -83,12 +83,15 @@ export default class App extends React.Component {
               <p>{behavior.name}</p>
               <img src={behavior.image} alt={behavior.name} />
            </div>
-         )
-        })}
+              )
+            }
+          )}
+          </div>
 
         {students.map((student, index)=>{
 
           // console.log(behaviors);
+          console.log(student);
 
           return
            <Student
@@ -98,7 +101,6 @@ export default class App extends React.Component {
               behaviorList={behaviors}
           />
 
-          
           }
         )}
       </div>
