@@ -26,8 +26,8 @@ firebase.initializeApp(config);
 const fbRef= firebase.database().ref();
 
 export default class App extends React.Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.changeIntoArray=this.changeIntoArray.bind(this)
     this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
     this.state = {
@@ -80,7 +80,7 @@ export default class App extends React.Component {
           </div>
 
           <div className = "studentBehaviorOptionsPurpleBorder">
-            {this.state.behaviors.map((behavior, index)=>{
+            {behaviors.map((behavior, index)=>{
             return (
               <div className= "singleBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
                 <p>{behavior.name}</p>
@@ -111,8 +111,7 @@ export default class App extends React.Component {
             return <Student
                 key={index}
                 student={student}
-                behaviors={behaviors}
-              />
+                behaviors={behaviors} />
               }
             )}
           </div>
