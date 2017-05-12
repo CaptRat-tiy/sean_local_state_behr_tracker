@@ -9,7 +9,6 @@ render() {
 
   let behaviorList=this.props.behaviorList
 
-  console.log(behaviorList)
 return (
   <div>
   {behaviorList.map((behavior, index)=>{

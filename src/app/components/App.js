@@ -29,6 +29,7 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     this.changeIntoArray=this.changeIntoArray.bind(this)
+    this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
     this.state = {
       courseData: {},
       students: [],
@@ -60,6 +61,10 @@ export default class App extends React.Component {
     return newArray
   }
 
+  handleBehaviorClick(behavior) {
+    console.log(behavior);
+  }
+
   render () {
     const students=this.state.students
     const courseData=this.state.courseData
@@ -77,7 +82,7 @@ export default class App extends React.Component {
           <div className = "studentBehaviorOptionsPurpleBorder">
             {this.state.behaviors.map((behavior, index)=>{
             return (
-              <div className= "singleBehavior" key={behavior.name}>
+              <div className= "singleBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
                 <p>{behavior.name}</p>
                 <img src={behavior.image} alt={behavior.name} />
               </div>
@@ -99,7 +104,7 @@ export default class App extends React.Component {
           <div className="footer">
             This qualifies as a footer
           </div>
-{console.log(students)}
+
           <div className="pushThisToStudentComponent">
             {students.map((student, index)=>{
               console.log(student, "hello world")
