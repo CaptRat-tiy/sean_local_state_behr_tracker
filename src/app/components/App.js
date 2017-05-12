@@ -6,7 +6,7 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import About from './About'
-import Footer from './Footer'
+
 import Routing from './Routing'
 
 
@@ -111,8 +111,7 @@ export default class App extends React.Component {
             return <Student
                 key={index}
                 student={student}
-                behaviors={behaviors}
-              />
+                behaviors={behaviors} />
               }
             )}
           </div>

@@ -11,5 +11,5 @@ Later iterations of this app would include mobile swipe recording, mobile remind
 
 
 To start:
-
+npm run dev
 (Opens in localhost:8080 at present)
