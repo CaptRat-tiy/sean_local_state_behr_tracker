@@ -9,8 +9,6 @@ h1 {
 
 img {
   max-width: 5em;
-  /*height: auto;*/
-  /*margin-bottom: 5%;*/
   border: 1px solid brown;
 }
 
@@ -27,12 +25,18 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
   margin: 0;
+  height: 5em;
   align-content: stretch;
   align-items: flex-start;
-  background-image:url("../../images/sometimes_you_learn.jpg");
+  /*background-image:url("../../images/headerGifs/sometimes_you_learn.jpg");*/
+  background-image:url("../../images/headerGifs/a-a-ron.gif");
   background-size: contain;
   background-repeat: no-repeat;
   }
+
+header h1 {
+  margin-left: 4em;
+}
 
 .body {
   font-family: 'Amatic SC', cursive;
