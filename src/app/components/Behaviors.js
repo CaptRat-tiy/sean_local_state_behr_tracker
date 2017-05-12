@@ -18,7 +18,7 @@ return (
         <img src={behavior.image} alt={behavior.name} />
      </div>
     )
-  })
+    })
   }
   </div>
 )
