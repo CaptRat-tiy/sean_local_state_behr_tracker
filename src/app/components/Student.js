@@ -6,19 +6,16 @@ import Behaviors from './Behaviors';
 import styles from '../styles/App.css';
 
 export default class Student extends React.Component{
-  render(){
 
+
+  render(){
     let student = this.props.student;
     let behaviorList= this.props.behaviors;
 
-    console.log(student);
     return (
-
       <div className="studentProfile">
         <div>
-
-          <h1>{student}</h1>
-
+          <h1>{student.firstName} {student.lastName}</h1>
         </div>
       </div>
     )

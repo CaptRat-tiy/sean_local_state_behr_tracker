@@ -25,7 +25,8 @@ header {
   align-content: stretch;
   align-items: flex-start;
   background-image:url("../../images/sometimes_you_learn.jpg");
-  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
   }
 
 .body {

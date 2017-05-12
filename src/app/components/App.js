@@ -100,15 +100,13 @@ export default class App extends React.Component {
           <div className="footer">
             This qualifies as a footer
           </div>
-
+{console.log(students)}
           <div className="pushThisToStudentComponent">
             {students.map((student, index)=>{
-            return
-              <Student
+              console.log(student, "hello world")
+            return <Student
                 key={index}
-
-                students = {students}
-                behaviorList={behaviors}
+                student={student}
               />
               }
             )}
