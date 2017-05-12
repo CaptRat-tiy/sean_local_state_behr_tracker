@@ -1,8 +1,7 @@
 "use strict";
 
 import React from 'react';
-import Behaviors from './Behaviors';
-
+import Behaviors from './Behaviors'
 import styles from '../styles/App.css';
 
 export default class Student extends React.Component{
@@ -12,10 +11,13 @@ export default class Student extends React.Component{
     let student = this.props.student;
     let behaviorList= this.props.behaviors;
 
+console.log(this.props)
     return (
       <div className="studentProfile">
         <div>
           <h1>{student.firstName} {student.lastName}</h1>
+          <Behaviors
+          behaviorList={behaviorList} />
         </div>
       </div>
     )
