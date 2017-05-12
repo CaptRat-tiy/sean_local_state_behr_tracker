@@ -78,11 +78,26 @@ header h1 {
 
   }
 
-  .singleBehavior {
+  .clickableBehavior {
     order: 0;
     flex: 1 0 20%;
     align-self: auto;
   }
+
+  .clickableBehavior button{
+  background-color: #03A9F4;
+  border: none;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.clickableBehavior button:hover, button:focus{
+  background-color: #f00;
+  outline: none;
+}
+
 
   .studentSelectorButtons {
     background-color: pink;

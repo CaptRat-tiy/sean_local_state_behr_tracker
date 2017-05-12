@@ -6,7 +6,6 @@ import styles from '../styles/App.css';
 
 export default class Student extends React.Component{
 
-
   render(){
     let student = this.props.student;
     let behaviorList= this.props.behaviors;

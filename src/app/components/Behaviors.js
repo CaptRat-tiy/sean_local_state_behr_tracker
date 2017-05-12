@@ -10,7 +10,7 @@ render() {
   let behaviorList=this.props.behaviorList
 
 return (
-  <div>
+  <div className="studentBehaviorOptionsPurpleBorder">
   {behaviorList.map((behavior, index)=>{
     return (
       <div className='behaviorArray' key={behavior.name}>

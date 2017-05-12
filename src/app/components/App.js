@@ -79,13 +79,27 @@ export default class App extends React.Component {
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
 
+          <div className="pushThisToStudentComponent">
+            {students.map((student, index)=>{
+              console.log(student, "hello world")
+            return <Student
+                key={index}
+                student={student}
+                behaviors={behaviors} />
+              }
+            )}
+          </div>
+
           <div className = "studentBehaviorOptionsPurpleBorder">
+          <p>Click all applicable behaviors:</p>
+
             {behaviors.map((behavior, index)=>{
             return (
-              <div className= "singleBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
+              <button className= "clickableBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
                 <p>{behavior.name}</p>
                 <img src={behavior.image} alt={behavior.name} />
-              </div>
+              </button>
+
                 )
               }
             )}
@@ -105,16 +119,7 @@ export default class App extends React.Component {
             This qualifies as a footer
           </div>
 
-          <div className="pushThisToStudentComponent">
-            {students.map((student, index)=>{
-              console.log(student, "hello world")
-            return <Student
-                key={index}
-                student={student}
-                behaviors={behaviors} />
-              }
-            )}
-          </div>
+
         </div>
       </div>
     )
