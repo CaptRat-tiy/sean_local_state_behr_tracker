@@ -69,15 +69,14 @@ export default class App extends React.Component {
      console.log(student);
   }
 
-  handleBehaviorClick(behavior){
+  handleBehaviorClick(behavior, studentID){
+    console.log(studentID);
       let d=new Date()
      console.log(d.getMonth()+1 + "/", d.getDate() + "/", d.getFullYear())
      let timestamp = Date.now()
-     const behaviorID = fbRef.child("courseID")
-     const behaviorIDTest=behaviorID.child(0)
-     const tacoTest=behaviorIDTest.push().key
+     const behaviorIdentifier=fbRef.push().key
      let behaviorUpdate={}
-     behaviorUpdate["courseID/studentArray/"+tacoTest] = {
+     behaviorUpdate["courseID/studentArray/" +studentID+"/behaviorHistory/" +behaviorIdentifier] = {
        month: 7,
        time: "9am",
        year: 2016,
@@ -102,9 +101,9 @@ export default class App extends React.Component {
           </div>
 
           <div>
-            {students.map((student, index)=>{
+            {students.map((student)=>{
             return <Student
-                key={index}
+                key={student.studentID}
                 student={student}
                 behaviors={behaviors}
                 handleBehaviorClick={this.handleBehaviorClick} />
@@ -115,7 +114,7 @@ export default class App extends React.Component {
           <div className="studentSelectorButtonsPinkBackground">
             <p>Please select the student you wish to monitor:</p>
 
-            {students.map((studentObject, index)=>{
+            {students.map((studentObject)=>{
               return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}

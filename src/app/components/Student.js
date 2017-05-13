@@ -19,7 +19,9 @@ export default class Student extends React.Component{
           <img src={student.image} />
           <Behaviors
           behaviorList={behaviorList}
-          handleBehaviorClick={handleBehaviorClick} />
+          handleBehaviorClick={handleBehaviorClick}
+          studentID={student.studentID}
+           />
         </div>
       </div>
     )
