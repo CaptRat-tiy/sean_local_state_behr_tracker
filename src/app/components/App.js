@@ -31,6 +31,8 @@ export default class App extends React.Component {
     super();
     this.changeIntoArray=this.changeIntoArray.bind(this)
     this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
+    this.handleStudentClick=this.handleStudentClick.bind(this)
+
     this.state = {
       courseData: {},
       students: [],
@@ -62,13 +64,14 @@ export default class App extends React.Component {
     return newArray
   }
 
-  handleBehaviorClick(behavior) {
-    console.log(behavior);
+  handleStudentClick(student){
+     console.log(student);
   }
 
-  reloadGifHeader(img) {
-    console.log(random(gifURL))
+  handleBehaviorClick(behavior){
+     console.log(behavior);
   }
+
 
   render () {
     const students=this.state.students
@@ -79,7 +82,6 @@ export default class App extends React.Component {
     return (
       <div className="body">
         <div className="mainYellow">
-
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
@@ -89,25 +91,20 @@ export default class App extends React.Component {
             return <Student
                 key={index}
                 student={student}
-                behaviors={behaviors} />
+                behaviors={behaviors}
+                handleBehaviorClick={this.handleBehaviorClick} />
               }
             )}
           </div>
-
-
 
           <div className="studentSelectorButtonsPinkBackground">
             <p>Please select the student you wish to monitor:</p>
 
             {students.map((studentObject, index)=>{
-              return <button key={studentObject.lastName} onClick={() => this.handleBehaviorClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
+              return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
           </div>
-
-
-
-
 
           <div className="footer">
             This qualifies as a footer

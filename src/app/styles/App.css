@@ -63,8 +63,7 @@ header h1 {
     background-color: lightgreen;
   }
 
-  .studentBehaviorOptionsPurpleBorder {
-    border: solid 4px purple;
+  .studentBehaviorOptionsPurple {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -74,7 +73,7 @@ header h1 {
     width: 80%;
     margin: auto;
     padding: 1em;
-
+    background-color: purple;
   }
 
   .clickableBehavior {
