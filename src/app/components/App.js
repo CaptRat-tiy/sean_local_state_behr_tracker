@@ -65,6 +65,10 @@ export default class App extends React.Component {
     console.log(behavior);
   }
 
+  reloadGifHeader(img) {
+    console.log(random(gifURL))
+  }
+
   render () {
     const students=this.state.students
     const courseData=this.state.courseData
@@ -79,9 +83,8 @@ export default class App extends React.Component {
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
 
-          <div className="pushThisToStudentComponent">
+          <div>
             {students.map((student, index)=>{
-              console.log(student, "hello world")
             return <Student
                 key={index}
                 student={student}
@@ -99,26 +102,27 @@ export default class App extends React.Component {
                 <p>{behavior.name}</p>
                 <img src={behavior.image} alt={behavior.name} />
               </button>
-
                 )
               }
             )}
           </div>
 
-          <div>
-            <div className="studentSelectorButtons">
+          <div className="studentSelectorButtonsPinkBackground">
+            <p>Please select the student you wish to monitor:</p>
+
             {students.map((studentObject, index)=>{
-              return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
+              return <button key={studentObject.lastName} onClick={() => this.handleBehaviorClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
-            </div>
           </div>
+
+
+
 
 
           <div className="footer">
             This qualifies as a footer
           </div>
-
 
         </div>
       </div>

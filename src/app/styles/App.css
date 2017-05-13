@@ -28,7 +28,6 @@ header {
   height: 5em;
   align-content: stretch;
   align-items: flex-start;
-  /*background-image:url("../../images/headerGifs/sometimes_you_learn.jpg");*/
   background-image:url("../../images/headerGifs/a-a-ron.gif");
   background-size: contain;
   background-repeat: no-repeat;
@@ -92,15 +91,17 @@ header h1 {
   color: white;
   font-weight: 700;
   border-radius: 3px;
-}
-.clickableBehavior button:hover, button:focus{
-  background-color: #f00;
-  outline: none;
-}
+  }
+  .clickableBehavior button:target, button:focus {
+    background-color: #f00;
+    outline: none;
+  }
 
-
-  .studentSelectorButtons {
+  .studentSelectorButtonsPinkBackground {
     background-color: pink;
+  }
+  .studentSelectorButtonsPinkBackground p {
+    margin: 0;
   }
 
 .studentTileWindow {
