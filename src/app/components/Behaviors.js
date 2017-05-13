@@ -10,8 +10,6 @@ render() {
   let behaviors=this.props.behaviorList;
   let handleBehaviorClick=this.props.handleBehaviorClick
 
-  console.log(handleBehaviorClick);
-
 return (
   <div>
     <div className = "studentBehaviorOptionsPurple">

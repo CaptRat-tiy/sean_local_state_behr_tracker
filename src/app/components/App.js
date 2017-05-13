@@ -56,6 +56,7 @@ export default class App extends React.Component {
     })
   }
 
+
   changeIntoArray(object){
     const newArray = []
     _.map(object, function(c,i,a){
@@ -69,8 +70,22 @@ export default class App extends React.Component {
   }
 
   handleBehaviorClick(behavior){
-     console.log(behavior);
+      let d=new Date()
+     console.log(d.getMonth()+1 + "/", d.getDate() + "/", d.getFullYear())
+     let timestamp = Date.now()
+     const behaviorID = fbRef.child("courseID")
+     const behaviorIDTest=behaviorID.child(0)
+     const tacoTest=behaviorIDTest.push().key
+     let behaviorUpdate={}
+     behaviorUpdate["courseID/studentArray/"+tacoTest] = {
+       month: 7,
+       time: "9am",
+       year: 2016,
+       behavior:behavior
+     }
+     fbRef.update(behaviorUpdate)
   }
+
 
 
   render () {

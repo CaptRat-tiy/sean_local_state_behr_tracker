@@ -12,8 +12,6 @@ export default class Student extends React.Component{
     let handleStudentClick=this.props.handleStudentClick;
     let handleBehaviorClick=this.props.handleBehaviorClick;
 
-console.log(this.props)
-
     return (
       <div className="studentProfile">
         <div>
