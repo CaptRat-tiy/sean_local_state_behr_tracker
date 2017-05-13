@@ -5,6 +5,7 @@ import _ from 'underscore';
 import * as firebase from 'firebase'
 
 import Student from './Student'
+import Behaviors from './Behaviors'
 import About from './About'
 import Footer from './Footer'
 import Routing from './Routing'
@@ -93,19 +94,7 @@ export default class App extends React.Component {
             )}
           </div>
 
-          <div className = "studentBehaviorOptionsPurpleBorder">
-          <p>Click all applicable behaviors:</p>
 
-            {behaviors.map((behavior, index)=>{
-            return (
-              <button className= "clickableBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
-                <p>{behavior.name}</p>
-                <img src={behavior.image} alt={behavior.name} />
-              </button>
-                )
-              }
-            )}
-          </div>
 
           <div className="studentSelectorButtonsPinkBackground">
             <p>Please select the student you wish to monitor:</p>
