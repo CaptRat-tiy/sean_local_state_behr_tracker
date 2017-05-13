@@ -15,6 +15,7 @@ console.log(this.props)
       <div className="studentProfile">
         <div>
           <h1>{student.firstName} {student.lastName}</h1>
+          <img src={student.image} />
           <Behaviors
           behaviorList={behaviorList} />
         </div>

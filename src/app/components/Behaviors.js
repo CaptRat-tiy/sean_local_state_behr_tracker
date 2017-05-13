@@ -11,8 +11,6 @@ render() {
 
 return (
   <div>
-
-
     <div className = "studentBehaviorOptionsPurpleBorder">
     <p>Click all applicable behaviors:</p>
 
