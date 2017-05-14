@@ -56,11 +56,11 @@ header h1 {
   color: white;
   flex: 0 1 auto;
   align-self: auto;
-  background-color: yellow;
+  /*background-color: yellow;*/
   width: 100vw;
   background-image: url("../../images/chalkboard.jpg");
   background-repeat:repeat-y;
-  background-size: contain;
+  background-size: cover;
 }
 
   .courseInfoLightGreen {
