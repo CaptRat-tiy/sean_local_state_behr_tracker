@@ -70,22 +70,26 @@ export default class App extends React.Component {
   }
 
   handleBehaviorClick(behavior, studentID){
-    console.log(studentID);
+
       let d=new Date()
-     console.log(d.getMonth()+1 + "/", d.getDate() + "/", d.getFullYear())
-     let timestamp = Date.now()
+      const month = d.getMonth() + 1
+      const date = d.getDate()
+      const year = d.getFullYear()
+      const militaryTime=d.getHours() +":" + d.getMinutes()
+
+      let timestamp = Date.now()
+
      const behaviorIdentifier=fbRef.push().key
      let behaviorUpdate={}
      behaviorUpdate["courseID/studentArray/" +studentID+"/behaviorHistory/" +behaviorIdentifier] = {
-       month: 7,
-       time: "9am",
-       year: 2016,
+       month: month,
+       date: date,
+       time: militaryTime,
+       year: year,
        behavior:behavior
      }
      fbRef.update(behaviorUpdate)
   }
-
-
 
   render () {
     const students=this.state.students
