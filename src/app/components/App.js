@@ -99,7 +99,7 @@ export default class App extends React.Component {
 
     return (
       <div className="body">
-        <div className="mainYellow">
+        <div className="mainChalkboard">
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
@@ -127,8 +127,6 @@ export default class App extends React.Component {
           <div className="footer">
             This qualifies as a footer
           </div>
-
-
 
         </div>
       </div>
