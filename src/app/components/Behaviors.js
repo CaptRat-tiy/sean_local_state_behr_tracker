@@ -7,19 +7,26 @@ import styles from '../styles/App.css';
 export default class Behaviors extends React.Component{
 render() {
 
-  let behaviorList=this.props.behaviorList
+  let behaviors=this.props.behaviorList;
+  let handleBehaviorClick=this.props.handleBehaviorClick;
+  let studentID=this.props.studentID;
+
 
 return (
   <div>
-  {behaviorList.map((behavior, index)=>{
-    return (
-      <div className='behaviorArray' key={behavior.name}>
-        <p>{behavior.name}</p>
-        <img src={behavior.image} alt={behavior.name} />
-     </div>
-    )
-    })
-  }
+    <div className = "studentBehaviorOptionsPurple">
+    <p>Click all applicable behaviors:</p>
+
+      {behaviors.map((behavior)=>{
+      return (
+        <button className="clickableBehavior" key={behavior.name} onClick={() => handleBehaviorClick(behavior.name, studentID)}>
+          <p>{behavior.name}</p>
+          <img src={behavior.image} alt={behavior.name} />
+        </button>
+          )
+        }
+      )}
+    </div>
   </div>
 )
   }

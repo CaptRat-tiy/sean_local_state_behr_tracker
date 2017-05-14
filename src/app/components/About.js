@@ -8,7 +8,9 @@ export default class About extends React.Component{
   render(){
     return (
       <div>
-         <h1>About</h1>
+         <a href="https://www.linkedin.com/in/plogan/">LinkedIn</a>
+
+         <a href="https://github.com/CaptRat">GitHub</a>
       </div>
     )
   }

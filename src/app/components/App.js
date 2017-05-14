@@ -5,6 +5,7 @@ import _ from 'underscore';
 import * as firebase from 'firebase'
 
 import Student from './Student'
+import Behaviors from './Behaviors'
 import About from './About'
 
 import Routing from './Routing'
@@ -26,10 +27,12 @@ firebase.initializeApp(config);
 const fbRef= firebase.database().ref();
 
 export default class App extends React.Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.changeIntoArray=this.changeIntoArray.bind(this)
     this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
+    this.handleStudentClick=this.handleStudentClick.bind(this)
+
     this.state = {
       courseData: {},
       students: [],
@@ -53,6 +56,7 @@ export default class App extends React.Component {
     })
   }
 
+
   changeIntoArray(object){
     const newArray = []
     _.map(object, function(c,i,a){
@@ -61,8 +65,30 @@ export default class App extends React.Component {
     return newArray
   }
 
-  handleBehaviorClick(behavior) {
-    console.log(behavior);
+  handleStudentClick(student){
+     console.log(student);
+  }
+
+  handleBehaviorClick(behavior, studentID){
+
+      let d=new Date()
+      const month = d.getMonth() + 1
+      const date = d.getDate()
+      const year = d.getFullYear()
+      const militaryTime=d.getHours() +":" + d.getMinutes()
+
+      let timestamp = Date.now()
+
+     const behaviorIdentifier=fbRef.push().key
+     let behaviorUpdate={}
+     behaviorUpdate["courseID/studentArray/" +studentID+"/behaviorHistory/" +behaviorIdentifier] = {
+       month: month,
+       date: date,
+       time: militaryTime,
+       year: year,
+       behavior:behavior
+     }
+     fbRef.update(behaviorUpdate)
   }
 
   render () {
@@ -74,47 +100,36 @@ export default class App extends React.Component {
     return (
       <div className="body">
         <div className="mainYellow">
-
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
 
-          <div className = "studentBehaviorOptionsPurpleBorder">
-            {this.state.behaviors.map((behavior, index)=>{
-            return (
-              <div className= "singleBehavior" key={behavior.name} onClick={() => this.handleBehaviorClick(behavior.name)}>
-                <p>{behavior.name}</p>
-                <img src={behavior.image} alt={behavior.name} />
-              </div>
-                )
-              }
-            )}
-          </div>
-
           <div>
-            <div className="studentSelectorButtons">
-            {students.map((studentObject, index)=>{
-              return <button key={studentObject.lastName}>{studentObject.firstName} {studentObject.lastName}</button>
+            {students.map((student)=>{
+            return <Student
+                key={student.studentID}
+                student={student}
+                behaviors={behaviors}
+                handleBehaviorClick={this.handleBehaviorClick} />
               }
             )}
-            </div>
           </div>
 
+          <div className="studentSelectorButtonsPinkBackground">
+            <p>Please select the student you wish to monitor:</p>
+
+            {students.map((studentObject)=>{
+              return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
+              }
+            )}
+          </div>
 
           <div className="footer">
             This qualifies as a footer
           </div>
 
-          <div className="pushThisToStudentComponent">
-            {students.map((student, index)=>{
-              console.log(student, "hello world")
-            return <Student
-                key={index}
-                student={student}
-                behaviors={behaviors} />
-              }
-            )}
-          </div>
+
+
         </div>
       </div>
     )

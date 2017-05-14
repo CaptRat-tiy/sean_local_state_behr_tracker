@@ -28,7 +28,6 @@ header {
   height: 5em;
   align-content: stretch;
   align-items: flex-start;
-  /*background-image:url("../../images/headerGifs/sometimes_you_learn.jpg");*/
   background-image:url("../../images/headerGifs/a-a-ron.gif");
   background-size: contain;
   background-repeat: no-repeat;
@@ -64,8 +63,7 @@ header h1 {
     background-color: lightgreen;
   }
 
-  .studentBehaviorOptionsPurpleBorder {
-    border: solid 4px purple;
+  .studentBehaviorOptionsPurple {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -75,17 +73,34 @@ header h1 {
     width: 80%;
     margin: auto;
     padding: 1em;
-
+    background-color: purple;
   }
 
-  .singleBehavior {
+  .clickableBehavior {
     order: 0;
     flex: 1 0 20%;
     align-self: auto;
   }
 
-  .studentSelectorButtons {
+  .clickableBehavior button{
+  background-color: #03A9F4;
+  border: none;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 3px;
+  }
+  .clickableBehavior button:target, button:focus {
+    background-color: #f00;
+    outline: none;
+  }
+
+  .studentSelectorButtonsPinkBackground {
     background-color: pink;
+  }
+  .studentSelectorButtonsPinkBackground p {
+    margin: 0;
   }
 
 .studentTileWindow {
