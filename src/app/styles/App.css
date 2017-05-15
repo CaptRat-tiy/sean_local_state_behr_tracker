@@ -51,16 +51,21 @@ header h1 {
   margin: 0;
 }
 
-.mainYellow {
+.mainChalkboard {
   order: 0;
+  color: white;
   flex: 0 1 auto;
   align-self: auto;
   background-color: yellow;
   width: 100vw;
+  background-image: url("../../images/chalkboard.jpg");
+  background-repeat:repeat-y;
+  background-size: contain;
 }
 
   .courseInfoLightGreen {
     background-color: lightgreen;
+    color: black;
   }
 
   .studentBehaviorOptionsPurple {

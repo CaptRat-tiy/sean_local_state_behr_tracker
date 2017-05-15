@@ -7,7 +7,7 @@ import * as firebase from 'firebase'
 import Student from './Student'
 import Behaviors from './Behaviors'
 import About from './About'
-import Footer from './Footer'
+
 import Routing from './Routing'
 
 
@@ -99,7 +99,7 @@ export default class App extends React.Component {
 
     return (
       <div className="body">
-        <div className="mainYellow">
+        <div className="mainChalkboard">
           <div className="courseInfoLightGreen">
             <h1>{teacherInfo.firstName} {teacherInfo.lastName}'s Grade {teacherInfo.gradeLevel} Class</h1>
           </div>
