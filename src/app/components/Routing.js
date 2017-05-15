@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import styles from '../styles/App.css';
+import styles from '../App.css';
 import App from './App';
 import About from './About';
 import NavBar from './NavBar';
@@ -19,7 +19,7 @@ export default class Routing extends React.Component{
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
             <Route path="/student" component={Student} />
-          
+
         </div>
       </BrowserRouter>
     )

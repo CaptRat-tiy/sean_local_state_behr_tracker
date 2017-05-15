@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import styles from '../styles/App.css';
+import styles from '../App.css';
 
 export default class Behaviors extends React.Component{
 render() {

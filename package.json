@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack -d && cp src/index.html dist/index.html && cp -R src/app/img dist/app && webpack-dev-server --content-base src/ --inline --hot",
-    "postinstall": "webpack -p && cp src/index.html dist/index.html && cp -R src/app/img dist/app"
+    "dev": "webpack -d && cp src/index.html dist/index.html && cp -R src/image dist/image && webpack-dev-server --content-base src/ --inline --hot",
+    "postinstall": "webpack -p && cp src/index.html dist/index.html && cp -R src/image dist/image"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "bugs": {
-    "url": "https://github.com/CaptRat-tiy/blog-assignment-w-react/issues"
+    "url": "https://github.com/CaptRat-tiy/Behavioral-Tracker"
   },
   "keywords": [
     "react",

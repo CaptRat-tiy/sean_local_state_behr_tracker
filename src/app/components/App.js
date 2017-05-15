@@ -11,7 +11,7 @@ import About from './About'
 import Routing from './Routing'
 
 
-import styles from '../styles/App.css';
+import styles from '../App.css';
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
