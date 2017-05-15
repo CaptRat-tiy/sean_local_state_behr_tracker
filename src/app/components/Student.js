@@ -3,6 +3,10 @@
 import React from 'react';
 import Behaviors from './Behaviors'
 import styles from '../App.css';
+// import media-q from '../media-q.css';
+
+
+
 
 export default class Student extends React.Component{
 

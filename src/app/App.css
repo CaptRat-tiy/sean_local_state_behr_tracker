@@ -33,6 +33,12 @@ header {
   background-repeat: no-repeat;
   }
 
+  .header:nth-child {
+    order: 0;
+    flex: 1 0 auto;
+    align-self: auto;
+    }
+
 header h1 {
   margin-left: 4em;
 }
@@ -143,4 +149,23 @@ header h1 {
   background-color: brown;
   text-align: center;
   max-height: 3%;
+}
+
+
+@media( max-width: 950px ) {
+  header {
+  font-size: 1.0em;
+  }
+}
+
+@media( max-width: 650px ) {
+  header {
+  font-size: .75em;
+  }
+}
+
+@media( max-width: 480px ) {
+  header {
+  font-size: .5em;
+  }
 }

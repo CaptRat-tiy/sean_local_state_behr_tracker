@@ -1,0 +1,21 @@
+@media( max-width: 1024px ) {
+
+}
+
+@media( max-width: 950px ) {
+  header {
+  font-size: 1.0em;
+  }
+}
+
+@media( max-width: 650px ) {
+  header {
+  font-size: .75em;
+  }
+}
+
+@media( max-width: 480px ) {
+  header {
+  font-size: .5em;
+  }
+}

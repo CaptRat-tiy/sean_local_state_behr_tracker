@@ -3,6 +3,7 @@
 import React from 'react';
 
 import styles from '../App.css';
+// import media-q from '../media-q.css';
 
 export default class About extends React.Component{
   render(){

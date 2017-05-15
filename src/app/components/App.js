@@ -10,8 +10,9 @@ import About from './About'
 
 import Routing from './Routing'
 
-
 import styles from '../App.css';
+// import media-q from '../media-q.css';
+
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
