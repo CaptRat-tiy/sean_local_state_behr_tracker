@@ -8,8 +8,6 @@ import Student from './Student'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import styles from '../App.css';
-// import media-q from '../media-q.css';
-
 
 export default class Routing extends React.Component{
   render(){
@@ -17,9 +15,10 @@ export default class Routing extends React.Component{
       <BrowserRouter>
         <div>
           <NavBar />
-            <Route exact path="/" component={App} />
-            <Route path="/about" component={About} />
-            <Route path="/student" component={Student} />
+          
+          <Route exact path="/" component={App} />
+          <Route path="/about" component={About} />
+          <Route path="/student" component={Student} />
 
         </div>
       </BrowserRouter>

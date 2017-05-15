@@ -3,10 +3,6 @@
 import React from 'react';
 import Behaviors from './Behaviors'
 import styles from '../App.css';
-// import media-q from '../media-q.css';
-
-
-
 
 export default class Student extends React.Component{
 
@@ -22,9 +18,9 @@ export default class Student extends React.Component{
           <h1>{student.firstName} {student.lastName}</h1>
           <img src={student.image} />
           <Behaviors
-          behaviorList={behaviorList}
-          handleBehaviorClick={handleBehaviorClick}
-          studentID={student.studentID}
+            behaviorList={behaviorList}
+            handleBehaviorClick={handleBehaviorClick}
+            studentID={student.studentID}
            />
         </div>
       </div>

@@ -11,7 +11,6 @@ import About from './About'
 import Routing from './Routing'
 
 import styles from '../App.css';
-// import media-q from '../media-q.css';
 
 
 var config = {
@@ -128,7 +127,6 @@ export default class App extends React.Component {
           <div className="footer">
             This qualifies as a footer
           </div>
-
         </div>
       </div>
     )
