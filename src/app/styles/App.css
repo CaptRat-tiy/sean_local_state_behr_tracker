@@ -28,7 +28,7 @@ header {
   height: 5em;
   align-content: stretch;
   align-items: flex-start;
-  background-image:url("../../images/headerGifs/a-a-ron.gif");
+  background-image:url("../../img/headerGifs/a-a-ron.gif");
   background-size: contain;
   background-repeat: no-repeat;
   }
@@ -58,7 +58,7 @@ header h1 {
   align-self: auto;
   background-color: yellow;
   width: 100vw;
-  background-image: url("../../images/chalkboard.jpg");
+  background-image: url("../../img/chalkboard.jpg");
   background-repeat:repeat-y;
   background-size: contain;
 }
