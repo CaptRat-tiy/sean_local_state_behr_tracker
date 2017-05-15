@@ -153,19 +153,20 @@ header h1 {
 
 
 @media( max-width: 950px ) {
-  header {
-  font-size: 1.0em;
+  header, h1, p {
+  font-size: .95em;
   }
 }
 
 @media( max-width: 650px ) {
-  header {
-  font-size: .75em;
+  header, h1, p {
+  font-size: .65em;
   }
 }
 
 @media( max-width: 480px ) {
-  header {
+  header, h1, p {
   font-size: .5em;
   }
+
 }
