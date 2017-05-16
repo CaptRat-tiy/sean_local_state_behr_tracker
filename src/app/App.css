@@ -17,28 +17,37 @@ width: 10%;
 }
 
 header {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.5em;
-  background-color: green;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0;
-  height: 5em;
-  align-content: stretch;
-  align-items: flex-start;
-  background-image:url("../image/headerGifs/a-a-ron.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 100%;
+    }
 
-.gifImage {
-    float: left;
+header .gif {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 200px;
+    height: 8em;
+    background-image:url("../image/headerGifs/a-a-ron.gif");
+    background-size: contain;
+    }
+
+header .headerText {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    font-family: 'Amatic SC', cursive;
+    background-color: green;
+    width: 100%;
+    font: 3.5em;
     }
 
 header h1 {
-  margin-left: 4em;
+  margin-left: 1em;
 }
 
 .body {
@@ -149,6 +158,11 @@ header h1 {
   max-height: 3%;
 }
 
+@media( max-width: 1024px) {
+  header, h1, p {
+  font-size: 1.3em;
+  }
+}
 
 @media( max-width: 950px ) {
   header, h1, p {
