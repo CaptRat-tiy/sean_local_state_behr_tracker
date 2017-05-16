@@ -34,6 +34,7 @@ export default class App extends React.Component {
     this.changeIntoArray=this.changeIntoArray.bind(this)
     this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
     this.handleStudentClick=this.handleStudentClick.bind(this)
+    this.changeIntoArray=this.changeIntoArray.bind(this)
 
     this.state = {
       courseData: {},

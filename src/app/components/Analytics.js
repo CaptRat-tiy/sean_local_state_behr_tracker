@@ -6,7 +6,7 @@ import styles from '../App.css';
 export default class Analytics extends React.Component {
   render(){
     let students = this.props.students;
-    let changeIntoArray=this.changeIntoArray;
+    let changeIntoArray=this.props.changeIntoArray;
 
     console.log(students);
 
@@ -14,12 +14,8 @@ export default class Analytics extends React.Component {
       <div>
         {students.map((student) => {
           console.log("student: ", student.behaviorHistory);
-          const behaviors = student.behaviorHistory
-            console.log("behaviors: ", behaviors);
 
-
-
-            behaviors._map((c, i, a) =>{
+          changeIntoArray(student.behaviorHistory).map((c, i, a) =>{
               console.log("c:", c);
 
             })
