@@ -6,6 +6,7 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
+import BehaviorHistory from './Analytics'
 import About from './About'
 
 import Routing from './Routing'
@@ -37,7 +38,8 @@ export default class App extends React.Component {
       courseData: {},
       students: [],
       teacherInfo: {},
-      behaviors: []
+      behaviors: [],
+      analytics: []
     }
   }
 
@@ -47,6 +49,8 @@ export default class App extends React.Component {
       const students = this.changeIntoArray(snapshot.val().studentArray)
       const teacherInfo = snapshot.val().teacherID
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
+      const analytics = this.changeIntoArray(snapshot.val().analytics)
+
       this.setState({
         courseData: courseData,
         students: students,
