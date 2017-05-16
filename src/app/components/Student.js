@@ -19,9 +19,9 @@ export default class Student extends React.Component{
           <h1>{student.firstName} {student.lastName}</h1>
           <img src={student.image} />
           <Behaviors
-          behaviorList={behaviorList}
-          handleBehaviorClick={handleBehaviorClick}
-          studentID={student.studentID}
+            behaviorList={behaviorList}
+            handleBehaviorClick={handleBehaviorClick}
+            studentID={student.studentID}
            />
         </div>
       </div>

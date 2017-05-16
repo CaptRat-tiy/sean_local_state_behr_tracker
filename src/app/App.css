@@ -17,21 +17,33 @@ width: 10%;
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-start;
+<<<<<<< HEAD:src/app/App.css
+  background-image:url("../image/headerGifs/a-a-ron.gif");
+=======
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
   background-color: green;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
   margin: 0;
   height: 5em;
-  align-content: stretch;
-  align-items: flex-start;
-  background-image:url("../image/headerGifs/a-a-ron.gif");
+
+  /*background-image:url("../image/headerGifs/a-a-ron.gif");*/
+>>>>>>> finalweek:src/app/App.css
   background-size: contain;
   background-repeat: no-repeat;
-  }
+    }
+
+
+
+.gifImage {
+    height: auto;
+    width: 100%;
+    }
 
 header h1 {
   margin-left: 4em;
@@ -144,3 +156,22 @@ header h1 {
   text-align: center;
   max-height: 3%;
 }
+
+/*
+@media( max-width: 950px ) {
+  header, h1, p {
+  font-size: 1.2em;
+  }
+}
+
+@media( max-width: 650px ) {
+  header, h1, p {
+  font-size: 1em;
+  }
+}
+
+@media( max-width: 480px ) {
+  header, h1, p {
+  font-size: .8em;
+  }
+}*/

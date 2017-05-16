@@ -22,13 +22,13 @@ export default class Analytics extends React.Component {
             behaviors._map((c, i, a) =>{
               console.log("c:", c);
 
-
             })
           return (
             <p></p>
               )
         }
       )}
+
       </div>
     )
   }

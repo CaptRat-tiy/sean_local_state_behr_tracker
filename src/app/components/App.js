@@ -6,12 +6,20 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
+<<<<<<< HEAD
 import Analytics from './Analytics'
+=======
+import BehaviorHistory from './Analytics'
+>>>>>>> finalweek
 import About from './About'
 
 import Routing from './Routing'
 
 import styles from '../App.css';
+<<<<<<< HEAD
+=======
+
+>>>>>>> finalweek
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
@@ -38,6 +46,10 @@ export default class App extends React.Component {
       students: [],
       teacherInfo: {},
       behaviors: [],
+<<<<<<< HEAD
+=======
+      analytics: []
+>>>>>>> finalweek
     }
   }
 
@@ -47,6 +59,8 @@ export default class App extends React.Component {
       const teacherInfo = snapshot.val().teacherID
       const students = this.changeIntoArray(snapshot.val().studentArray)
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
+      const analytics = this.changeIntoArray(snapshot.val().analytics)
+
       this.setState({
         courseData: courseData,
         students: students,
@@ -134,7 +148,6 @@ export default class App extends React.Component {
           <div className="footer">
             This qualifies as a footer
           </div>
-
         </div>
       </div>
     )
