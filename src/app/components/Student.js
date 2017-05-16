@@ -9,6 +9,7 @@ export default class Student extends React.Component{
   render(){
     let student = this.props.student;
     let behaviorList= this.props.behaviors;
+
     let handleStudentClick=this.props.handleStudentClick;
     let handleBehaviorClick=this.props.handleBehaviorClick;
 

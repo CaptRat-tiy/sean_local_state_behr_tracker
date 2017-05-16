@@ -38,23 +38,21 @@ export default class App extends React.Component {
       students: [],
       teacherInfo: {},
       behaviors: [],
-      analytics: []
     }
   }
 
   componentWillMount(){
     fbRef.on("child_added", (snapshot)=>{
       const courseData = this.changeIntoArray(snapshot.val())
-      const students = this.changeIntoArray(snapshot.val().studentArray)
       const teacherInfo = snapshot.val().teacherID
+      const students = this.changeIntoArray(snapshot.val().studentArray)
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
-      const analytics = this.changeIntoArray(snapshot.val().analytics)
       this.setState({
         courseData: courseData,
         students: students,
         teacherInfo: teacherInfo,
         behaviors: behaviors,
-        analytics: analytics
+
       })
     })
   }
@@ -69,11 +67,10 @@ export default class App extends React.Component {
   }
 
   handleStudentClick(student){
-     console.log(student);
+    console.log("Hello Carrie");
   }
 
   handleBehaviorClick(behavior, studentID){
-
       let d=new Date()
       const month = d.getMonth() + 1
       const date = d.getDate()
@@ -99,7 +96,7 @@ export default class App extends React.Component {
     const courseData=this.state.courseData
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
-    const analytics=this.state.analytics
+
 
     return (
       <div className="body">
@@ -114,8 +111,7 @@ export default class App extends React.Component {
                 key={student.studentID}
                 student={student}
                 behaviors={behaviors}
-                handleBehaviorClick={this.handleBehaviorClick}
-                analytics={analytics}/>
+                handleBehaviorClick={this.handleBehaviorClick}/>
               }
             )}
           </div>
@@ -127,6 +123,12 @@ export default class App extends React.Component {
               return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
+          </div>
+
+          <div className="analytics">
+            <Analytics
+              students={students}
+              changeIntoArray={this.changeIntoArray}/>
           </div>
 
           <div className="footer">
