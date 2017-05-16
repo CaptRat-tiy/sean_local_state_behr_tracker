@@ -2,13 +2,11 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
-<<<<<<< HEAD
-import styles from '../App.css';
-=======
->>>>>>> finalweek
-import Footer from './Footer'
 
 import styles from '../App.css';
+
+import Footer from './Footer'
+
 
 export default class NavBar extends React.Component{
   render(){
@@ -21,7 +19,7 @@ export default class NavBar extends React.Component{
             <h1>Behavior Tracking App ('navbar component')</h1>
             <Link to="/about"><p>About</p></Link>
             <Link to="/student"><p>Student</p></Link>
-          </div>  
+          </div>
         </header>
     )
   }
