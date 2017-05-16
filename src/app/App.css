@@ -17,24 +17,28 @@ width: 10%;
 }
 
 header {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.5em;
-  background-color: green;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0;
-  height: 5em;
   align-content: stretch;
   align-items: flex-start;
-  background-image:url("../image/headerGifs/a-a-ron.gif");
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  background-color: green;
+  margin: 0;
+  height: 5em;
+
+  /*background-image:url("../image/headerGifs/a-a-ron.gif");*/
   background-size: contain;
   background-repeat: no-repeat;
-  }
+    }
+
+
 
 .gifImage {
-    float: left;
+    height: auto;
+    width: 100%;
     }
 
 header h1 {
@@ -152,19 +156,18 @@ header h1 {
 
 @media( max-width: 950px ) {
   header, h1, p {
-  font-size: .95em;
+  font-size: 1.2em;
   }
 }
 
-/*@media( max-width: 650px ) {
+@media( max-width: 650px ) {
   header, h1, p {
-  font-size: .90em;
+  font-size: 1em;
   }
 }
 
 @media( max-width: 480px ) {
   header, h1, p {
-  font-size: .9em;
+  font-size: .8em;
   }
-
-}*/
+}
