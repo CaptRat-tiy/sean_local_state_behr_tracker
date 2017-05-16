@@ -38,7 +38,7 @@ export default class App extends React.Component {
       students: [],
       teacherInfo: {},
       behaviors: [],
-      behaviorHistory: []
+      analytics: []
     }
   }
 
@@ -48,13 +48,13 @@ export default class App extends React.Component {
       const students = this.changeIntoArray(snapshot.val().studentArray)
       const teacherInfo = snapshot.val().teacherID
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
-      const behaviorHistory = this.changeIntoArray(snapshot.val().behaviorHistory)
+      const analytics = this.changeIntoArray(snapshot.val().analytics)
       this.setState({
         courseData: courseData,
         students: students,
         teacherInfo: teacherInfo,
         behaviors: behaviors,
-        behaviorHistory: behaviorHistory
+        analytics: analytics
       })
     })
   }
@@ -99,6 +99,7 @@ export default class App extends React.Component {
     const courseData=this.state.courseData
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
+    const analytics=this.state.analytics
 
     return (
       <div className="body">
@@ -113,7 +114,8 @@ export default class App extends React.Component {
                 key={student.studentID}
                 student={student}
                 behaviors={behaviors}
-                handleBehaviorClick={this.handleBehaviorClick} />
+                handleBehaviorClick={this.handleBehaviorClick}
+                analytics={analytics}/>
               }
             )}
           </div>
