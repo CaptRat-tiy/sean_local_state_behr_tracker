@@ -6,12 +6,14 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
+
+import Analytics from './Analytics'
+
 import About from './About'
 
 import Routing from './Routing'
 
 import styles from '../App.css';
-
 
 var config = {
     apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
@@ -32,26 +34,29 @@ export default class App extends React.Component {
     this.changeIntoArray=this.changeIntoArray.bind(this)
     this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
     this.handleStudentClick=this.handleStudentClick.bind(this)
+    this.changeIntoArray=this.changeIntoArray.bind(this)
 
     this.state = {
       courseData: {},
       students: [],
       teacherInfo: {},
-      behaviors: []
+      behaviors: [],
     }
   }
 
   componentWillMount(){
     fbRef.on("child_added", (snapshot)=>{
       const courseData = this.changeIntoArray(snapshot.val())
-      const students = this.changeIntoArray(snapshot.val().studentArray)
       const teacherInfo = snapshot.val().teacherID
+      const students = this.changeIntoArray(snapshot.val().studentArray)
       const behaviors = this.changeIntoArray(snapshot.val().behaviors)
+      const analytics = this.changeIntoArray(snapshot.val().analytics)
+
       this.setState({
         courseData: courseData,
         students: students,
         teacherInfo: teacherInfo,
-        behaviors: behaviors
+        behaviors: behaviors,
       })
     })
   }
@@ -66,11 +71,10 @@ export default class App extends React.Component {
   }
 
   handleStudentClick(student){
-     console.log(student);
+    console.log("Hello Carrie");
   }
 
   handleBehaviorClick(behavior, studentID){
-
       let d=new Date()
       const month = d.getMonth() + 1
       const date = d.getDate()
@@ -110,7 +114,7 @@ export default class App extends React.Component {
                 key={student.studentID}
                 student={student}
                 behaviors={behaviors}
-                handleBehaviorClick={this.handleBehaviorClick} />
+                handleBehaviorClick={this.handleBehaviorClick}/>
               }
             )}
           </div>
@@ -122,6 +126,12 @@ export default class App extends React.Component {
               return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
+          </div>
+
+          <div className="analytics">
+            <Analytics
+              students={students}
+              changeIntoArray={this.changeIntoArray}/>
           </div>
 
           <div className="footer">

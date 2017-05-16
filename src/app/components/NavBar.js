@@ -2,9 +2,11 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Footer from './Footer'
 
 import styles from '../App.css';
+
+import Footer from './Footer'
+
 
 export default class NavBar extends React.Component{
   render(){
@@ -15,7 +17,8 @@ export default class NavBar extends React.Component{
             <p></p>
           </div>
           <div className="headerText">
-          <h1>Behavior Tracking App ('navbar component')</h1>
+          <h1>Behavior Tracking App</h1>
+
             <Link to="/about"><p>About</p></Link>
             <Link to="/student"><p>Student</p></Link>
           </div>

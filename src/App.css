@@ -17,37 +17,24 @@ width: 10%;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
-    width: 100%;
-    }
-
-header .gif {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    width: 200px;
-    height: 8em;
-    background-image:url("../image/headerGifs/a-a-ron.gif");
-    background-size: contain;
-    }
-
-header .headerText {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    font-family: 'Amatic SC', cursive;
-    background-color: green;
-    width: 100%;
-    font: 3.5em;
-    }
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0;
+  height: 5em;
+  align-content: stretch;
+  align-items: flex-start;
+  background-image:url("./image/headerGifs/a-a-ron.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
 
 header h1 {
-  margin-left: 1em;
+  margin-left: 4em;
 }
 
 .body {
@@ -71,7 +58,7 @@ header h1 {
   align-self: auto;
   background-color: yellow;
   width: 100vw;
-  background-image: url("../image/chalkboard.jpg");
+  background-image: url("./image/chalkboard.jpg");
   background-repeat:repeat-y;
   background-size: contain;
 }
@@ -157,31 +144,3 @@ header h1 {
   text-align: center;
   max-height: 3%;
 }
-
-/*
-@media( max-width: 1024px) {
-  header, h1, p {
-  font-size: 1.3em;
-  }
-}
-
-
-
-
-@media( max-width: 950px ) {
-  header, h1, p {
-  font-size: 1.2em;
-  }
-}
-
-@media( max-width: 650px ) {
-  header, h1, p {
-  font-size: 1em;
-  }
-}
-
-@media( max-width: 480px ) {
-  header, h1, p {
-  font-size: .8em;
-  }
-}*/

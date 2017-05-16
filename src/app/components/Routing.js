@@ -1,13 +1,16 @@
 "use strict";
 
 import React from 'react';
+
+import styles from '../App.css';
+
 import App from './App';
 import About from './About';
 import NavBar from './NavBar';
 import Student from './Student'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-import styles from '../App.css';
+// import styles from '../App.css';
 
 export default class Routing extends React.Component{
   render(){
@@ -15,10 +18,9 @@ export default class Routing extends React.Component{
       <BrowserRouter>
         <div>
           <NavBar />
-          
-          <Route exact path="/" component={App} />
-          <Route path="/about" component={About} />
-          <Route path="/student" component={Student} />
+            <Route exact path="/" component={App} />
+            <Route path="/about" component={About} />
+            <Route path="/student" component={Student} />
 
         </div>
       </BrowserRouter>
