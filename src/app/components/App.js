@@ -72,7 +72,7 @@ export default class App extends React.Component {
   }
 
   handleStudentClick(student){
-    console.log("Hello Carrie");
+    
   }
 
   handleBehaviorClick(behavior, studentID){
