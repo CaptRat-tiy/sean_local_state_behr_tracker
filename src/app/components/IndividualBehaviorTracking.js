@@ -7,6 +7,9 @@ import styles from '../App.css';
 export default class IndividualBehaviorTracking extends React.Component{
   render() {
     const instance = this.props.instance;
+
+    const behaviors = this.props.behaviors;
+
     return (
       <div className="busted">
         <div className="bustedBehavior">

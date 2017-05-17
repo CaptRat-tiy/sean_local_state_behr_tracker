@@ -71,7 +71,7 @@ export default class App extends React.Component {
     console.log("Hello Carrie");
   }
 
-  handleBehaviorClick(behavior, studentID){
+  handleBehaviorClick(behavior, behaviorImage, studentID){
       let d=new Date()
       const month = d.getMonth() + 1
       const date = d.getDate()
@@ -87,7 +87,8 @@ export default class App extends React.Component {
        date: date,
        time: militaryTime,
        year: year,
-       behavior:behavior
+       behavior:behavior,
+       behaviorImage: behaviorImage
      }
      fbRef.update(behaviorUpdate)
   }
@@ -128,8 +129,7 @@ export default class App extends React.Component {
           <div className="analytics">
             <Analytics
               students={students}
-              student={this.student}
-              recBehavior={this.recBehavior}
+              behaviors={behaviors}
               changeIntoArray={this.changeIntoArray}
 
               />
