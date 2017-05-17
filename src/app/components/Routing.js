@@ -10,8 +10,6 @@ import NavBar from './NavBar';
 import Student from './Student'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-// import styles from '../App.css';
-
 export default class Routing extends React.Component{
   render(){
     return (
@@ -21,6 +19,7 @@ export default class Routing extends React.Component{
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
             <Route path="/student" component={Student} />
+            <Route path="/finnegan" component={Student} />
 
         </div>
       </BrowserRouter>
