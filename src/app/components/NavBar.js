@@ -11,16 +11,19 @@ import Footer from './Footer'
 export default class NavBar extends React.Component{
   render(){
     return (
-        <header>
-          <div className="gifImage">
-            <img src="./../image/headerGifs/a-a-ron.gif" />
+      <div>
+        <header className="header">
+          <div className="gif">
+            <p></p>
           </div>
-          <div className="content">
-            <h1>Behavior Tracking App ('navbar component')</h1>
+          <div className="headerText">
+          <h1>Behavior Tracking App</h1>
+
             <Link to="/about"><p>About</p></Link>
             <Link to="/student"><p>Student</p></Link>
           </div>
         </header>
+      </div>
     )
   }
 }

@@ -57,7 +57,6 @@ export default class App extends React.Component {
         students: students,
         teacherInfo: teacherInfo,
         behaviors: behaviors,
-
       })
     })
   }
@@ -101,7 +100,6 @@ export default class App extends React.Component {
     const courseData=this.state.courseData
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
-
 
     return (
       <div className="body">
