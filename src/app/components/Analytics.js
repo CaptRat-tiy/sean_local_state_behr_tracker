@@ -2,35 +2,31 @@
 
 import React from 'react';
 import styles from '../App.css';
+import _ from 'underscore';
 
 export default class Analytics extends React.Component {
+
+  changeIntoArray(object){
+    const newArray = []
+    _.map(object, function(c,i,a){
+      newArray.push(c)
+    })
+    return newArray
+  }
+
+
   render(){
     let students = this.props.students;
-    let student = this.props.student;
-    let changeIntoArray=this.props.changeIntoArray;
-    let recBehavior = this.props.recBehavior;
 
+console.log("changeIntoArray: ",this.changeIntoArray);
+
+    let studentsArray = this.changeIntoArray(students);
+
+    console.log(typeof(studentsArray))
 
     return (
       <div>
-        {students.map((student, i) => {
-          console.log("students inside analytics return: ", students);
-
-          changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) => {
-                let firstName = student.firstName
-                let recBehavior = {
-                  month: behaviorHistory.month,
-                  date: behaviorHistory.date,
-                  time: behaviorHistory.time,
-                  year: behaviorHistory.year,
-                  behavior:behaviorHistory.behavior
-                }
-                console.log(firstName + "'s recurring behavior(s): ", recBehavior);
-
-                <p>{firstName}</p>
-              });
-            })
-        }
+      <p >{}</p>
         <p>Analytics HELLO</p>
       </div>
     )
