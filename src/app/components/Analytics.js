@@ -6,9 +6,11 @@ import styles from '../App.css';
 export default class Analytics extends React.Component {
   render(){
     let students = this.props.students;
+    let student = this.props.student;
     let changeIntoArray=this.props.changeIntoArray;
+    let recBehavior = this.props.recBehavior;
 
-    console.log(students);
+    // console.log(students);
 
     return (
       <div>
@@ -26,7 +28,7 @@ console.log(firstName + "'s recurring behavior(s): ", recBehavior);
               });
             })
         }
-        <p>{"Analytics Hello"}</p>
+        <p>{recBehavior}</p>
       </div>
     )
   }

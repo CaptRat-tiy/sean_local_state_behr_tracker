@@ -6,11 +6,8 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
-
 import Analytics from './Analytics'
-
 import About from './About'
-
 import Routing from './Routing'
 
 import styles from '../App.css';
@@ -131,7 +128,10 @@ export default class App extends React.Component {
           <div className="analytics">
             <Analytics
               students={students}
-              changeIntoArray={this.changeIntoArray}/>
+              student={this.student}
+              changeIntoArray={this.changeIntoArray}
+              recBehavior={this.recBehavior}
+              />
           </div>
 
           <div className="footer">
