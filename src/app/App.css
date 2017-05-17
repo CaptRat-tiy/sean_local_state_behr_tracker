@@ -50,6 +50,10 @@ header h1 {
   margin-left: 1em;
 }
 
+.headerText {
+  float: left;
+}
+
 .body {
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
