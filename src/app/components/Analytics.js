@@ -10,25 +10,28 @@ export default class Analytics extends React.Component {
     let changeIntoArray=this.props.changeIntoArray;
     let recBehavior = this.props.recBehavior;
 
-    // console.log(students);
 
     return (
       <div>
         {students.map((student, i) => {
+          console.log("students inside analytics return: ", students);
+
           changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) => {
-            let firstName = student.firstName
-            let recBehavior = {
-              month: behaviorHistory.month,
-              date: behaviorHistory.date,
-              time: behaviorHistory.time,
-              year: behaviorHistory.year,
-              behavior:behaviorHistory.behavior
-            }
-console.log(firstName + "'s recurring behavior(s): ", recBehavior);
+                let firstName = student.firstName
+                let recBehavior = {
+                  month: behaviorHistory.month,
+                  date: behaviorHistory.date,
+                  time: behaviorHistory.time,
+                  year: behaviorHistory.year,
+                  behavior:behaviorHistory.behavior
+                }
+                console.log(firstName + "'s recurring behavior(s): ", recBehavior);
+
+                <p>{firstName}</p>
               });
             })
         }
-        <p>{recBehavior}</p>
+        <p>Analytics HELLO</p>
       </div>
     )
   }

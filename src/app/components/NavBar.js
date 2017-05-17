@@ -14,7 +14,6 @@ export default class NavBar extends React.Component{
       <div>
         <header className="header">
           <div className="gif">
-            <p></p>
           </div>
           <div className="headerText">
           <h1>Behavior Tracking App</h1>
