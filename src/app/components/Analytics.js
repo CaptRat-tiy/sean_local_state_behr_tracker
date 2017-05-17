@@ -22,7 +22,7 @@ export default class Analytics extends React.Component {
               year: behaviorHistory.year,
               behavior:behaviorHistory.behavior
             }
-console.log("first name: ", firstName, "recurring behavior: ", recBehavior);
+console.log(firstName + "'s recurring behavior(s): ", recBehavior);
               });
             })
         }
