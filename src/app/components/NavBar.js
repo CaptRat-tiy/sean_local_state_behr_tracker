@@ -13,14 +13,8 @@ export default class NavBar extends React.Component{
     return (
       <div>
         <header className="header">
-          <div className="gif">
-          </div>
-          <div className="headerText">
+          <img className="gifImage" src="../image/headerGifs/a-a-ron.gif" alt=""/>
           <h1>Behavior Tracking App</h1>
-
-            <Link to="/about"><p>About</p></Link>
-            <Link to="/student"><p>Student</p></Link>
-          </div>
         </header>
       </div>
     )

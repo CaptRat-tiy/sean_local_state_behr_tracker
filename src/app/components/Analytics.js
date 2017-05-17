@@ -9,7 +9,6 @@ export default class Analytics extends React.Component {
   render(){
     let students = this.props.students;
     let changeIntoArray=this.props.changeIntoArray;
-    let behaviors = this.props.behaviors;
 
     return (
       <div>
@@ -21,8 +20,7 @@ export default class Analytics extends React.Component {
               <div className="recurrenceInfo">
                 {behaviorArray.map((instance, i) => {
                   return <IndividualBehaviorTracking key={i}
-                    instance={instance}
-                    behaviors={behaviors} />
+                    instance={instance} />
                 })}
               </div>
             </div>

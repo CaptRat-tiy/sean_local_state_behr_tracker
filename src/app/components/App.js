@@ -129,7 +129,6 @@ export default class App extends React.Component {
           <div className="analytics">
             <Analytics
               students={students}
-              behaviors={behaviors}
               changeIntoArray={this.changeIntoArray}
 
               />
