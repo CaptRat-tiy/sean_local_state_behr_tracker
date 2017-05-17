@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Behaviors from './Behaviors'
-import IndividualBehaviorTracking from './IndividualBehaviorTracking'
 import styles from '../App.css';
 
 export default class Student extends React.Component{
