@@ -13,16 +13,12 @@ export default class Analytics extends React.Component {
     return (
       <div>
         {students.map((student, i) => {
-          changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) =>{
-              console.log("student: ", student.firstName, "behaviorHistory:", behaviorHistory);
-
+          changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) => {
+              <p>{"student: ", student.firstName, "behaviorHistory:", behaviorHistory}</p>
+              });
             })
-          return (
-            <p></p>
-              )
         }
-      )}
-
+        <p>HELLO ANALYTICS</p>
       </div>
     )
   }
