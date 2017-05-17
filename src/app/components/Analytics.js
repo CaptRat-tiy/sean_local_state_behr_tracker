@@ -11,26 +11,23 @@ export default class Analytics extends React.Component {
     let changeIntoArray=this.props.changeIntoArray;
     let recBehavior = this.props.recBehavior;
 
-
     return (
       <div>
         {students.map((student, i) => {
           const behaviorArray = changeIntoArray(student.behaviorHistory)
-          console.log(behaviorArray);
           return (
-            <div key={i}>
-              <p>{student.firstName} {student.lastName} </p>
-              <ul>
+            <div key={i} className="recurrence">
+              <h2>{student.firstName} {student.lastName} </h2>
+              <div className="recurrenceInfo">
                 {behaviorArray.map((instance, i) => {
-                  return <IndividualBehaviorTracking
-                    instance={this.instance} />
-
+                  return <IndividualBehaviorTracking key={i}
+                    instance={instance} />
                 })}
-              </ul>
+              </div>
             </div>
           )
             })
-}
+          }
       </div>
     )
   }
