@@ -185,18 +185,18 @@ header {
 
 @media( max-width: 950px ) {
   header, h1, p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   }
 }
 
 @media( max-width: 650px ) {
   header, h1, p {
-  font-size: 1em;
+  font-size: .9rem;
   }
 }
 
 @media( max-width: 480px ) {
   header, h1, p {
-  font-size: .8em;
+  font-size: .8rem;
   }
 }
