@@ -117,14 +117,14 @@ export default class App extends React.Component {
             )}
           </div>
 
-          <div className="studentSelectorButtonsPinkBackground">
+          {/*<div className="studentSelectorButtonsPinkBackground">
             <p>Please select the student you wish to monitor:</p>
 
             {students.map((studentObject)=>{
               return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
-          </div>
+          </div>*/}
 
           <div className="analytics">
             <Analytics
