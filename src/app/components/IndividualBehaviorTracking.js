@@ -14,8 +14,8 @@ export default class IndividualBehaviorTracking extends React.Component{
           <img src={instance.behaviorImage} alt={instance.behavior}/>
           <h3>{instance.behavior}</h3>
         </div>
-        <p>{instance.month}/{instance.date}/{instance.year}</p>
-        <p>{instance.time}</p>
+        <p>date of incident:  {instance.month}/{instance.date}/{instance.year}</p>
+        <p>time of day: {instance.time}</p>
       </div>
     )
   }

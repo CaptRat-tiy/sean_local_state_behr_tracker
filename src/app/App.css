@@ -19,30 +19,11 @@ width: 10%;
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
     align-items: flex-start;
-    width: 100%;
-    }
-
-/*header .gif {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    width: 200px;
-    height: 8em;
-    background-image:url("../image/headerGifs/a-a-ron.gif");
-    background-size: contain;
-    }*/
-
-header {
-    display: flex;
     align-items: center;
     font-family: 'Amatic SC', cursive;
     background-color: green;
     width: 100%;
-    font: 3.5em;
     }
 
 .gifImage {
@@ -53,14 +34,12 @@ header {
 
 .header h1 {
   margin-left: 2em;
-  font-size: 5em;
+  font-size: 3.5em;
 }
-
-
 
 .body {
   font-family: 'Amatic SC', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align:center;
   display: flex;
   flex-direction: column;
@@ -87,6 +66,7 @@ header {
   .courseInfoLightGreen {
     background-color: lightgreen;
     color: black;
+    font-size: .5em;
   }
 
   .studentBehaviorOptionsPurple {
@@ -145,8 +125,8 @@ header {
 }
 
 .bustedBehavior img {
-  max-width: 100px;
-  height: 100px;
+  width: 3em;
+  height: 3em;
   display: inline;
   background-color: black;
 }
