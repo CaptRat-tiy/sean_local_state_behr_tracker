@@ -22,7 +22,7 @@ var config = {
 
 export default class App extends React.Component {
   constructor(){
-    super();
+    super()
 
 // local state
     this.state = {
@@ -33,9 +33,7 @@ export default class App extends React.Component {
           image: "../image/student-icons/boy_with_cover.png",
           lastName: "Viszla",
           studentID: 0,
-          behaviorHistory: {
-
-          }
+          behaviorHistory: {}
         },
         1: {
           firstName: "Kelly",
@@ -78,39 +76,44 @@ export default class App extends React.Component {
 
     }
 
-//firebase-friendly
-    // this.state = {
-    //   courseData: {},
-    //   students: [],
-    //   teacherInfo: {},
-    //   behaviors: [],
-    // }
+/*    //firebase-friendly
+    this.state = {
+      courseData: {},
+      students: [],
+      teacherInfo: {},
+      behaviors: [],
+    }*/
+    this.generateGuid = this.generateGuid.bind(this)
+    this.handleBehaviorClick = this.handleBehaviorClick.bind(this)
   }
 
-  //
-  // handleStudentClick(student){
-  //
-  // }
+  generateGuid(){
+    const min = 0
+    const max = Number.MAX_SAFE_INTEGER
+    return Math.floor(Math.random() * (max - min + 1)) + min
+  }
 
   handleBehaviorClick(behavior, behaviorImage, studentID){
-      let d = new Date()
-      const month = d.getMonth() + 1
-      const date = d.getDate()
-      const year = d.getFullYear()
-      const militaryTime = d.getHours() + ":" + d.getMinutes()
+    console.log(this.state.students);
+    const revisedStudents = {...this.state.students}
 
-      let timestamp = Date.now()
+    const now = new Date()
+    const month = now.getMonth() + 1
+    const date = now.getDate()
+    const year = now.getFullYear()
+    const militaryTime = now.getHours() + ":" + now.getMinutes()
 
-     const behaviorIdentifier = fbRef.push().key
-     let behaviorUpdate = {}
-     behaviorUpdate["courseID/studentArray/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
+    const behaviorIdentifier = this.generateGuid()
+    
+    revisedStudents[studentID].behaviorHistory["courseID/studentArray/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
        month: month,
        date: date,
        time: militaryTime,
        year: year,
        behavior: behavior,
        behaviorImage: behaviorImage
-     }
+    }
+    this.setState({students: revisedStudents})
   }
 
   render () {
@@ -118,7 +121,6 @@ export default class App extends React.Component {
     const courseData=this.state.courseData
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
-
 
     return (
       <div className="body">
@@ -128,10 +130,8 @@ export default class App extends React.Component {
           </div>
 
           <div>
-            { console.log(students)}
-            {
-              students._map((student) => {
-            return <Student
+            {_.map(students, (student) => {
+              return <Student
                 key={student.studentID}
                 student={student}
                 behaviors={behaviors}

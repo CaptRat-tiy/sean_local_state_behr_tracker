@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import _ from 'lodash';
 import Behaviors from './Behaviors'
 import styles from '../App.css';
 
