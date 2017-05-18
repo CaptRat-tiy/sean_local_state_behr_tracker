@@ -183,8 +183,6 @@ header {
   max-height: 3%;
 }
 
-
-
 @media( max-width: 950px ) {
   header, h1, p {
   font-size: 1.2em;
