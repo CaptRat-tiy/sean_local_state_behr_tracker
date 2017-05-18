@@ -1,7 +1,8 @@
-"use strict";
+"use strict"
 
-import React from 'react';
-import _ from 'lodash';
+import React from 'react'
+import _ from 'lodash'
+import Rebase from 're-base'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
@@ -9,16 +10,17 @@ import Analytics from './Analytics'
 import About from './About'
 import Routing from './Routing'
 
-import styles from '../App.css';
+import styles from '../App.css'
 
-var config = {
-    apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
-    authDomain: "behavioral-tracker-app.firebaseapp.com",
-    databaseURL: "https://behavioral-tracker-app.firebaseio.com",
-    projectId: "behavioral-tracker-app",
-    storageBucket: "behavioral-tracker-app.appspot.com",
-    messagingSenderId: "119916788968"
-};
+const base = Rebase.createClass({
+  apiKey: "AIzaSyAjB5xxpo_eOVJ7LFoDJUN51TGXyhkq1IQ",
+  authDomain: "behavioral-tracker-app.firebaseapp.com",
+  databaseURL: "https://behavioral-tracker-app.firebaseio.com",
+  projectId: "behavioral-tracker-app",
+  storageBucket: "behavioral-tracker-app.appspot.com",
+  messagingSenderId: "119916788968"
+}, 'behavioral-tracker-app')
+
 
 export default class App extends React.Component {
   constructor(){
@@ -26,38 +28,31 @@ export default class App extends React.Component {
 
 // local state
     this.state = {
-      courseData: "courseID",
-      students: {
-        0: {
-          firstName: "Finnegan",
-          image: "../image/student-icons/boy_with_cover.png",
-          lastName: "Viszla",
-          studentID: 0,
-          behaviorHistory: {}
-        },
-        1: {
-          firstName: "Kelly",
-          image: "../image/student-icons/blond_girl.png",
-          lastName: "Lilly",
-          studentID: 1 ,
-          behaviorHistory: {
-              KkRVefOD9pK_bnbbh2I: {
-              behavior: "Argumentative",
-              behaviorImage: "../image/argumentative/argumentative_red.png",
-              date: 18,
-              month: 5,
-              time: "11:20",
-              year: 2017
-            }
-          }
-        },
-      },
+      courses: {
+        courseID: {
+          students: {
+            0: {
+              firstName: "Finnegan",
+              image: "../image/student-icons/boy_with_cover.png",
+              lastName: "Viszla",
+              studentID: 0,
+              behaviorHistory: {}
+            },
+            1: {
+              firstName: "Kelly",
+              image: "../image/student-icons/blond_girl.png",
+              lastName: "Lilly",
+              studentID: 1 ,
+              behaviorHistory: {}
+            },
+          },
 
-
-      teacherInfo: {
-        firstName: "Kamie",
-        lastName: "Logan",
-        gradeLevel: 3
+          teacherInfo: {
+            firstName: "Kamie",
+            lastName: "Logan",
+            gradeLevel: 3
+          },
+        },
       },
       behaviors: {
         argumentative:{
@@ -73,7 +68,6 @@ export default class App extends React.Component {
           name: "Crying"
         }
       },
-
     }
 
 /*    //firebase-friendly
@@ -86,6 +80,21 @@ export default class App extends React.Component {
     this.generateGuid = this.generateGuid.bind(this)
     this.handleBehaviorClick = this.handleBehaviorClick.bind(this)
   }
+  //
+  // componentDidMount(){
+  //   base.syncState('courseID', {
+  //     context: this,
+  //     state: 'courseID',
+  //   })
+  //   base.syncState('behaviors', {
+  //     context: this,
+  //     state: 'behaviors',
+  //   })
+  // }
+  //
+  // componentWillUnmount(){
+  //   base.removeBinding(this.ref);
+  // }
 
   generateGuid(){
     const min = 0
@@ -94,9 +103,10 @@ export default class App extends React.Component {
   }
 
   handleBehaviorClick(behavior, behaviorImage, studentID){
-    console.log(this.state.students);
-    const revisedStudents = {...this.state.students}
 
+    const revisedStudents = {...this.state.courses.courseID.students}
+
+console.log("revisedStudents is/are: ", revisedStudents);
     const now = new Date()
     const month = now.getMonth() + 1
     const date = now.getDate()
@@ -104,8 +114,8 @@ export default class App extends React.Component {
     const militaryTime = now.getHours() + ":" + now.getMinutes()
 
     const behaviorIdentifier = this.generateGuid()
-    
-    revisedStudents[studentID].behaviorHistory["courseID/studentArray/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
+
+    revisedStudents[studentID].behaviorHistory["courses/courseID/students/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
        month: month,
        date: date,
        time: militaryTime,
@@ -117,9 +127,9 @@ export default class App extends React.Component {
   }
 
   render () {
-    const students=this.state.students
-    const courseData=this.state.courseData
-    const teacherInfo=this.state.teacherInfo
+    const students=this.state.courses.courseID.students
+    const courseData=this.state.courses.courseID //is this right?
+    const teacherInfo=this.state.courses.courseID.teacherInfo
     const behaviors=this.state.behaviors
 
     return (
