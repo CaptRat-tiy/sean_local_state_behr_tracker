@@ -12,7 +12,7 @@ var config = {
     filename: "bundle.js",
     publicPath: "/app/"
   },
-  devtool: "inline-source-map",
+  devtool: "cheap-module-source-map",
   module: {
     loaders: [
       {

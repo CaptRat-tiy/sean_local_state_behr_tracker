@@ -1,8 +1,7 @@
 "use strict";
 
 import React from 'react';
-import _ from 'underscore';
-import * as firebase from 'firebase'
+import _ from 'lodash';
 
 import Student from './Student'
 import Behaviors from './Behaviors'
@@ -19,77 +18,99 @@ var config = {
     projectId: "behavioral-tracker-app",
     storageBucket: "behavioral-tracker-app.appspot.com",
     messagingSenderId: "119916788968"
-  };
-
-firebase.initializeApp(config);
-
-const fbRef= firebase.database().ref();
+};
 
 export default class App extends React.Component {
   constructor(){
     super();
-    this.changeIntoArray=this.changeIntoArray.bind(this)
-    this.handleBehaviorClick=this.handleBehaviorClick.bind(this)
-    this.handleStudentClick=this.handleStudentClick.bind(this)
-    this.changeIntoArray=this.changeIntoArray.bind(this)
 
+// local state
     this.state = {
-      courseData: {},
-      students: [],
-      teacherInfo: {},
-      behaviors: [],
+      courseData: "courseID",
+      students: {
+        0: {
+          firstName: "Finnegan",
+          image: "../image/student-icons/boy_with_cover.png",
+          lastName: "Viszla",
+          studentID: 0,
+          behaviorHistory: {
+
+          }
+        },
+        1: {
+          firstName: "Kelly",
+          image: "../image/student-icons/blond_girl.png",
+          lastName: "Lilly",
+          studentID: 1 ,
+          behaviorHistory: {
+              KkRVefOD9pK_bnbbh2I: {
+              behavior: "Argumentative",
+              behaviorImage: "../image/argumentative/argumentative_red.png",
+              date: 18,
+              month: 5,
+              time: "11:20",
+              year: 2017
+            }
+          }
+        },
+      },
+
+
+      teacherInfo: {
+        firstName: "Kamie",
+        lastName: "Logan",
+        gradeLevel: 3
+      },
+      behaviors: {
+        argumentative:{
+          image: "../image/argumentative/argumentative_red.png",
+          name: "Argumentative"
+        },
+        bullying:{
+          image: "../image/bullying/bullying_red.png",
+          name: "Bullying"
+        },
+        crying:{
+          image: "../image/frequent crying/frequent_crying_red.png",
+          name: "Crying"
+        }
+      },
+
     }
+
+//firebase-friendly
+    // this.state = {
+    //   courseData: {},
+    //   students: [],
+    //   teacherInfo: {},
+    //   behaviors: [],
+    // }
   }
 
-  componentWillMount(){
-    fbRef.on("child_added", (snapshot)=>{
-      const courseData = this.changeIntoArray(snapshot.val())
-      const teacherInfo = snapshot.val().teacherID
-      const students = this.changeIntoArray(snapshot.val().studentArray)
-      const behaviors = this.changeIntoArray(snapshot.val().behaviors)
-      const analytics = this.changeIntoArray(snapshot.val().analytics)
-
-      this.setState({
-        courseData: courseData,
-        students: students,
-        teacherInfo: teacherInfo,
-        behaviors: behaviors,
-      })
-    })
-  }
-
-  changeIntoArray(object){
-    const newArray = []
-    _.map(object, function(c,i,a){
-      newArray.push(c)
-    })
-    return newArray
-  }
-
-  handleStudentClick(student){
-
-  }
+  //
+  // handleStudentClick(student){
+  //
+  // }
 
   handleBehaviorClick(behavior, behaviorImage, studentID){
-      let d=new Date()
+      let d = new Date()
       const month = d.getMonth() + 1
       const date = d.getDate()
       const year = d.getFullYear()
-      const militaryTime=d.getHours() +":" + d.getMinutes()
+      const militaryTime = d.getHours() + ":" + d.getMinutes()
 
       let timestamp = Date.now()
 
-     const behaviorIdentifier=fbRef.push().key
-     let behaviorUpdate={}
-     behaviorUpdate["courseID/studentArray/" +studentID+"/behaviorHistory/" +behaviorIdentifier] = {
+     const behaviorIdentifier = fbRef.push().key
+     let behaviorUpdate = {}
+     behaviorUpdate["courseID/studentArray/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
        month: month,
        date: date,
        time: militaryTime,
        year: year,
-       behavior:behavior,
+       behavior: behavior,
        behaviorImage: behaviorImage
      }
-     fbRef.update(behaviorUpdate)
   }
 
   render () {
@@ -97,6 +118,7 @@ export default class App extends React.Component {
     const courseData=this.state.courseData
     const teacherInfo=this.state.teacherInfo
     const behaviors=this.state.behaviors
+
 
     return (
       <div className="body">
@@ -106,7 +128,9 @@ export default class App extends React.Component {
           </div>
 
           <div>
-            {students.map((student)=>{
+            { console.log(students)}
+            {
+              students._map((student) => {
             return <Student
                 key={student.studentID}
                 student={student}
