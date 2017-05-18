@@ -14,7 +14,7 @@ export default class NavBar extends React.Component{
       <div>
         <header className="header">
           <img className="gifImage" src="../image/headerGifs/a-a-ron.gif" alt=""/>
-          <h1>Behavior Tracking App</h1>
+          <h1>NAUGHTy IN MY CLASSROOM</h1>
         </header>
       </div>
     )
