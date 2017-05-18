@@ -68,7 +68,7 @@ export default class App extends React.Component {
   }
 
   handleStudentClick(student){
-    console.log("Hello Carrie");
+
   }
 
   handleBehaviorClick(behavior, behaviorImage, studentID){
@@ -130,12 +130,11 @@ export default class App extends React.Component {
             <Analytics
               students={students}
               changeIntoArray={this.changeIntoArray}
-
               />
           </div>
 
           <div className="footer">
-            This qualifies as a footer
+          <a href="https://github.com/CaptRat-tiy/Behavioral-Tracker">https://github.com/CaptRat-tiy/Behavioral-Tracker</a>
           </div>
         </div>
       </div>
