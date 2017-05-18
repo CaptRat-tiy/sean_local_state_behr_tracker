@@ -1,7 +1,8 @@
 "use strict";
 
 import React from 'react';
-import App from './App';
+import IndividualBehaviorTracking from './IndividualBehaviorTracking'
+
 import styles from '../App.css';
 
 export default class Analytics extends React.Component {
@@ -9,24 +10,24 @@ export default class Analytics extends React.Component {
     let students = this.props.students;
     let changeIntoArray=this.props.changeIntoArray;
 
-    // console.log(students);
-
     return (
       <div>
         {students.map((student, i) => {
-          changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) => {
-              let firstName = student.firstName
-              behaviorHistory = behaviorHistory
-            return (
-                <h1>{ "anything?" }</h1>
-                )
-              });
+          const behaviorArray = changeIntoArray(student.behaviorHistory)
+          return (
+            <div key={i} className="recurrence">
+              <h2>{student.firstName} {student.lastName} </h2>
+              <div className="recurrenceInfo">
+                {behaviorArray.map((instance, i) => {
+                  return <IndividualBehaviorTracking key={i}
+                    instance={instance} />
+                })}
+              </div>
+            </div>
+          )
             })
-        }
-        <p>HELLO ANALYTICS</p>
+          }
       </div>
     )
   }
 }
-
-// console.log("student: ", firstName, "behaviorHistory:", behaviorHistory)

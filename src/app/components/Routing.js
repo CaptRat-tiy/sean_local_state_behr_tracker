@@ -17,8 +17,6 @@ export default class Routing extends React.Component{
         <div>
           <NavBar />
             <Route exact path="/" component={App} />
-            <Route path="/about" component={About} />
-            <Route path="/student" component={Student} />
 
         </div>
       </BrowserRouter>

@@ -15,11 +15,11 @@ render() {
 return (
   <div>
     <div className = "studentBehaviorOptionsPurple">
-    <p>Click all applicable behaviors:</p>
+    <p>Click all applicable behaviors: </p>
 
       {behaviors.map((behavior)=>{
       return (
-        <button className="clickableBehavior" key={behavior.name} onClick={() => handleBehaviorClick(behavior.name, studentID)}>
+        <button className="clickableBehavior" key={behavior.name} onClick={() => handleBehaviorClick(behavior.name, behavior.image, studentID)}>
           <p>{behavior.name}</p>
           <img src={behavior.image} alt={behavior.name} />
         </button>

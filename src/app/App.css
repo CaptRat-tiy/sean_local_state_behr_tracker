@@ -19,40 +19,27 @@ width: 10%;
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
     align-items: flex-start;
-    width: 100%;
-    }
-
-header .gif {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    width: 200px;
-    height: 8em;
-    background-image:url("../image/headerGifs/a-a-ron.gif");
-    background-size: contain;
-    }
-
-header .headerText {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+    align-items: center;
     font-family: 'Amatic SC', cursive;
     background-color: green;
     width: 100%;
-    font: 3.5em;
     }
 
-header h1 {
-  margin-left: 1em;
+.gifImage {
+  min-width: 25vw;
+  height: auto;
+  border: none;
+}
+
+.header h1 {
+  margin-left: 2em;
+  font-size: 3.5em;
 }
 
 .body {
   font-family: 'Amatic SC', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align:center;
   display: flex;
   flex-direction: column;
@@ -79,6 +66,7 @@ header h1 {
   .courseInfoLightGreen {
     background-color: lightgreen;
     color: black;
+    font-size: .7em;
   }
 
   .studentBehaviorOptionsPurple {
@@ -117,8 +105,45 @@ header h1 {
   .studentSelectorButtonsPinkBackground {
     background-color: pink;
   }
+
   .studentSelectorButtonsPinkBackground p {
     margin: 0;
+  }
+
+.busted {
+  width: 30vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bustedBehavior {
+  display:flex;
+  justify-content: space-around;
+}
+
+.bustedBehavior img {
+  width: 3em;
+  height: 3em;
+  display: inline;
+  background-color: black;
+}
+
+.bustedBehavior h3 {
+  display: inline;
+}
+
+.recurrence {
+  border: 1px solid yellow;
+  margin: 1em;
+  }
+
+.recurrenceInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
   }
 
 .studentTileWindow {
@@ -135,7 +160,7 @@ header h1 {
     flex: 0 1 auto;
     align-self: auto;
     background-color: slategrey;
-    }
+  }
 
   .identifierIcon {
     order: 0;
@@ -147,7 +172,7 @@ header h1 {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    }
+  }
 
 .footer {
   order: 0;
@@ -157,14 +182,6 @@ header h1 {
   text-align: center;
   max-height: 3%;
 }
-
-/*
-@media( max-width: 1024px) {
-  header, h1, p {
-  font-size: 1.3em;
-  }
-}
-
 
 
 
@@ -184,4 +201,4 @@ header h1 {
   header, h1, p {
   font-size: .8em;
   }
-}*/
+}

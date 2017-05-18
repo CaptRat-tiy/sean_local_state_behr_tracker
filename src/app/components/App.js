@@ -6,11 +6,8 @@ import * as firebase from 'firebase'
 
 import Student from './Student'
 import Behaviors from './Behaviors'
-
 import Analytics from './Analytics'
-
 import About from './About'
-
 import Routing from './Routing'
 
 import styles from '../App.css';
@@ -74,7 +71,7 @@ export default class App extends React.Component {
     
   }
 
-  handleBehaviorClick(behavior, studentID){
+  handleBehaviorClick(behavior, behaviorImage, studentID){
       let d=new Date()
       const month = d.getMonth() + 1
       const date = d.getDate()
@@ -90,7 +87,8 @@ export default class App extends React.Component {
        date: date,
        time: militaryTime,
        year: year,
-       behavior:behavior
+       behavior:behavior,
+       behaviorImage: behaviorImage
      }
      fbRef.update(behaviorUpdate)
   }
@@ -119,19 +117,21 @@ export default class App extends React.Component {
             )}
           </div>
 
-          <div className="studentSelectorButtonsPinkBackground">
+          {/*<div className="studentSelectorButtonsPinkBackground">
             <p>Please select the student you wish to monitor:</p>
 
             {students.map((studentObject)=>{
               return <button key={studentObject.lastName} onClick={() => this.handleStudentClick(studentObject.firstName)} >{studentObject.firstName} {studentObject.lastName}</button>
               }
             )}
-          </div>
+          </div>*/}
 
           <div className="analytics">
             <Analytics
               students={students}
-              changeIntoArray={this.changeIntoArray}/>
+              changeIntoArray={this.changeIntoArray}
+
+              />
           </div>
 
           <div className="footer">
