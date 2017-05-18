@@ -58,7 +58,6 @@ export default class App extends React.Component {
     })
   }
 
-
   changeIntoArray(object){
     const newArray = []
     _.map(object, function(c,i,a){
