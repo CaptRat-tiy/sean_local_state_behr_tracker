@@ -31,21 +31,3 @@ export default class Analytics extends React.Component {
     )
   }
 }
-
-// <div>
-//   {students.map((student, i) => {
-//     changeIntoArray(student.behaviorHistory).map((behaviorHistory, i, a) => {
-//       let firstName = student.firstName
-//       let recBehavior = {
-//         month: behaviorHistory.month,
-//         date: behaviorHistory.date,
-//         time: behaviorHistory.time,
-//         year: behaviorHistory.year,
-//         behavior:behaviorHistory.behavior
-//       }
-// console.log(firstName + "'s recurring behavior(s): ", recBehavior);
-//         });
-//       })
-//   }
-//   <p>Analytics HELLO</p>
-// </div>

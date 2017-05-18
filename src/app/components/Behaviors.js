@@ -15,7 +15,7 @@ render() {
 return (
   <div>
     <div className = "studentBehaviorOptionsPurple">
-    <p>Click all applicable behaviors:</p>
+    <p>Click all applicable behaviors: </p>
 
       {behaviors.map((behavior)=>{
       return (
