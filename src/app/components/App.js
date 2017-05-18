@@ -36,14 +36,12 @@ export default class App extends React.Component {
               image: "../image/student-icons/boy_with_cover.png",
               lastName: "Viszla",
               studentID: 0,
-              behaviorHistory: {}
             },
             1: {
               firstName: "Kelly",
               image: "../image/student-icons/blond_girl.png",
               lastName: "Lilly",
               studentID: 1 ,
-              behaviorHistory: {}
             },
           },
 
@@ -70,21 +68,21 @@ export default class App extends React.Component {
       },
     }
 
-/*    //firebase-friendly
-    this.state = {
-      courseData: {},
-      students: [],
-      teacherInfo: {},
-      behaviors: [],
-    }*/
+// firebase-friendly
+//     this.state = {
+//       courseData: {},
+//       students: [],
+//       teacherInfo: {},
+//       behaviors: [],
+//     }
     this.generateGuid = this.generateGuid.bind(this)
     this.handleBehaviorClick = this.handleBehaviorClick.bind(this)
   }
-  //
+
   // componentDidMount(){
-  //   base.syncState('courseID', {
+  //   base.syncState('courses', {
   //     context: this,
-  //     state: 'courseID',
+  //     state: 'courses',
   //   })
   //   base.syncState('behaviors', {
   //     context: this,
@@ -107,6 +105,7 @@ export default class App extends React.Component {
     const revisedStudents = {...this.state.courses.courseID.students}
 
 console.log("revisedStudents is/are: ", revisedStudents);
+
     const now = new Date()
     const month = now.getMonth() + 1
     const date = now.getDate()
@@ -114,8 +113,15 @@ console.log("revisedStudents is/are: ", revisedStudents);
     const militaryTime = now.getHours() + ":" + now.getMinutes()
 
     const behaviorIdentifier = this.generateGuid()
+    const student = revisedStudents[studentID]
 
-    revisedStudents[studentID].behaviorHistory["courses/courseID/students/" + studentID + "/behaviorHistory/" + behaviorIdentifier] = {
+    //.behaviorHistory["courses/courseID/students/" + studentID]
+
+    student["behaviorHistory"] = {}
+
+    console.log(student);
+
+    student["behaviorHistory"][behaviorIdentifier] = {
        month: month,
        date: date,
        time: militaryTime,
@@ -123,12 +129,13 @@ console.log("revisedStudents is/are: ", revisedStudents);
        behavior: behavior,
        behaviorImage: behaviorImage
     }
+    console.log(revisedStudents);
     this.setState({students: revisedStudents})
   }
 
   render () {
     const students=this.state.courses.courseID.students
-    const courseData=this.state.courses.courseID //is this right?
+
     const teacherInfo=this.state.courses.courseID.teacherInfo
     const behaviors=this.state.behaviors
 
