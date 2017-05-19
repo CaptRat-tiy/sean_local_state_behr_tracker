@@ -1,8 +1,10 @@
-"use strict";
+"use strict"
 
-import React from 'react';
-import _ from 'lodash';
-import styles from '../App.css';
+import React from 'react'
+import _ from 'lodash'
+import styles from '../App.css'
+import Rebase from 're-base'
+
 
 export default class Behaviors extends React.Component{
 render() {
