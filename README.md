@@ -13,3 +13,11 @@ Later iterations of this app would include mobile swipe recording, mobile remind
 To start:
 npm run dev
 (Opens in localhost:8080 at present)
+
+
+Next iteration concepts:
+  make behaviors selectable for users.  Maybe 8 out of 16 or whatever.
+  React-Native and mobile option?
+  change analytics into graphical comparisons over time (how is intervention working over a week, over a month, etc.)
+  build in a timer/alarm ability so that teacher can get automated reminder for documenting at intervals
+  make gifs display exchange after each new student selection?
