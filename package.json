@@ -46,7 +46,6 @@
     "react-image-file": "^0.1.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "rebase": "^0.3.0",
     "style-loader": "0.13.1",
     "underscore": "^1.8.3",
     "url-loader": "^0.5.8",
