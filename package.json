@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack -d && cp src/index.html dist/index.html && cp -R src/image dist/image && webpack-dev-server --content-base src/ --inline --hot",
+    "dev:deploy-test": "webpack -d && cp src/index.html dist/index.html && cp -R src/image dist/image && npm start",
     "postinstall": "webpack -p && cp src/index.html dist/index.html && cp -R src/image dist/images"
   },
   "repository": {
