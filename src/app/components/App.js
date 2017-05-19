@@ -114,7 +114,8 @@ console.log("revisedStudents is/are: ", revisedStudents);
 
     const behaviorIdentifier = this.generateGuid()
     const student = revisedStudents[studentID]
-
+//this seems to work.  (Strangely, === doesn't.)
+//but Firebase still isn't working, after switching states (line 29 - 95).  It says line 136 courseID isn't defined...?
     if ( student["behaviorHistory"] == null ) {
       student["behaviorHistory"] = {}
     }
