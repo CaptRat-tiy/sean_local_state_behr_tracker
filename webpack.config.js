@@ -12,7 +12,7 @@ var config = {
     filename: "bundle.js",
     publicPath: "/app/"
   },
-  devtool: "inline-source-map",
+  devtool: "cheap-module-source-map",
   module: {
     loaders: [
       {
@@ -20,7 +20,7 @@ var config = {
         include: SRC_DIR,
         loader: "babel-loader",
         query: {
-          presets: ["react", "es2015"]
+          presets: ["react", "es2015", "stage-0"]
         }
       },
       {

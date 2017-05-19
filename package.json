@@ -16,6 +16,14 @@
   "license": "ISC",
   "homepage": ".",
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-react-app": "^2.2.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.23.0",
     "file-loader": "^0.11.1",
     "url-loader": "^0.5.8"
   },
@@ -29,6 +37,8 @@
     "file-loader": "^0.11.1",
     "firebase": "3.6.1",
     "json-loader": "^0.5.4",
+    "lodash": "^4.17.4",
+    "re-base": "^2.8.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
