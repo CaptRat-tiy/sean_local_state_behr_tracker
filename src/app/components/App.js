@@ -115,7 +115,7 @@ console.log("revisedStudents is/are: ", revisedStudents);
     const behaviorIdentifier = this.generateGuid()
     const student = revisedStudents[studentID]
 
-    if ( student["behaviorHistory"] /* does not exist */ ) {
+    if ( student["behaviorHistory"] == null ) {
       student["behaviorHistory"] = {}
     }
 
