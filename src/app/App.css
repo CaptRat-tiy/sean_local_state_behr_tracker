@@ -60,7 +60,7 @@ header {
   width: 100vw;
   background-image: url("../image/chalkboard.jpg");
   background-repeat:repeat-y;
-  background-size: contain;
+  background-size: cover;
 }
 
   .courseInfoLightGreen {
