@@ -1,6 +1,15 @@
-This blog display needs a header, main content area, and footer.
-This main content area needs to have a main area for actual content and at least one sidebar.
-This site also needs a navigation bar that takes users to blog posts, an about page, and a recommended links links page.
-This blog posts should include a date-time entry and tags.
-This sidebar should include a list of months when a blog entry has been made, along with a list of tags used on blogs. Clicking on a month or tag should show a filtered list of blog entries.
-Then modify this blog so that you can use blog entries as project entries, to include a video or screenshot. Visitors should be able to select a 'portfolio' tag to see your portfolio entries.
+This project is in fulfillment of TIY's curriculum.  
+
+Along with Reading, 'Riting and 'Rithmetic, teachers are expected to be police and parent and priest in their classrooms.  One particularly onerous requirement is tracking (in this case, imaginary) students' disruptive/maladaptive behaviors in class, so that any interventions can be scientifically analyzed, over time, for effect. While this sounds wise, the documentation regimen requires the teacher to interrupt group lessons' flow, in order to track individual students' behaviors.  Therefore, often (regularly), teachers delay the tracking to a more convenient time - thereby lessening the accuracy and quality of the data.
+
+This application assists the process in an elegant expeditious digital manner; rather than paperwork, the app allows the teacher at the planned time, to document the behavior with recognizable icons and the toggle icon ingeniously captures the binary data (was he doing this behavior just now, or not?), freeing teacher's time and attention back onto the "problem child", instead of the damn paperwork! ; )
+
+Eventually, the app will allow teachers to input student names, frequency intervals for observation and to choose typical "problem" behaviors for tracking, and then alert teachers of precise observation requirements, at the scheduled times.
+
+Later iterations of this app would include mobile swipe recording, mobile reminder (the phone vibrating and generating the student / behavior icon).
+
+
+
+To start:
+npm run dev
+(Opens in localhost:8080 at present)

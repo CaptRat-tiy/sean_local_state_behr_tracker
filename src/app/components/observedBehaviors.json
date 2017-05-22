@@ -1,0 +1,75 @@
+[
+  {
+    "TEACHER1": {
+      "firstname": "Kamie",
+      "lastname": "Logan",
+      "grade": "3",
+      "email_address": "klogan@emerson.com",
+      "username": "naughtemouse"
+    },
+    "TEACHER2": {
+      "firstname": "Dirk",
+      "lastname": "Matthias",
+      "grade": "11",
+      "email_address": "dirkadirka@emerson.com",
+      "username": "dirkadirka"
+    }
+  },
+
+  {
+  "STUDENT": {
+    "firstname": "Finnegan",
+    "lastname": "Viszla",
+    "grade": "3",
+    "FREQUENCY/INTERVAL": {
+        "15_minutes": true,
+        "30_minutes": false,
+        "45_minutes": false,
+        "75_minutes": true,
+        "at_end_of_class": false
+      },
+    "ATTENDANCE": {
+      "absent?": false,
+        "img": "./images/attendance/absent today red.png",
+       "tardy": true,
+        "img": "./images/attendance/tardy red.png",
+      "completed_homework": false
+      }
+    }
+  },
+
+  {
+    "AGGRESSION": {
+      "fighting": false,
+      "threatening/bullying": false,
+      "hands_on_others": true,
+      "aggressive_speech": false,
+      "argumentative": true
+    }
+  },
+  {
+    "DISTRACTION": {
+      "self-distraction": true,
+      "environmental_distraction": false,
+      "out_of_chair": true,
+      "distracting_others": false,
+      "attention_seeking(of_others)": true,
+      "not_facing_target": true
+    }
+  },
+  {
+    "OTHER_CONCERNS": {
+      "isolation": false,
+      "impulsive": false,
+      "crying": false,
+      "doesn't_request_assistance": false
+    }
+  },
+  {
+    "ENVIRONMENT": {
+      "wear_glasses?": false,
+      "hearing_aid?": false,
+      "prescription?": true
+    }
+  }
+]

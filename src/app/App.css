@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 5em;
+  border: 1px solid brown;
+}
+
+button {
+width: 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    background-color: green;
+    width: 100%;
+    }
+
+.gifImage {
+  min-width: 25vw;
+  height: auto;
+  border: none;
+}
+
+.header h1 {
+  margin-left: 2em;
+  font-size: 3.5em;
+}
+
+.body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mainChalkboard {
+  order: 0;
+  color: white;
+  flex: 0 1 auto;
+  align-self: auto;
+  /*background-color: yellow;*/
+  width: 100vw;
+  background-image: url("../image/chalkboard.jpg");
+  background-repeat:repeat-y;
+  background-size: cover;
+}
+
+  .courseInfoLightGreen {
+    background-color: lightgreen;
+    color: black;
+    font-size: .7em;
+  }
+
+  .studentBehaviorOptionsPurple {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    background-color: purple;
+  }
+
+  .clickableBehavior {
+    order: 0;
+    flex: 1 0 20%;
+    align-self: auto;
+  }
+
+  .clickableBehavior button{
+  background-color: #03A9F4;
+  border: none;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 3px;
+  }
+  .clickableBehavior button:target, button:focus {
+    background-color: #f00;
+    outline: none;
+  }
+
+  .studentSelectorButtonsPinkBackground {
+    background-color: pink;
+  }
+
+  .studentSelectorButtonsPinkBackground p {
+    margin: 0;
+  }
+
+.busted {
+  width: 30vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bustedBehavior {
+  display:flex;
+  justify-content: space-around;
+}
+
+.bustedBehavior img {
+  width: 3em;
+  height: 3em;
+  display: inline;
+  background-color: black;
+}
+
+.bustedBehavior h3 {
+  display: inline;
+}
+
+.recurrence {
+  border: 1px solid yellow;
+  margin: 1em;
+  }
+
+.recurrenceInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  }
+
+.studentTileWindow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+  .studentTile {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    background-color: slategrey;
+  }
+
+  .identifierIcon {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+  .observedBehaviors {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+
+.footer {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: skyblue;
+  text-align: center;
+  max-height: 3%;
+}
+
+@media( max-width: 950px ) {
+  header, h1, p {
+  font-size: 1.2rem;
+  }
+}
+
+@media( max-width: 650px ) {
+  header, h1, p {
+  font-size: .9rem;
+  }
+}
+
+@media( max-width: 480px ) {
+  header, h1, p {
+  font-size: .8rem;
+  }
+}
