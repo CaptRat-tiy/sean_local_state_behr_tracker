@@ -52,7 +52,6 @@ export default class App extends React.Component {
       return selectedBlogData
     }
 
-
   render () {
     return (
       <div id="layout">
