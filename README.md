@@ -9,6 +9,13 @@ Eventually, the app will allow teachers to input student names, frequency interv
 Later iterations of this app would include mobile swipe recording, mobile reminder (the phone vibrating and generating the student / behavior icon).
 
 
+Future Development: Fix time glitch that shows single digit in minutes
+
+Add mobile-functionality: swipe for behavior, alarm
+
+greater selection of behaviors
+input of User's student data
+graphical analysis of recurring behavior over time (day, week, month)
 
 To start:
 npm run dev
