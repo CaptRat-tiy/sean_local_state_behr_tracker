@@ -156,7 +156,7 @@ console.log("revisedStudents is/are: ", revisedStudents);
     const month = now.getMonth() + 1
     const date = now.getDate()
     const year = now.getFullYear()
-    const militaryTime = now.getHours() + ":" + now.getMinutes()
+    const militaryTime = now.getHours() + ":" + (now.getMinutes()<10?'0':'')
 
     const behaviorIdentifier = this.generateGuid()
     const student = revisedStudents[studentID]
@@ -215,8 +215,7 @@ console.log("revisedStudents is/are: ", revisedStudents);
           <div className="analytics">
             <Analytics
               students={students}
-              changeIntoArray={this.changeIntoArray}
-              />
+            />
           </div>
 
           <div className="footer">

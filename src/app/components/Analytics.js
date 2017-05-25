@@ -9,8 +9,8 @@ import styles from '../App.css';
 export default class Analytics extends React.Component {
   render(){
     let students = this.props.students;
-    let changeIntoArray=this.props.changeIntoArray;
-
+    // let changeIntoArray=this.props.changeIntoArray;
+    
     return (
       <div>
         {_.map(students, (student, i) => {
