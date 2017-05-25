@@ -28,9 +28,7 @@ export default class App extends React.Component {
 
 // local state
     this.state = {
-<<<<<<< HEAD
-      blogData: blogData,
-=======
+
       courses: {
         courseID: {
           students: {
@@ -113,7 +111,6 @@ export default class App extends React.Component {
         name: "Withdrawn"
         }
       },
->>>>>>> b4271d81bdbafc6cbe42356fd7bc0196fc7ec97a
     }
 
 // firebase-friendly
@@ -127,22 +124,7 @@ export default class App extends React.Component {
     this.handleBehaviorClick = this.handleBehaviorClick.bind(this)
   }
 
-<<<<<<< HEAD
-//get specific button info, brought up from Components, to re-set state
-  setFilterState(selector, category) {
-    this.setState({
-      blogData: this.setBlogData(selector, category),
-    })
-  }
-=======
-<<<<<<< HEAD
-  changeIntoArray(object){
-    const newArray = []
-    _.map(object, function(c,i,a){
-      newArray.push(c)
-    })
-    return newArray
-=======
+
   // componentDidMount(){
   //   base.syncState('courses', {
   //     context: this,
@@ -162,7 +144,6 @@ export default class App extends React.Component {
     const min = 0
     const max = Number.MAX_SAFE_INTEGER
     return Math.floor(Math.random() * (max - min + 1)) + min
->>>>>>> d83eb11604beae95fb46ff9b55ac26c63659a0a0
   }
 
   handleBehaviorClick(behavior, behaviorImage, studentID){
@@ -170,7 +151,6 @@ export default class App extends React.Component {
     const revisedStudents = {...this.state.courses.courseID.students}
 
 console.log("revisedStudents is/are: ", revisedStudents);
->>>>>>> b4271d81bdbafc6cbe42356fd7bc0196fc7ec97a
 
     const now = new Date()
     const month = now.getMonth() + 1
@@ -186,8 +166,6 @@ console.log("revisedStudents is/are: ", revisedStudents);
       student["behaviorHistory"] = {}
     }
 
-<<<<<<< HEAD
-=======
     student["behaviorHistory"][behaviorIdentifier] = {
        month: month,
        date: date,
@@ -200,7 +178,6 @@ console.log("revisedStudents is/are: ", revisedStudents);
     this.setState({students: revisedStudents})
   }
 
->>>>>>> b4271d81bdbafc6cbe42356fd7bc0196fc7ec97a
   render () {
     const students=this.state.courses.courseID.students
 
@@ -208,18 +185,7 @@ console.log("revisedStudents is/are: ", revisedStudents);
     const behaviors=this.state.behaviors
 
     return (
-<<<<<<< HEAD
-      <div id="layout">
-        <Header />
-        <div className="main">
-          <Sidebar
-            blogData = {blogData}
-            setFilterState={this.setFilterState}
-          />
-          <Main
-            blogData = {this.state.blogData}
-          />
-=======
+
       <div className="body">
         <div className="mainChalkboard">
           <div className="courseInfoLightGreen">
@@ -256,7 +222,6 @@ console.log("revisedStudents is/are: ", revisedStudents);
           <div className="footer">
           <a href="https://github.com/CaptRat-tiy/Behavioral-Tracker">https://github.com/CaptRat-tiy/Behavioral-Tracker</a>
           </div>
->>>>>>> b4271d81bdbafc6cbe42356fd7bc0196fc7ec97a
         </div>
       </div>
     )
