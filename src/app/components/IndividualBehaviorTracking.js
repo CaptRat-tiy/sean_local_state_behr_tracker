@@ -8,6 +8,12 @@ export default class IndividualBehaviorTracking extends React.Component{
   render() {
     const instance = this.props.instance;
 
+// (does this work for 8:05am, instead of 8:5am?)
+    let minutes = instance.time.minutes
+    if(minutes < 10){
+      minutes = "0" + minutes
+    }
+
     return (
       <div className="busted">
         <div className="bustedBehavior">
