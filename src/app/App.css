@@ -56,7 +56,6 @@ header {
   color: white;
   flex: 0 1 auto;
   align-self: auto;
-  /*background-color: yellow;*/
   width: 100vw;
   background-image: url("../image/chalkboard.jpg");
   background-repeat:repeat-y;
@@ -102,7 +101,6 @@ header {
     background-color: #f00;
     outline: none;
   }
-
 
 .busted {
   width: 30vw;

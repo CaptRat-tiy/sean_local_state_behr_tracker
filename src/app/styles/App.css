@@ -9,7 +9,7 @@ button {
 	display: inline;
 	background-color: #699DB6;
 	letter-spacing: 2px;
-	font-size: 3em;
+	font-size: .3em;
 	padding: .3em .5em;
 	border-radius: 5em;
 	border: .2em solid rgba(0,0,0,0.3);
