@@ -215,7 +215,7 @@ export default class App extends React.Component {
           </div>
 
           <div className="footer">
-          <a href="https://github.com/CaptRat-tiy/Behavioral-Tracker">https://github.com/CaptRat-tiy/Behavioral-Tracker</a>
+          <a href="https://github.com/CaptRat-tiy/sean_local_state_behr_tracker">https://github.com/CaptRat-tiy/sean_local_state_behr_tracker</a>
           </div>
         </div>
       </div>
