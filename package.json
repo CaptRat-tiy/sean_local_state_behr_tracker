@@ -36,6 +36,7 @@
     "css-loader": "^0.26.0",
     "file-loader": "^0.11.1",
     "firebase": "3.6.1",
+    "gh-pages": "^1.0.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.17.4",
     "re-base": "^2.8.0",
