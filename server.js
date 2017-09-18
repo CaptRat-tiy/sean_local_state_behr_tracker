@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+//what does line 4 do?  App opens on localhost:8080
 const port = process.env.PORT || 8081;
 const app = express();
 const DIST_DIR = path.resolve(__dirname, "dist");
@@ -11,4 +12,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port);
+// app.listen(process.env.PORT || 8080);
 console.log('Server started');
